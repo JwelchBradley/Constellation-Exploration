@@ -15,12 +15,12 @@ D:/jwelc/resumes & cover letters/Portfolio Website/Games/Constellation Explorati
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-49276
+63620
 Successfully changed project path to: D:/jwelc/resumes & cover letters/Portfolio Website/Games/Constellation Exploration/Constellation Exploration
 D:/jwelc/resumes & cover letters/Portfolio Website/Games/Constellation Exploration/Constellation Exploration
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 136.64 ms, found 15 plugins.
-Preloading 2 native plugins for Editor in 3.93 ms.
+Refreshing native plugins compatible for Editor in 95.71 ms, found 15 plugins.
+Preloading 2 native plugins for Editor in 2.60 ms.
 Initialize engine version: 2020.3.17f1 (a4537701e4ab)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.17f1/Editor/Data/Resources/UnitySubsystems
 [Subsystems] Discovering subsystems at path D:/jwelc/resumes & cover letters/Portfolio Website/Games/Constellation Exploration/Constellation Exploration/Assets
@@ -35,52 +35,52 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.17f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.17f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.17f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56752
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56024
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.17f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.17f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.006631 seconds.
+Registered in 0.004069 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 167.08 ms, found 15 plugins.
-Preloading 2 native plugins for Editor in 0.18 ms.
+Refreshing native plugins compatible for Editor in 81.13 ms, found 15 plugins.
+Preloading 2 native plugins for Editor in 0.08 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  2.075 seconds
+- Completed reload, in  1.152 seconds
 Domain Reload Profiling:
-	ReloadAssembly (2075ms)
-		BeginReloadAssembly (94ms)
+	ReloadAssembly (1152ms)
+		BeginReloadAssembly (57ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (864ms)
-			LoadAssemblies (92ms)
+		EndReloadAssembly (481ms)
+			LoadAssemblies (54ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (264ms)
+			SetupTypeCache (154ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (82ms)
-			SetupLoadedEditorAssemblies (401ms)
+			RebuildScriptCaches (34ms)
+			SetupLoadedEditorAssemblies (216ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (12ms)
+				InitializePlatformSupportModulesInManaged (5ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (167ms)
-				BeforeProcessingInitializeOnLoad (30ms)
-				ProcessInitializeOnLoadAttributes (147ms)
-				ProcessInitializeOnLoadMethodAttributes (43ms)
+				RefreshPlugins (81ms)
+				BeforeProcessingInitializeOnLoad (17ms)
+				ProcessInitializeOnLoadAttributes (83ms)
+				ProcessInitializeOnLoadMethodAttributes (29ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.015475 seconds.
+Registered in 0.007756 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 122.40 ms, found 15 plugins.
-Preloading 2 native plugins for Editor in 0.13 ms.
+Refreshing native plugins compatible for Editor in 90.72 ms, found 15 plugins.
+Preloading 2 native plugins for Editor in 0.08 ms.
 [XR] OculusXRPlugin: registering subsystems
 [XR] Unable to register display lifecyle provider: [1]
 [XR] Oculus Input lifecycle provider registered.
@@ -101,45 +101,45 @@ UnityEngine.Debug:LogError (object)
 UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
 
 Mono: successfully reloaded assembly
-- Completed reload, in  2.283 seconds
+- Completed reload, in  1.514 seconds
 Domain Reload Profiling:
-	ReloadAssembly (2284ms)
-		BeginReloadAssembly (252ms)
+	ReloadAssembly (1515ms)
+		BeginReloadAssembly (148ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (10ms)
+			DisableScriptedObjects (5ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (35ms)
-		EndReloadAssembly (1931ms)
-			LoadAssemblies (159ms)
+			CreateAndSetChildDomain (18ms)
+		EndReloadAssembly (1302ms)
+			LoadAssemblies (104ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (620ms)
+			SetupTypeCache (383ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (111ms)
-			SetupLoadedEditorAssemblies (825ms)
+			RebuildScriptCaches (72ms)
+			SetupLoadedEditorAssemblies (600ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (6ms)
+				InitializePlatformSupportModulesInManaged (5ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (123ms)
-				BeforeProcessingInitializeOnLoad (189ms)
-				ProcessInitializeOnLoadAttributes (478ms)
-				ProcessInitializeOnLoadMethodAttributes (23ms)
+				RefreshPlugins (91ms)
+				BeforeProcessingInitializeOnLoad (123ms)
+				ProcessInitializeOnLoadAttributes (354ms)
+				ProcessInitializeOnLoadMethodAttributes (20ms)
 				AfterProcessingInitializeOnLoad (7ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (6ms)
+			AwakeInstancesAfterBackupRestoration (5ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.43 seconds
-Refreshing native plugins compatible for Editor in 1.57 ms, found 15 plugins.
-Preloading 2 native plugins for Editor in 0.11 ms.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.09 seconds
+Refreshing native plugins compatible for Editor in 0.95 ms, found 15 plugins.
+Preloading 2 native plugins for Editor in 0.09 ms.
 Unloading 4130 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 192.9 MB.
 System memory in use after: 193.1 MB.
 
 Unloading 36 unused Assets to reduce memory usage. Loaded Objects now: 4575.
-Total: 4.219900 ms (FindLiveObjects: 0.358000 ms CreateObjectMapping: 0.197300 ms MarkObjects: 3.573000 ms  DeleteObjects: 0.090500 ms)
+Total: 4.083000 ms (FindLiveObjects: 0.363100 ms CreateObjectMapping: 0.191000 ms MarkObjects: 3.444300 ms  DeleteObjects: 0.083600 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -154,616 +154,1481 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
+  path: Assets/_BowAndArrow/Editor
+  artifactKey: Guid(11ed407cca5cfe84abd77fe87b59fcbd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/_BowAndArrow/Editor using Guid(11ed407cca5cfe84abd77fe87b59fcbd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5e871cd51c1f1ae9cf85b021d5cbfe4f') in 0.012624 seconds 
+  Import took 0.018329 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 15.646241 seconds.
+  path: Assets/Scenes/Austin Test Scene.unity
+  artifactKey: Guid(aed7140699ac6a740934c626f978177e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Austin Test Scene.unity using Guid(aed7140699ac6a740934c626f978177e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '553e6b46e92c8a143f815a51b3f8cb6e') in 0.014186 seconds 
+  Import took 0.103245 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.535915 seconds.
+  path: Assets/Scenes/Star Test.unity
+  artifactKey: Guid(7d6cbfb34116b244c91cdc2e47fdb5af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Star Test.unity using Guid(7d6cbfb34116b244c91cdc2e47fdb5af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '37702565b2c20e6165d00d6372759363') in 0.006930 seconds 
+  Import took 0.013654 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.009422 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.11 ms, found 15 plugins.
+Preloading 2 native plugins for Editor in 0.13 ms.
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00048] in D:\jwelc\resumes & cover letters\Portfolio Website\Games\Constellation Exploration\Constellation Exploration\Library\PackageCache\com.unity.xr.oculus@1.10.0\Runtime\OculusLoader.cs:250 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in D:\jwelc\resumes & cover letters\Portfolio Website\Games\Constellation Exploration\Constellation Exploration\Library\PackageCache\com.unity.xr.oculus@1.10.0\Runtime\OculusLoader.cs:235 
+  at (wrapper managed-to-native) System.Reflection.MonoMethod.InternalInvoke(System.Reflection.MonoMethod,object,object[],System.Exception&)
+  at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00032] in <695d1cc93cca45069c528c15c9fdd749>:0 
+   --- End of inner exception stack trace ---
+  at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00048] in <695d1cc93cca45069c528c15c9fdd749>:0 
+  at System.Reflection.MethodBase.Invoke (System.Object obj, System.Object[] parameters) [0x00000] in <695d1cc93cca45069c528c15c9fdd749>:0 
+  at UnityEditor.EditorAssemblies.ProcessInitializeOnLoadMethodAttributes () [0x00047] in <d0e4b8c1204147f3935b6e9c8b8565ad>:0 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadMethodAttributes ()
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.547 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1548ms)
+		BeginReloadAssembly (148ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (7ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (50ms)
+		EndReloadAssembly (1327ms)
+			LoadAssemblies (119ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (435ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (58ms)
+			SetupLoadedEditorAssemblies (573ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (119ms)
+				ProcessInitializeOnLoadAttributes (401ms)
+				ProcessInitializeOnLoadMethodAttributes (34ms)
+				AfterProcessingInitializeOnLoad (12ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (15ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.14 ms, found 15 plugins.
+Preloading 2 native plugins for Editor in 0.15 ms.
+Unloading 3940 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 180.0 MB.
+System memory in use after: 180.3 MB.
+
+Unloading 27 unused Assets to reduce memory usage. Loaded Objects now: 4578.
+Total: 5.544100 ms (FindLiveObjects: 0.519700 ms CreateObjectMapping: 0.378900 ms MarkObjects: 4.615900 ms  DeleteObjects: 0.028500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 203.936952 seconds.
+  path: Assets/Scripts/Stars/StarCreator.cs
+  artifactKey: Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fa95fa685901139d0c1f68f9f7eeefde') in 0.148789 seconds 
+  Import took 0.155160 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 63.496112 seconds.
+  path: Assets/Scripts/Stars/StarCreator.cs
+  artifactKey: Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f616c7cd8b5fa2c341e784f5cee55c09') in 0.004971 seconds 
+  Import took 0.015258 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 46.424075 seconds.
+  path: Assets/Scripts/Stars/StarCreator.cs
+  artifactKey: Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a5907f6881a330dbbd7e076381cd8bbd') in 0.005884 seconds 
+  Import took 0.018551 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 23.980283 seconds.
+  path: Assets/Scripts/Stars/StarCreator.cs
+  artifactKey: Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e37e574d345194e2559ce828399f4ba1') in 0.004659 seconds 
+  Import took 0.014780 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 15.609257 seconds.
+  path: Assets/Scripts/Stars/StarCreator.cs
+  artifactKey: Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f7f047dd3e4c6fc109466dc58e92eb5a') in 0.002080 seconds 
+  Import took 0.010922 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 18.548797 seconds.
+  path: Assets/Scripts/Stars/StarCreator.cs
+  artifactKey: Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '63c836abc71c0436beb4c3396e2e69ab') in 0.005697 seconds 
+  Import took 0.016336 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 14.519976 seconds.
+  path: Assets/Scripts/Stars/StarCreator.cs
+  artifactKey: Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dbd73ea5421519ebdbb8741a12cb246a') in 0.004599 seconds 
+  Import took 0.015527 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 15.136701 seconds.
+  path: Assets/Scripts/Stars/StarCreator.cs
+  artifactKey: Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d65a4bcc0148a8b3a8e88373a976be0') in 0.005726 seconds 
+  Import took 0.017555 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 13.440103 seconds.
+  path: Assets/Scripts/Stars/StarCreator.cs
+  artifactKey: Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2619e38b69acd6d204632c5f1e05c953') in 0.003630 seconds 
+  Import took 0.011501 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 14.243707 seconds.
+  path: Assets/Scripts/Stars/StarCreator.cs
+  artifactKey: Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '561177de69ba1c154015449de5b5a533') in 0.007879 seconds 
+  Import took 0.020511 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 25.256892 seconds.
+  path: Assets/Scripts/Stars/StarCreator.cs
+  artifactKey: Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '83b6b02810c2797bfa9b86c319992a13') in 0.005282 seconds 
+  Import took 0.017526 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 12.943880 seconds.
+  path: Assets/Scripts/Stars/StarCreator.cs
+  artifactKey: Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e8dd879e2e76e5745cb07af5fe6dc5e3') in 0.004004 seconds 
+  Import took 0.012973 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 12.398080 seconds.
+  path: Assets/Scripts/Stars/StarCreator.cs
+  artifactKey: Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ec60c836aa554842780431a7204e298') in 0.005436 seconds 
+  Import took 0.014318 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 15.434597 seconds.
+  path: Assets/Scripts/Stars/StarCreator.cs
+  artifactKey: Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ddd4e9973f9bf930921de39e8ddbdf7f') in 0.005292 seconds 
+  Import took 0.017365 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 21.324802 seconds.
+  path: Assets/Scripts/Stars/StarCreator.cs
+  artifactKey: Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '813d4f261a71327d814652cb6dc3bbc4') in 0.005504 seconds 
+  Import took 0.191757 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 30.899558 seconds.
+  path: Assets/Scripts/Stars/StarCreator.cs
+  artifactKey: Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '30c68486297c2f6e83481e33fbae02d4') in 0.004996 seconds 
+  Import took 0.014242 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 17.158419 seconds.
+  path: Assets/Scripts/Stars/StarCreator.cs
+  artifactKey: Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '18eb5610d7052d1a056137a2e05c204c') in 0.004704 seconds 
+  Import took 0.026586 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 15.865856 seconds.
+  path: Assets/Scripts/Stars/StarCreator.cs
+  artifactKey: Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e13b35a49f5eea4b19f481e820838409') in 0.004062 seconds 
+  Import took 0.031753 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 12.596165 seconds.
+  path: Assets/Scripts/Stars/StarCreator.cs
+  artifactKey: Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6fc37f9ee2552c4f965e42ba0f598450') in 0.004703 seconds 
+  Import took 0.013829 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 18.031474 seconds.
+  path: Assets/Scripts/Stars/StarCreator.cs
+  artifactKey: Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0917b0db104d240c791cbe826526be98') in 0.006368 seconds 
+  Import took 0.018732 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 16.615537 seconds.
+  path: Assets/Scripts/Stars/StarCreator.cs
+  artifactKey: Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '71b187893d88fe58bc315299a19ba537') in 0.005300 seconds 
+  Import took 0.028562 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 13.711673 seconds.
+  path: Assets/Scripts/Stars/StarCreator.cs
+  artifactKey: Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '552163c38c283e21dcda0280e7f93aa0') in 0.005233 seconds 
+  Import took 0.016190 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 43.710218 seconds.
+  path: Assets/Scripts/Stars/StarCreator.cs
+  artifactKey: Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '367004858e4434e103324be6e68e93f3') in 0.005573 seconds 
+  Import took 0.015691 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 15.605642 seconds.
+  path: Assets/Scripts/Stars/StarCreator.cs
+  artifactKey: Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b5b172a95093fdae155289796b1be543') in 0.006025 seconds 
+  Import took 0.017585 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 16.309469 seconds.
+  path: Assets/Scripts/Stars/StarCreator.cs
+  artifactKey: Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fd75ab66d6920875bd7df389309f4a3e') in 0.005998 seconds 
+  Import took 0.017685 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 16.166811 seconds.
+  path: Assets/Scripts/Stars/StarCreator.cs
+  artifactKey: Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0ae3df32e940cd3dc2ada7c7173cd6be') in 0.002883 seconds 
+  Import took 0.015870 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 116.743104 seconds.
+  path: Assets/Scripts/Stars/StarCreator.cs
+  artifactKey: Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b5482d82b5be14d44fa0284d0a41bd95') in 0.003479 seconds 
+  Import took 0.042418 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 18.395986 seconds.
+  path: Assets/Scripts/Stars/StarCreator.cs
+  artifactKey: Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aecedfe6ebb9b3c976179ea008a70195') in 0.006656 seconds 
+  Import took 0.035368 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 19.880595 seconds.
+  path: Assets/Scripts/Stars/StarCreator.cs
+  artifactKey: Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2c83b904082bd8d864850e8aed591186') in 0.007909 seconds 
+  Import took 0.019620 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 18.657970 seconds.
+  path: Assets/Scripts/Stars/StarCreator.cs
+  artifactKey: Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '01b979843828878208f443de1944956c') in 0.004871 seconds 
+  Import took 0.017670 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 16.434319 seconds.
+  path: Assets/Scripts/Stars/StarCreator.cs
+  artifactKey: Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '50cd17584af3314dfd37966ccef993f0') in 0.006962 seconds 
+  Import took 0.024310 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 17.625519 seconds.
+  path: Assets/Scripts/Stars/StarCreator.cs
+  artifactKey: Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a8d5d62a1c088a86913e24c89001b9c2') in 0.004930 seconds 
+  Import took 0.015076 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 18.796542 seconds.
+  path: Assets/Scripts/Stars/StarCreator.cs
+  artifactKey: Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1393f4919f69b7c7d3cb9021891bb474') in 0.006476 seconds 
+  Import took 0.019453 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 15.056024 seconds.
+  path: Assets/Scripts/Stars/StarCreator.cs
+  artifactKey: Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a1bddc11aa8b69e39a184d6e286d8996') in 0.004137 seconds 
+  Import took 0.016943 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 13.698977 seconds.
+  path: Assets/Scripts/Stars/StarCreator.cs
+  artifactKey: Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ed5f2925e5727caee0aeb9e9a80e5470') in 0.010863 seconds 
+  Import took 0.028201 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 14.902311 seconds.
+  path: Assets/Scripts/Stars/StarCreator.cs
+  artifactKey: Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bd10673d52f096cc83112bf643ee44ee') in 0.007714 seconds 
+  Import took 0.031370 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 17.555537 seconds.
+  path: Assets/Scripts/Stars/StarCreator.cs
+  artifactKey: Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '03ff840a23a6d2666bcb79c69c96f8c1') in 0.024338 seconds 
+  Import took 0.064453 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 16.100586 seconds.
+  path: Assets/Scripts/Stars/StarCreator.cs
+  artifactKey: Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '024f600218b3b0e797ff8e5407c3bd2a') in 0.005441 seconds 
+  Import took 0.014774 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 20.961934 seconds.
+  path: Assets/Scripts/Stars/StarCreator.cs
+  artifactKey: Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '74f81bcb72b7d0191679707a6b868ea3') in 0.003825 seconds 
+  Import took 0.013128 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 17.183641 seconds.
+  path: Assets/Scripts/Stars/StarCreator.cs
+  artifactKey: Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0f5da7aab44d9a04cae39f79db99add0') in 0.008640 seconds 
+  Import took 0.043019 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 13.527771 seconds.
+  path: Assets/Scripts/Stars/StarCreator.cs
+  artifactKey: Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '94e1089d7dbbaf4e71b28fa5a93db662') in 0.011376 seconds 
+  Import took 0.028161 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 23.017127 seconds.
+  path: Assets/Scripts/Stars/StarCreator.cs
+  artifactKey: Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c1c91d02795e2d658e04f244050a12be') in 0.005458 seconds 
+  Import took 0.035858 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 13.395106 seconds.
+  path: Assets/Scripts/Stars/StarCreator.cs
+  artifactKey: Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '15085709ce4278ae301f48d1c0901e1b') in 0.006900 seconds 
+  Import took 0.020191 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 12.964376 seconds.
+  path: Assets/Scripts/Stars/StarCreator.cs
+  artifactKey: Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc4471cc894faae2253aa887f10e7bd4') in 0.006226 seconds 
+  Import took 0.018865 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 14.307486 seconds.
+  path: Assets/Scripts/Stars/StarCreator.cs
+  artifactKey: Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2cb9b370810b974d8845e851f3ed3904') in 0.003484 seconds 
+  Import took 0.013420 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 12.507541 seconds.
+  path: Assets/Scripts/Stars/StarCreator.cs
+  artifactKey: Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2a06160233615b51b1478f244eb6cbcf') in 0.009567 seconds 
+  Import took 0.023126 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 14.090624 seconds.
+  path: Assets/Scripts/Stars/StarCreator.cs
+  artifactKey: Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2b2c58b23bc34eabc26d06803c029a62') in 0.002888 seconds 
+  Import took 0.012716 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 19.322895 seconds.
+  path: Assets/Scripts/Stars/StarCreator.cs
+  artifactKey: Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eeb92cc551cc2f8d7d1e8026dd1bd1e4') in 0.009562 seconds 
+  Import took 0.023697 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 15.966680 seconds.
+  path: Assets/Scripts/Stars/StarCreator.cs
+  artifactKey: Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '89d5838dbf81bd4b2591c866b742e424') in 0.006085 seconds 
+  Import took 0.019063 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 19.854910 seconds.
+  path: Assets/Scripts/Stars/StarCreator.cs
+  artifactKey: Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ed37111ddfa22113dab23d8d79679486') in 0.003202 seconds 
+  Import took 0.018296 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 17.809120 seconds.
+  path: Assets/Scripts/Stars/StarCreator.cs
+  artifactKey: Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f8b2f7bcb2b0243670079444eaf1692e') in 0.003128 seconds 
+  Import took 0.016019 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 30.478078 seconds.
+  path: Assets/Scripts/Stars/StarCreator.cs
+  artifactKey: Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9941a62a76daa308e52045e8bc577055') in 0.007094 seconds 
+  Import took 0.020015 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 31.847149 seconds.
+  path: Assets/Scripts/Stars/StarCreator.cs
+  artifactKey: Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '94210714e20ec9d1029bb92f8ef7c92f') in 0.006376 seconds 
+  Import took 0.017441 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 16.703022 seconds.
+  path: Assets/Scripts/Stars/StarCreator.cs
+  artifactKey: Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f697c9c13bfd908d6ea32d1cc30b15a9') in 0.004087 seconds 
+  Import took 0.015473 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 17.700515 seconds.
+  path: Assets/Scripts/Stars/StarCreator.cs
+  artifactKey: Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '645a27c0c08a807d8124f3451c0a800e') in 0.004746 seconds 
+  Import took 0.015809 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 18.291913 seconds.
+  path: Assets/Scripts/Stars/StarCreator.cs
+  artifactKey: Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '43a43242e502f5821bfefa90fa25735b') in 0.005263 seconds 
+  Import took 0.018933 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 15.285298 seconds.
+  path: Assets/Scripts/Stars/StarCreator.cs
+  artifactKey: Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '90ffdf525770658188ef88bf51a5db31') in 0.007846 seconds 
+  Import took 0.021603 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 17.176453 seconds.
+  path: Assets/Scripts/Stars/StarCreator.cs
+  artifactKey: Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6b9ad0d4e9056a672f51428f87879a5f') in 0.008169 seconds 
+  Import took 0.023861 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 14.727951 seconds.
+  path: Assets/Scripts/Stars/StarCreator.cs
+  artifactKey: Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ab9a95d9505c08411a4d583494b22693') in 0.003983 seconds 
+  Import took 0.016464 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 14.542418 seconds.
+  path: Assets/Scripts/Stars/StarCreator.cs
+  artifactKey: Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c1f07f8a1f48e2c23f66534969ffa7b5') in 0.003016 seconds 
+  Import took 0.014574 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 13.681602 seconds.
+  path: Assets/Scripts/Stars/StarCreator.cs
+  artifactKey: Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ddbf3f90fd6a4f26001aa9c92b27347d') in 0.007266 seconds 
+  Import took 0.016586 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 13.607856 seconds.
+  path: Assets/Scripts/Stars/StarCreator.cs
+  artifactKey: Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '60dbf8d0dc8268365e1ba6bd6f0072cf') in 0.005484 seconds 
+  Import took 0.016846 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 18.740443 seconds.
+  path: Assets/Scripts/Stars/StarCreator.cs
+  artifactKey: Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '78942f7ab6dc9c61fffa1006540d7674') in 0.006703 seconds 
+  Import took 0.019085 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 16.468652 seconds.
+  path: Assets/Scripts/Stars/StarCreator.cs
+  artifactKey: Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'faa2ae64570117a626825024132eeab5') in 0.006035 seconds 
+  Import took 0.022440 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 13.956714 seconds.
+  path: Assets/Scripts/Stars/StarCreator.cs
+  artifactKey: Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e165f2956992c746d55bba2b1b55004e') in 0.009186 seconds 
+  Import took 0.033320 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 15.491660 seconds.
+  path: Assets/Scripts/Stars/StarCreator.cs
+  artifactKey: Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6442fe22e09d877fa65f37dd8d352c85') in 0.009319 seconds 
+  Import took 0.023023 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 14.950055 seconds.
+  path: Assets/Scripts/Stars/StarCreator.cs
+  artifactKey: Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd18cf4ffcaaf53fe2b97b3c58e03480a') in 0.002991 seconds 
+  Import took 0.012696 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 13.943675 seconds.
+  path: Assets/Scripts/Stars/StarCreator.cs
+  artifactKey: Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '523fc839d967ad1b6363f6db5f0c2e24') in 0.003899 seconds 
+  Import took 0.014008 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 13.677364 seconds.
+  path: Assets/Scripts/Stars/StarCreator.cs
+  artifactKey: Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a5935969d944b0587517a1aaa0182d1a') in 0.005816 seconds 
+  Import took 0.018657 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 14.602680 seconds.
+  path: Assets/Scripts/Stars/StarCreator.cs
+  artifactKey: Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '036c392a2cf0b16fd673036a32e027eb') in 0.008822 seconds 
+  Import took 0.026879 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 14.993983 seconds.
+  path: Assets/Scripts/Stars/StarCreator.cs
+  artifactKey: Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2d1c9ec0bea7abc755e42da913017e2b') in 0.007650 seconds 
+  Import took 0.021612 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 13.569345 seconds.
+  path: Assets/Scripts/Stars/StarCreator.cs
+  artifactKey: Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1ac32c06a0f5446854bcc1820a4377fc') in 0.008047 seconds 
+  Import took 0.019942 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 14.602782 seconds.
+  path: Assets/Scripts/Stars/StarCreator.cs
+  artifactKey: Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c49a95d0d71018598e931f168ca23c1e') in 0.007316 seconds 
+  Import took 0.020467 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 17.112908 seconds.
+  path: Assets/Scripts/Stars/StarCreator.cs
+  artifactKey: Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9798fcfc72fc0eaa7de9db316cd26688') in 0.008121 seconds 
+  Import took 0.023629 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 14.813946 seconds.
+  path: Assets/Scripts/Stars/StarCreator.cs
+  artifactKey: Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '24955e31783f66b42e7e3e1cb4c1ed38') in 0.006357 seconds 
+  Import took 0.017672 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 16.834279 seconds.
+  path: Assets/Scripts/Stars/StarCreator.cs
+  artifactKey: Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ea75832d89f50e0b42b207879f11b0f4') in 0.007320 seconds 
+  Import took 0.022831 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 17.572727 seconds.
+  path: Assets/Scripts/Stars/StarCreator.cs
+  artifactKey: Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d91697edd9d2024b7f0e2ba3e7cdace') in 0.003641 seconds 
+  Import took 0.015142 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 18.336525 seconds.
+  path: Assets/Scripts/Stars/StarCreator.cs
+  artifactKey: Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0fad8715b9f63a5e1d21634b7510635c') in 0.006544 seconds 
+  Import took 0.024897 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 15.179831 seconds.
+  path: Assets/Scripts/Stars/StarCreator.cs
+  artifactKey: Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '509599fcca81b32bb1ab3f8d78df7011') in 0.004975 seconds 
+  Import took 0.015064 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 15.005255 seconds.
+  path: Assets/Scripts/Stars/StarCreator.cs
+  artifactKey: Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2234486bee1b99d57ed42e90dd3203ce') in 0.005220 seconds 
+  Import took 0.017219 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 16.907130 seconds.
+  path: Assets/Scripts/Stars/StarCreator.cs
+  artifactKey: Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e6210a8ba699e5f412f6074a4dfa60a8') in 0.010731 seconds 
+  Import took 0.024668 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 16.657978 seconds.
+  path: Assets/Scripts/Stars/StarCreator.cs
+  artifactKey: Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '03461a646b851b5c2e6da82d3c5d540f') in 0.006474 seconds 
+  Import took 0.019574 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 16.011243 seconds.
+  path: Assets/Scripts/Stars/StarCreator.cs
+  artifactKey: Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e92de90a0988c0082acd7015328db886') in 0.005484 seconds 
+  Import took 0.017383 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 29.782416 seconds.
+  path: Assets/Scripts/Stars/StarCreator.cs
+  artifactKey: Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5531f1507f23329375930c75137b905f') in 0.005144 seconds 
+  Import took 0.018777 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 346.486883 seconds.
+  path: Assets/Scripts/Stars/StarCreator.cs
+  artifactKey: Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7bc6cb926ff7911e04e3cf3f81f986bf') in 0.002449 seconds 
+  Import took 0.106074 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 18.817873 seconds.
+  path: Assets/Scripts/Stars/StarCreator.cs
+  artifactKey: Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7b337042eb85e8a6d946788bd473f23a') in 0.003753 seconds 
+  Import took 0.034551 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 14.442561 seconds.
+  path: Assets/Scripts/Stars/StarCreator.cs
+  artifactKey: Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b81faa8fe08ec15fc4dd2b925caabcb0') in 0.003806 seconds 
+  Import took 0.017301 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 17.594260 seconds.
+  path: Assets/Scripts/Stars/StarCreator.cs
+  artifactKey: Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '98931e9d284585a35a59416e50b24de3') in 0.007638 seconds 
+  Import took 0.033715 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 17.671031 seconds.
+  path: Assets/Scripts/Stars/StarCreator.cs
+  artifactKey: Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '720a4d8140a1cffb07074c71e2ce9c86') in 0.002863 seconds 
+  Import took 0.012648 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 16.259035 seconds.
+  path: Assets/Scripts/Stars/StarCreator.cs
+  artifactKey: Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2e5d3ce3ad7e4d14f987f203cceaf28b') in 0.007836 seconds 
+  Import took 0.034527 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 15.168397 seconds.
+  path: Assets/Scripts/Stars/StarCreator.cs
+  artifactKey: Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3830d36ab746ea21428b9e3af5eba534') in 0.008166 seconds 
+  Import took 0.039339 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 15.882230 seconds.
+  path: Assets/Scripts/Stars/StarCreator.cs
+  artifactKey: Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '92d0b5e98cde8cacb800f18a62359b77') in 0.002509 seconds 
+  Import took 0.014517 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 17.670174 seconds.
+  path: Assets/Scripts/Stars/StarCreator.cs
+  artifactKey: Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '533ad89f988cd0f061bbf8235e6e9bf9') in 0.007973 seconds 
+  Import took 0.032312 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 16.685961 seconds.
+  path: Assets/Scripts/Stars/StarCreator.cs
+  artifactKey: Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '93fc510067e786adcfd81ca77d10178a') in 0.006461 seconds 
+  Import took 0.043240 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 16.557779 seconds.
+  path: Assets/Scripts/Stars/StarCreator.cs
+  artifactKey: Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d7baa8ac17910170a6b915fba4a1a15') in 0.006598 seconds 
+  Import took 0.018869 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 14.225563 seconds.
+  path: Assets/Scripts/Stars/StarCreator.cs
+  artifactKey: Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fd8918334493f03c2412123695acb2e6') in 0.025518 seconds 
+  Import took 0.044235 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 14.990064 seconds.
   path: Assets/Scripts/Stars/StarCreator.cs
   artifactKey: Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ab56a9a2d44adb4fc1f15cd0744c118f') in 0.077124 seconds 
-  Import took 0.100516 seconds .
+Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4565443e40ea0b880e733ee99b5b1d78') in 0.004843 seconds 
+  Import took 0.027357 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 44.249179 seconds.
+  Time since last request: 18.864405 seconds.
   path: Assets/Scripts/Stars/StarCreator.cs
   artifactKey: Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1155a3bc64e0c49e0423a621d40a8a2b') in 0.003146 seconds 
-  Import took 0.030009 seconds .
+Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eaea7a2525252f2b109f1b17fccba591') in 0.006949 seconds 
+  Import took 0.033426 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 16.722485 seconds.
+  Time since last request: 16.398812 seconds.
   path: Assets/Scripts/Stars/StarCreator.cs
   artifactKey: Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bb5e014dc87ca53a2dc61ac1eb55b13b') in 0.005848 seconds 
-  Import took 0.031711 seconds .
+Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '607c29f0f0f7a63c0267774a0651b344') in 0.006817 seconds 
+  Import took 0.032284 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 16.499588 seconds.
+  Time since last request: 3.922043 seconds.
   path: Assets/Scripts/Stars/StarCreator.cs
   artifactKey: Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0e2932beef933c556c8831a9043a9592') in 0.002512 seconds 
-  Import took 0.016530 seconds .
+Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '935d15f2163efc40a1d36c1b73e11c7f') in 0.003976 seconds 
+  Import took 0.036280 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 16.009571 seconds.
+  Time since last request: 17.353228 seconds.
   path: Assets/Scripts/Stars/StarCreator.cs
   artifactKey: Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9e291699fc285965a8cf11bfa2961ca6') in 0.005493 seconds 
-  Import took 0.018485 seconds .
+Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4c9cec94827ad566c4766eb6a01a10b5') in 0.004630 seconds 
+  Import took 0.029037 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 16.536984 seconds.
+  Time since last request: 72.554594 seconds.
   path: Assets/Scripts/Stars/StarCreator.cs
   artifactKey: Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c17a2950723f191e59e4a49d6af7ecb') in 0.002700 seconds 
-  Import took 0.025262 seconds .
+Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '40c758ff7d28d9ef0f02e3a0fe6fe054') in 0.004442 seconds 
+  Import took 0.033092 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 21.472919 seconds.
+  Time since last request: 11.572417 seconds.
   path: Assets/Scripts/Stars/StarCreator.cs
   artifactKey: Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eea4c1d74c3ae20d7356bb681622aa8d') in 0.003295 seconds 
-  Import took 0.018909 seconds .
+Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6b5e86af88666a9e3eb513783b80394a') in 0.002829 seconds 
+  Import took 0.015028 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 15.105280 seconds.
+  Time since last request: 5.111295 seconds.
   path: Assets/Scripts/Stars/StarCreator.cs
   artifactKey: Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6f9acb906faaedd0266e1dfc65c2b3e0') in 0.005255 seconds 
-  Import took 0.031794 seconds .
+Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '603c863118a172f541750852d9b5bb64') in 0.004528 seconds 
+  Import took 0.019819 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 19.061054 seconds.
+  Time since last request: 20.632247 seconds.
   path: Assets/Scripts/Stars/StarCreator.cs
   artifactKey: Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3ce0a8915e6d4951c0c804515a3d6e39') in 0.005537 seconds 
-  Import took 0.045382 seconds .
+Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8fb05d79fbc228c7d2facaa8a4351cf6') in 0.005414 seconds 
+  Import took 0.017291 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 16.117732 seconds.
+  Time since last request: 17.976979 seconds.
   path: Assets/Scripts/Stars/StarCreator.cs
   artifactKey: Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8ea69cc20fb837ecceeb9bc5727086ad') in 0.007354 seconds 
-  Import took 0.018641 seconds .
+Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a66c019093dd26da39b1422f3dfb26e') in 0.005150 seconds 
+  Import took 0.027258 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 21.373970 seconds.
+  Time since last request: 31.080893 seconds.
   path: Assets/Scripts/Stars/StarCreator.cs
   artifactKey: Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ad25ae68d5592f5fc2168b7304fa18f5') in 0.004440 seconds 
-  Import took 0.037916 seconds .
+Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2b1e096170bfa0c1b6941c4dcd129d24') in 0.006813 seconds 
+  Import took 0.021582 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 16.297735 seconds.
+  Time since last request: 21.625282 seconds.
   path: Assets/Scripts/Stars/StarCreator.cs
   artifactKey: Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6eb5fb3441bd567a8532be90c94434cd') in 0.008325 seconds 
-  Import took 0.026010 seconds .
+Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '583e7ce6c886f5664bef176cc5c7ec12') in 0.006417 seconds 
+  Import took 0.027001 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 19.498027 seconds.
+  Time since last request: 18.088156 seconds.
   path: Assets/Scripts/Stars/StarCreator.cs
   artifactKey: Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1b0d55dcfd7645ed6ce2ae736562f920') in 0.006822 seconds 
-  Import took 0.038621 seconds .
+Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '984ce3769ae7ec3246e80403013b9b72') in 0.004795 seconds 
+  Import took 0.028500 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 18.500435 seconds.
+  Time since last request: 14.136626 seconds.
   path: Assets/Scripts/Stars/StarCreator.cs
   artifactKey: Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ac88f4562db57f691c9b8bd5d138dcf') in 0.003074 seconds 
-  Import took 0.029696 seconds .
+Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b6cd79bfce1c7914675745756ad1116c') in 0.005248 seconds 
+  Import took 0.247467 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 17.915682 seconds.
+  Time since last request: 13.885751 seconds.
   path: Assets/Scripts/Stars/StarCreator.cs
   artifactKey: Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9942b59ae4d7d4f95eb318be4dd29801') in 0.007203 seconds 
-  Import took 0.035984 seconds .
+Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2560633cf72f96f93fbf30fb2a42b4ad') in 0.003173 seconds 
+  Import took 0.014956 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 16.725509 seconds.
+  Time since last request: 15.616651 seconds.
   path: Assets/Scripts/Stars/StarCreator.cs
   artifactKey: Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '597eb931f04a4a54723bfdce795d3e05') in 0.006394 seconds 
-  Import took 0.019213 seconds .
+Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '78d1e9bb9923e62ef5deae7c79b205e2') in 0.007120 seconds 
+  Import took 0.019648 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 16.664764 seconds.
+  Time since last request: 17.629919 seconds.
   path: Assets/Scripts/Stars/StarCreator.cs
   artifactKey: Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0d10084fc767a6c45a364daa1fdb252e') in 0.006341 seconds 
-  Import took 0.031945 seconds .
+Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c970a842424dfc73c51fdbf09b91a837') in 0.005760 seconds 
+  Import took 0.017078 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 25.963560 seconds.
+  Time since last request: 16.143856 seconds.
   path: Assets/Scripts/Stars/StarCreator.cs
   artifactKey: Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a6e1396d53f486fc4d8c6d6a000ef915') in 0.005175 seconds 
-  Import took 0.017687 seconds .
+Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a9885e10e493c84d6834ffc7d363896') in 0.005192 seconds 
+  Import took 0.016978 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 29.758855 seconds.
+  Time since last request: 15.209171 seconds.
   path: Assets/Scripts/Stars/StarCreator.cs
   artifactKey: Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '01d9a360a2e0d5d4d92a4917c6076666') in 0.006050 seconds 
-  Import took 0.027799 seconds .
+Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '288e407548a97fabdfbe3f98a40765de') in 0.006033 seconds 
+  Import took 0.028483 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 15.828400 seconds.
+  Time since last request: 19.515892 seconds.
   path: Assets/Scripts/Stars/StarCreator.cs
   artifactKey: Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '668351ce240d2ba2f9bb8475dda0ed2c') in 0.006830 seconds 
-  Import took 0.032105 seconds .
+Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e314a0be41a2310f14bfc5ca866aa8fb') in 0.003060 seconds 
+  Import took 0.029121 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 32.259444 seconds.
+  Time since last request: 16.394329 seconds.
   path: Assets/Scripts/Stars/StarCreator.cs
   artifactKey: Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd12f179b0d46693c90962a439d294e5b') in 0.005752 seconds 
-  Import took 0.134538 seconds .
+Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1e9d49198d582a7e2b600c056d6499bd') in 0.004301 seconds 
+  Import took 0.037021 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 15.026649 seconds.
+  Time since last request: 19.493981 seconds.
   path: Assets/Scripts/Stars/StarCreator.cs
   artifactKey: Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ab283e569fb4f256f8857ea716f9e8b4') in 0.004801 seconds 
-  Import took 0.032198 seconds .
+Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3f5c3ae6ea91b522f7cd537bb23863bd') in 0.005751 seconds 
+  Import took 0.037558 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 15.640008 seconds.
+  Time since last request: 17.865870 seconds.
   path: Assets/Scripts/Stars/StarCreator.cs
   artifactKey: Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9146fba7527043e74e9846af13231249') in 0.006466 seconds 
-  Import took 0.035306 seconds .
+Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e32e3d69210d5c2aff4ea73f68817a8b') in 0.010568 seconds 
+  Import took 0.023418 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 17.929737 seconds.
+  Time since last request: 17.043753 seconds.
   path: Assets/Scripts/Stars/StarCreator.cs
   artifactKey: Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6529ba765107a114d1a6c84b05307d4b') in 0.007315 seconds 
-  Import took 0.020935 seconds .
+Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0420e9ea1c004f96871b52e217a7eb89') in 0.007436 seconds 
+  Import took 0.033248 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 15.847823 seconds.
+  Time since last request: 14.887949 seconds.
   path: Assets/Scripts/Stars/StarCreator.cs
   artifactKey: Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '36fa1f5d88679176cf3879c02b77d6f4') in 0.006463 seconds 
-  Import took 0.100054 seconds .
+Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '87f13b9eb74be877e615365eba0827dc') in 0.008306 seconds 
+  Import took 0.022392 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 15.605125 seconds.
+  Time since last request: 15.842840 seconds.
   path: Assets/Scripts/Stars/StarCreator.cs
   artifactKey: Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5716821ae37cd389239b4ba5197a1ade') in 0.004994 seconds 
-  Import took 0.034244 seconds .
+Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bccd7ff2f6da91cf31b9164e9eae5d3a') in 0.008036 seconds 
+  Import took 0.063583 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 15.736747 seconds.
+  Time since last request: 15.266061 seconds.
   path: Assets/Scripts/Stars/StarCreator.cs
   artifactKey: Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b8301d54f6f29595f5d64168d82b7a13') in 0.007598 seconds 
-  Import took 0.022141 seconds .
+Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '569baa57c598baf12cc3876d47ab8266') in 0.004427 seconds 
+  Import took 0.025897 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 18.104626 seconds.
+  Time since last request: 16.191816 seconds.
   path: Assets/Scripts/Stars/StarCreator.cs
   artifactKey: Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '96dac67e6ed2687eee7331ad67b67eb3') in 0.006319 seconds 
-  Import took 0.016621 seconds .
+Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b689cf1816c3593f17906970cbf419be') in 0.015322 seconds 
+  Import took 0.046032 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 16.385486 seconds.
+  Time since last request: 17.568624 seconds.
   path: Assets/Scripts/Stars/StarCreator.cs
   artifactKey: Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef5bfb1f5997a17b6078b8aa43cde266') in 0.008678 seconds 
-  Import took 0.228704 seconds .
+Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '09b3bc10fc171ea4f5520ef1b4c09fbf') in 0.012638 seconds 
+  Import took 0.059679 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 19.306394 seconds.
+  Time since last request: 19.884889 seconds.
   path: Assets/Scripts/Stars/StarCreator.cs
   artifactKey: Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c27276b11fabec311df13661d48c8082') in 0.007316 seconds 
-  Import took 0.022677 seconds .
+Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4cd41f8d6520b9a7dbea6515d3165744') in 0.027720 seconds 
+  Import took 0.054743 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 24.982027 seconds.
+  Time since last request: 19.236162 seconds.
   path: Assets/Scripts/Stars/StarCreator.cs
   artifactKey: Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8519cf2f465c7580abfcfcd0d9ad4f37') in 0.006410 seconds 
-  Import took 0.222504 seconds .
+Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd78fbd174a44095194b9a680ada00e1b') in 0.005859 seconds 
+  Import took 0.033841 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 14.932649 seconds.
+  Time since last request: 21.975780 seconds.
   path: Assets/Scripts/Stars/StarCreator.cs
   artifactKey: Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ad3fbd23ec17f3e6eb22e5b5ef92f37a') in 0.007471 seconds 
-  Import took 0.018857 seconds .
+Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'df15287ab5c4860165903f4745fc58bb') in 0.010946 seconds 
+  Import took 0.019992 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 13.505071 seconds.
+  Time since last request: 16.836084 seconds.
   path: Assets/Scripts/Stars/StarCreator.cs
   artifactKey: Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b24aad30a843988d75f532def053a782') in 0.006816 seconds 
-  Import took 0.034190 seconds .
+Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '72ec850e1be13c679072442aca1b53ba') in 0.002945 seconds 
+  Import took 0.022767 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 15.482009 seconds.
+  Time since last request: 19.837802 seconds.
   path: Assets/Scripts/Stars/StarCreator.cs
   artifactKey: Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bd85d54c80841e823ff5a9ae775e51fd') in 0.007299 seconds 
-  Import took 0.029652 seconds .
+Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f6a65a31482cac73e2a8de030817884b') in 0.004183 seconds 
+  Import took 0.020056 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 15.629968 seconds.
+  Time since last request: 37.654529 seconds.
   path: Assets/Scripts/Stars/StarCreator.cs
   artifactKey: Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e8634ec2f7505eff379b69f030a055d9') in 0.008402 seconds 
-  Import took 0.037285 seconds .
+Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b0f88c0feb9913eae6259f2d655f189a') in 0.026291 seconds 
+  Import took 0.251111 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 20.601112 seconds.
+  Time since last request: 14.019288 seconds.
   path: Assets/Scripts/Stars/StarCreator.cs
   artifactKey: Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c406bef2b2e7a1c8cc27eb524c8a2174') in 0.013869 seconds 
-  Import took 0.040899 seconds .
+Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '22128c7b3ed546fbb9952877573a3461') in 0.004890 seconds 
+  Import took 0.029472 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 19.020968 seconds.
+  Time since last request: 18.444972 seconds.
   path: Assets/Scripts/Stars/StarCreator.cs
   artifactKey: Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a45a6dee7a1998470c462df27e93ab15') in 0.002939 seconds 
-  Import took 0.014328 seconds .
+Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ba934aabf49bc1039ad522394a5d9f5a') in 0.017150 seconds 
+  Import took 0.189199 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 47.314340 seconds.
+  Time since last request: 16.066523 seconds.
   path: Assets/Scripts/Stars/StarCreator.cs
   artifactKey: Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '12a2450925733e833e1983de738e7749') in 0.006646 seconds 
-  Import took 0.487009 seconds .
+Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '353ff62581546b88b902664edfd81e73') in 0.007631 seconds 
+  Import took 0.039335 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 49.773485 seconds.
+  Time since last request: 15.381503 seconds.
   path: Assets/Scripts/Stars/StarCreator.cs
   artifactKey: Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6121920a337aefe15f918ce2e2327f28') in 0.004828 seconds 
-  Import took 0.047369 seconds .
+Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd510482ac8f050da024ab3bb8ed9217b') in 0.014480 seconds 
+  Import took 0.038739 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 31.010503 seconds.
+  Time since last request: 16.096393 seconds.
   path: Assets/Scripts/Stars/StarCreator.cs
   artifactKey: Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f5db332fcb3fa2d88c9dfd1034e55678') in 0.006859 seconds 
-  Import took 0.201464 seconds .
+Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '78049c1beb263719204852b67f6a136b') in 0.012419 seconds 
+  Import took 0.138690 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 19.924378 seconds.
+  Time since last request: 14.396392 seconds.
   path: Assets/Scripts/Stars/StarCreator.cs
   artifactKey: Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cf9656843939dbcf8ce9d1fda5ede56b') in 0.005729 seconds 
-  Import took 0.054853 seconds .
+Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a2e47811ac66725fb2a94ffc3c1f595a') in 0.006084 seconds 
+  Import took 0.030184 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 16.629639 seconds.
+  Time since last request: 13.380034 seconds.
   path: Assets/Scripts/Stars/StarCreator.cs
   artifactKey: Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6aa9ab6bd295447f2b19dd272482fe42') in 0.005871 seconds 
-  Import took 0.032915 seconds .
+Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'be9c3fed8f0778ecbb4a93a3d1b55a33') in 0.028897 seconds 
+  Import took 0.047444 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 34.568721 seconds.
+  Time since last request: 15.724280 seconds.
   path: Assets/Scripts/Stars/StarCreator.cs
   artifactKey: Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '23c46d43f0d3b2b9e64d34fbbda2fe61') in 0.006157 seconds 
-  Import took 0.017056 seconds .
+Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '37d60c83b4b4f3cd22ec7ef82fbf9939') in 0.014474 seconds 
+  Import took 0.219520 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 18.961104 seconds.
+  Time since last request: 13.776013 seconds.
   path: Assets/Scripts/Stars/StarCreator.cs
   artifactKey: Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c659f30aa97c61aa779200ed3cf992d5') in 0.006054 seconds 
-  Import took 0.153842 seconds .
+Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'af07b77984e08532fcd27ecdc34f1cb9') in 0.016433 seconds 
+  Import took 0.042676 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 18.282938 seconds.
+  Time since last request: 13.357679 seconds.
   path: Assets/Scripts/Stars/StarCreator.cs
   artifactKey: Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8f92c22b4a0a97a5c9cf1b781cc60e9c') in 0.005859 seconds 
-  Import took 0.031754 seconds .
+Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '94161a99e4a4962919d2841d13abb407') in 0.006369 seconds 
+  Import took 0.026739 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 19.119520 seconds.
+  Time since last request: 15.337017 seconds.
   path: Assets/Scripts/Stars/StarCreator.cs
   artifactKey: Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '970a797b4aafa9276411c3cdd7cbb368') in 0.006263 seconds 
-  Import took 0.019529 seconds .
+Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6b864b6410ac111d1fe37e644dab7e09') in 0.007238 seconds 
+  Import took 0.024939 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 17.904634 seconds.
+  Time since last request: 35.923697 seconds.
   path: Assets/Scripts/Stars/StarCreator.cs
   artifactKey: Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b2449e0184e5b90514f6d68fb7436098') in 0.002682 seconds 
-  Import took 0.013660 seconds .
+Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '399496ab3229518093a3ca744d9efd1a') in 0.013582 seconds 
+  Import took 0.023697 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 15.805693 seconds.
+  Time since last request: 16.141444 seconds.
   path: Assets/Scripts/Stars/StarCreator.cs
   artifactKey: Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '231d94557f393e144469f46036b5ce83') in 0.005869 seconds 
-  Import took 0.019227 seconds .
+Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2b0df053228105ae15df5b9164593217') in 0.010800 seconds 
+  Import took 0.025932 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 27.304969 seconds.
+  Time since last request: 20.624215 seconds.
   path: Assets/Scripts/Stars/StarCreator.cs
   artifactKey: Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fa0f5cdd862d2ac4519ab32a70a3ab0a') in 0.007900 seconds 
-  Import took 0.034093 seconds .
+Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '26c00c72cc4c6cdd7d8f8e98a957a4c0') in 0.008033 seconds 
+  Import took 0.031503 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 28.716476 seconds.
+  Time since last request: 15.818649 seconds.
   path: Assets/Scripts/Stars/StarCreator.cs
   artifactKey: Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bdd095341bff20d5ab6ed48af549c299') in 0.012778 seconds 
-  Import took 0.042969 seconds .
+Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '974426e06663a35961ba5ad185bc5dd4') in 0.014301 seconds 
+  Import took 0.027713 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 21.119975 seconds.
+  Time since last request: 17.589219 seconds.
   path: Assets/Scripts/Stars/StarCreator.cs
   artifactKey: Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6ee986b08855fff093ac0e8922a67649') in 0.008234 seconds 
-  Import took 0.019412 seconds .
+Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '06bac3da4a20d875a47501e455e30873') in 0.011658 seconds 
+  Import took 0.506661 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 15.150384 seconds.
+  Time since last request: 14.365121 seconds.
   path: Assets/Scripts/Stars/StarCreator.cs
   artifactKey: Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6645af2643322d1bba07e76c55186731') in 0.003335 seconds 
-  Import took 0.014425 seconds .
+Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd1b14903bf9499fbbef7543d5de4ae80') in 0.016832 seconds 
+  Import took 0.041369 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 19.766970 seconds.
+  Time since last request: 16.148958 seconds.
   path: Assets/Scripts/Stars/StarCreator.cs
   artifactKey: Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9fc49060b5515b867dffc9c3045b6767') in 0.005318 seconds 
-  Import took 0.036727 seconds .
+Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dbfbd6f366a47dbdebc1cb9fd86e5541') in 0.010542 seconds 
+  Import took 0.038423 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 13.445223 seconds.
+  Time since last request: 15.872413 seconds.
   path: Assets/Scripts/Stars/StarCreator.cs
   artifactKey: Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '96c6831d63223bf0361265220c3899a3') in 0.012868 seconds 
-  Import took 0.030743 seconds .
+Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '61e4bc58df504f8f4f0c9b9ece49d1f8') in 0.012989 seconds 
+  Import took 0.023470 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 17.713525 seconds.
+  Time since last request: 11.917039 seconds.
   path: Assets/Scripts/Stars/StarCreator.cs
   artifactKey: Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '223906fa49b24ad75be46110426d9588') in 0.002724 seconds 
-  Import took 0.026409 seconds .
+Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6a161677061465f86d0f6ec101048b49') in 0.014783 seconds 
+  Import took 0.031455 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 14.966824 seconds.
+  Time since last request: 20.107460 seconds.
   path: Assets/Scripts/Stars/StarCreator.cs
   artifactKey: Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f2ccc4ebd4228699e5d949b9184f00f5') in 0.003613 seconds 
-  Import took 0.033120 seconds .
+Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '099734847edcc256f78fea5a7618479c') in 0.013013 seconds 
+  Import took 0.045251 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 14.606375 seconds.
+  Time since last request: 14.646475 seconds.
   path: Assets/Scripts/Stars/StarCreator.cs
   artifactKey: Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bf595b8d62e31411cddf4a53067f515f') in 0.005442 seconds 
-  Import took 0.232382 seconds .
+Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4366d1560b788b5afb19055fb2514fb9') in 0.006858 seconds 
+  Import took 0.038670 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 14.830705 seconds.
+  Time since last request: 14.618884 seconds.
   path: Assets/Scripts/Stars/StarCreator.cs
   artifactKey: Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dff1887bd25d4abffa176cc8e6867171') in 0.007780 seconds 
-  Import took 0.050243 seconds .
+Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '92b96b4c4ce9795568cc965df7cfaff7') in 0.006176 seconds 
+  Import took 0.184858 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 37.358070 seconds.
+  Time since last request: 17.967543 seconds.
   path: Assets/Scripts/Stars/StarCreator.cs
   artifactKey: Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c4e88e07ba7a8002709f4269e9654b64') in 0.006045 seconds 
-  Import took 0.045081 seconds .
+Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5549db292398a09410e921b20f7330bf') in 0.006559 seconds 
+  Import took 0.019809 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 14.313115 seconds.
+  Time since last request: 17.880052 seconds.
   path: Assets/Scripts/Stars/StarCreator.cs
   artifactKey: Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '589311b8673e008ad8be2f15213ab00f') in 0.006501 seconds 
-  Import took 0.035299 seconds .
+Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cfa8cae4c804394bbc646d1a6410160a') in 0.006434 seconds 
+  Import took 0.038715 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 3.761013 seconds.
+  Time since last request: 15.038147 seconds.
   path: Assets/Scripts/Stars/StarCreator.cs
   artifactKey: Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '44f003bb130f8ad27a086808529f285c') in 0.007378 seconds 
-  Import took 0.036827 seconds .
+Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5e095b5cc6d0f5c3bc1b3b7859b389e9') in 0.004672 seconds 
+  Import took 0.031603 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 63.346086 seconds.
+  Time since last request: 29.081284 seconds.
   path: Assets/Scripts/Stars/StarCreator.cs
   artifactKey: Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '91cb213dc6727874b3914877979c9955') in 0.002325 seconds 
-  Import took 0.054231 seconds .
+Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e2521042855a98e407a5ddcf0224275f') in 0.020128 seconds 
+  Import took 0.122832 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 61.970188 seconds.
+  Time since last request: 16.141066 seconds.
   path: Assets/Scripts/Stars/StarCreator.cs
   artifactKey: Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2a542686ffc02154843e77dc17675f8a') in 0.006821 seconds 
-  Import took 0.220687 seconds .
+Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ff3010a1264bd1b8de7df27524d7d6fb') in 0.006134 seconds 
+  Import took 0.028962 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 15.311956 seconds.
+  Time since last request: 16.052671 seconds.
   path: Assets/Scripts/Stars/StarCreator.cs
   artifactKey: Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '78e4ff929da23ec5f84b59698f7e190d') in 0.007366 seconds 
-  Import took 0.033840 seconds .
+Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8eff3b93d20bcf234757368f6b380188') in 0.006866 seconds 
+  Import took 0.017622 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 15.350966 seconds.
+  Time since last request: 46.564175 seconds.
   path: Assets/Scripts/Stars/StarCreator.cs
   artifactKey: Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '74033e9ad8c187179976dc5b218aecaa') in 0.003314 seconds 
-  Import took 0.031234 seconds .
+Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ec36161ab3f8cfd14c286ce2355bc7cb') in 0.003913 seconds 
+  Import took 0.013102 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 17.814481 seconds.
+  Time since last request: 17.082090 seconds.
   path: Assets/Scripts/Stars/StarCreator.cs
   artifactKey: Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4c0485c0b27c9485d6271599112e6d6c') in 0.005887 seconds 
-  Import took 0.045477 seconds .
+Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eb66ea1a1729f118faebb27460516a45') in 0.006460 seconds 
+  Import took 0.018675 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 22.118955 seconds.
+  Time since last request: 16.434299 seconds.
   path: Assets/Scripts/Stars/StarCreator.cs
   artifactKey: Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '928a81e2c79a302e637fa15383c86e84') in 0.011082 seconds 
-  Import took 0.038785 seconds .
+Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'df62ced704a6b075e6b735139fdb1f14') in 0.011892 seconds 
+  Import took 0.100479 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 16.390632 seconds.
+  Time since last request: 14.897757 seconds.
   path: Assets/Scripts/Stars/StarCreator.cs
   artifactKey: Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '08b0e5842977732db1f865eeadbff15a') in 0.005849 seconds 
-  Import took 0.239116 seconds .
+Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b1a9a6a6b13c7b4b728ca2e6c249581e') in 0.004432 seconds 
+  Import took 0.028906 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 14.758407 seconds.
+  Time since last request: 16.653616 seconds.
   path: Assets/Scripts/Stars/StarCreator.cs
   artifactKey: Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd692f6b2067d1964c045cbc8bec3837e') in 0.005656 seconds 
-  Import took 0.033261 seconds .
+Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f55ccdfbebfad6770c3f60ed4c8a46e') in 0.013133 seconds 
+  Import took 0.029487 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 18.226538 seconds.
+  Time since last request: 17.609866 seconds.
   path: Assets/Scripts/Stars/StarCreator.cs
   artifactKey: Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fc86437558e52052217e1396dc66e6a8') in 0.002714 seconds 
-  Import took 0.033455 seconds .
+Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '72f9014b3ab808a1a18fdf05b8ae38b2') in 0.022085 seconds 
+  Import took 0.037684 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 15.842785 seconds.
+  Time since last request: 16.675611 seconds.
   path: Assets/Scripts/Stars/StarCreator.cs
   artifactKey: Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd952fd64625821d1bebf0ffde903fc6e') in 0.008093 seconds 
-  Import took 0.023297 seconds .
+Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ff32f4491e5f24c8e83bf5bd88ac1b25') in 0.005756 seconds 
+  Import took 0.018204 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 46.990831 seconds.
+  Time since last request: 15.107719 seconds.
   path: Assets/Scripts/Stars/StarCreator.cs
   artifactKey: Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '50684c80b4a31625e2a79c07a5845032') in 0.007777 seconds 
-  Import took 0.034977 seconds .
+Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd322753932e3731610f8a2a8507b3709') in 0.025348 seconds 
+  Import took 0.095243 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 17.596162 seconds.
+  Time since last request: 18.831917 seconds.
   path: Assets/Scripts/Stars/StarCreator.cs
   artifactKey: Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5ebb4e51caf5ea655047d5036fdf6905') in 0.005515 seconds 
-  Import took 0.143166 seconds .
+Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e5515ff036d237b699c199830ed3ac3b') in 0.004328 seconds 
+  Import took 0.014066 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 15.902705 seconds.
+  Time since last request: 17.826732 seconds.
   path: Assets/Scripts/Stars/StarCreator.cs
   artifactKey: Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f55884c0c0416d0f93fec9afe5ee1668') in 0.006534 seconds 
-  Import took 0.020208 seconds .
+Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c466ab021922abcd970c1e954a1ee466') in 0.018658 seconds 
+  Import took 0.034987 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 18.434036 seconds.
+  Time since last request: 16.945602 seconds.
   path: Assets/Scripts/Stars/StarCreator.cs
   artifactKey: Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2e886db8649ea5ab49d4697bcf9efd33') in 0.004426 seconds 
-  Import took 0.039197 seconds .
+Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '14cd454b89daf4cd0a9d598e9855e4c1') in 0.028714 seconds 
+  Import took 0.056566 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 19.044754 seconds.
+  Time since last request: 15.552155 seconds.
   path: Assets/Scripts/Stars/StarCreator.cs
   artifactKey: Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '34eccba25a29ca39a087d46cf7f00762') in 0.009017 seconds 
-  Import took 0.035992 seconds .
+Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '74369e38a3f1a0c08846c1c98d5bac50') in 0.005758 seconds 
+  Import took 0.019411 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 17.327825 seconds.
+  Time since last request: 15.555350 seconds.
   path: Assets/Scripts/Stars/StarCreator.cs
   artifactKey: Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9afc2f0dd4ea4d55c39e5c59f7ee7947') in 0.003255 seconds 
-  Import took 0.015617 seconds .
+Start importing Assets/Scripts/Stars/StarCreator.cs using Guid(afa7d82fd0cedcf44bac0a5eb57972f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7cde813ba30ae9ad7f7c1815dcc64f3d') in 0.005817 seconds 
+  Import took 0.031284 seconds .
 
