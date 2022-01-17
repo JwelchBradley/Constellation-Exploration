@@ -39,7 +39,6 @@ public class StarCreator : MonoBehaviour
     {
 
         #region Constellations
-        #region Finished
         #region Monoceros
         new stars_type("Constellation: Monoceros", 0.000000f, 0.000000f, 0.000000f),
         new stars_type("start", 0, 0, 0),
@@ -353,7 +352,6 @@ public class StarCreator : MonoBehaviour
         new stars_type("end", 0, 0, 0),
         new stars_type("Constellation: Hercules", 0.000000f, 0.000000f, 0.000000f),
         #endregion
-        #endregion
   
         #region Orion
         new stars_type("Constellation: Orion", 0.000000f, 0.000000f, 0.000000f),
@@ -530,13 +528,51 @@ public class StarCreator : MonoBehaviour
         new stars_type("Constellation: Perseus", 0.000000f, 0.000000f, 0.000000f),
         #endregion
 
-        #region TODO
-
-
-        #region Maybes
         #region Canis Major
+        new stars_type("Constellation: Canis Major", 0.000000f, 0.000000f, 0.000000f),
+        new stars_type("start", 0, 0, 0),
+        new stars_type("Furud", 95.0699873459228f/15, -30.070494995078782f, 2.94f),
+        new stars_type("Adhara", 104.65666264753602f/15, -28.984206388901995f, 1.41f),
+        new stars_type("Sigma Canis Majoris", 105.43372021675086f/15, -27.948063491407883f, 3.58f),
+        new stars_type("Wezen", 107.09754370369312f/15, -26.405481399501394f, 1.96f),
+        new stars_type("Omicron2 Canis Majoris", 105.76692241803752f/15, -23.83871783083207f, 3.00f),
+        new stars_type("Sirius", 101.29298121878419f/15, -16.73173035325023f, -1.09f),
+        new stars_type("Nu2 Canis Majoris", 6.6410375f, -19.1f, 4.09f),
+        new stars_type("Omicron1 Canis Majoris", 103.3638095948367f/15, -23.963234167211393f, 4.00f),
+        new stars_type("Sigma Canis Majoris", 105.43372021675086f/15, -27.948063491407883f, 3.58f),
+        new stars_type("end", 0, 0, 0),
 
+        new stars_type("start", 0, 0, 0),
+        new stars_type("Adhara", 104.65666264753602f/15, -28.984206388901995f, 1.41f),
+        new stars_type("Kappa Canis Majoris", 102.46553753412348f/15, -32.5213051159513f, 3.45f),
+        new stars_type("end", 0, 0, 0),
+
+        new stars_type("start", 0, 0, 0),
+        new stars_type("Wezen", 107.09754370369312f/15, -26.405481399501394f, 1.96f),
+        new stars_type("Omega Canis Majoris", 108.70475068167542f/15, -26.78419870433944f, 3.98f),
+        new stars_type("Aludra", 7.4576f, -29.315622822888f, 2.41f),
+        new stars_type("end", 0, 0, 0),
+
+        new stars_type("start", 0, 0, 0),
+        new stars_type("Sirius", 101.29298121878419f/15, -16.73173035325023f, -1.09f),
+        new stars_type("Iota Canis Majoris", 104.04042466206376f/15, -17.055736823451117f, 4.34f),
+        new stars_type("Muliphein", 105.9399123435681f/15, -15.647117188756015f, 4.06f),
+        new stars_type("Theta Canis Majoris", 103.5551708210549f/15, -12.048546210514285f, 4.19f),
+        new stars_type("Iota Canis Majoris", 104.04042466206376f/15, -17.055736823451117f, 4.34f),
+        new stars_type("end", 0, 0, 0),
+
+        new stars_type("start", 0, 0, 0),
+        new stars_type("Xi2 Canis Majoris", 98.76881136081414f/15, -22.977069367245676f, 4.53f),
+        new stars_type("Nu2 Canis Majoris", 6.6410375f, -19.1f, 4.09f),
+        new stars_type("Mirzam", 95.68226550714893f/15, -17.96659494336557f, 1.89f),
+        new stars_type("end", 0, 0, 0),
+        new stars_type("Constellation: Canis Major", 0.000000f, 0.000000f, 0.000000f),
         #endregion
+
+        #region TODO
+        
+        #region Maybes
+
 
         #region Cameloparalis
 
