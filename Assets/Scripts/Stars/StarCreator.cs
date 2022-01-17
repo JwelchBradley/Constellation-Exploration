@@ -354,10 +354,7 @@ public class StarCreator : MonoBehaviour
         new stars_type("Constellation: Hercules", 0.000000f, 0.000000f, 0.000000f),
         #endregion
         #endregion
-
-        #region Need Magnitude
-        
-
+  
         #region Orion
         new stars_type("Constellation: Orion", 0.000000f, 0.000000f, 0.000000f),
         #region Torso
@@ -373,42 +370,40 @@ public class StarCreator : MonoBehaviour
         new stars_type("end", 0, 0, 0),
         #endregion
 
-        /// Need Magnitues
         #region Up Arm
         // Orion Up Arm 9-16 indexes
         new stars_type("start", 0, 0, 0),
         new stars_type("Betelgeuse", 5.919500f, 7.243773685353041f, 0.500000f),
-        new stars_type("Mu Orionis", 90.81583987857081f/15, 9.530229476781042f, 0.000000f),
-        new stars_type("Xi Orionis", 93.24749286638966f/15, 14.100099175230447f, 0.000000f),
-        new stars_type("64 Orionis", 91.04442726234083f/15, 19.830121936059367f, 0.000000f),
+        new stars_type("Mu Orionis", 90.81583987857081f/15, 9.530229476781042f, 4.16f),
+        new stars_type("Xi Orionis", 93.24749286638966f/15, 14.100099175230447f, 4.38f),
+        new stars_type("64 Orionis", 91.04442726234083f/15, 19.830121936059367f, 5.09f),
         new stars_type("end", 0, 0, 0),
 
         new stars_type("start", 0, 0, 0),
-        new stars_type("Xi Orionis", 6.216666f, 14.120900f, 0.000000f),
-        new stars_type("Nu Orionis", 92.02701737861587f/15, 14.62005495583628f, 0.000000f),
+        new stars_type("Xi Orionis", 6.216666f, 14.120900f, 4.38f),
+        new stars_type("Nu Orionis", 92.02701737861587f/15, 14.62005495583628f, 4.34f),
         new stars_type("end", 0, 0, 0),
 
         new stars_type("start", 0, 0, 0),
-        new stars_type("Mu Orionis", 90.81583987857081f/15, 9.530229476781042f, 0.000000f),
-        new stars_type("Nu Orionis", 92.02701737861587f/15, 14.62005495583628f, 0.000000f),
-        new stars_type("Chi Orionis", 5.916600f, 20.164610f, 0.000000f),
+        new stars_type("Mu Orionis", 90.81583987857081f/15, 9.530229476781042f, 4.16f),
+        new stars_type("Nu Orionis", 92.02701737861587f/15, 14.62005495583628f, 4.34f),
+        new stars_type("Chi Orionis", 5.916600f, 20.164610f, 4.50f),
         new stars_type("end", 0, 0, 0),
         #endregion
 
-        // Need Magnitude
         #region Box Arm
         new stars_type("start", 0, 0, 0),
         new stars_type("Bellatrix", 5.418851f, 6.349702f, 1.640000f),
-        new stars_type("PI^3 Orionis", 72.58677163058913f/15, 6.713162919257889f, 0.000000f),
-        new stars_type("PI^2 Orionis", 72.80704102028638f/15, 8.770450922740736f, 0.000000f),
+        new stars_type("PI^3 Orionis", 72.58677163058913f/15, 6.713162919257889f, 3.28f),
+        new stars_type("PI^2 Orionis", 72.80704102028638f/15, 8.770450922740736f, 4.34f),
         new stars_type("PI^1 Orionis", 73.52495589495844f/15, 10.002482196142342f, 4.740000f),
         new stars_type("end", 0, 0, 0),
 
         new stars_type("start", 0, 0, 0),
-        new stars_type("PI^3 Orionis", 72.58677163058913f/15, 6.713162919257889f, 0.000000f),
-        new stars_type("PI^4 Orionis", 72.8190242880102f/15, 5.335948790127093f, 0.000000f),
-        new stars_type("PI^5 Orionis", 73.48167330848129f/15, 2.6963509720090943f, 0.000000f),
-        new stars_type("PI^6 Orionis", 74.57496766386038f/15, 1.4505505846306124f, 0.000000f),
+        new stars_type("PI^3 Orionis", 72.58677163058913f/15, 6.713162919257889f, 3.28f),
+        new stars_type("PI^4 Orionis", 72.8190242880102f/15, 5.335948790127093f, 3.61f),
+        new stars_type("PI^5 Orionis", 73.48167330848129f/15, 2.6963509720090943f, 3.64f),
+        new stars_type("PI^6 Orionis", 74.57496766386038f/15, 1.4505505846306124f, 4.62f),
         new stars_type("end", 0, 0, 0),
         #endregion
 
@@ -429,39 +424,39 @@ public class StarCreator : MonoBehaviour
         #region Gemini
         new stars_type("Constellation: Gemini", 0.000000f, 0.000000f, 0.000000f),
         new stars_type("start", 0, 0, 0),
-        new stars_type("1 Geminorum", 90.96828975357269f/15, 22.991653600620577f, 0.000000f),
-        new stars_type("Propus", 93.4369219411265f/15, 22.60247193995005f, 0.000000f),
-        new stars_type("Tejat", 95.98773443674125f/15, 22.356343965590995f, 0.000000f),
-        new stars_type("Mebsuta", 101.10562608637606f/15, 24.87886180185512f, 0.000000f),
-        new stars_type("Tau Geminorum", 107.87149066662214f/15, 30.160378254773047f, 0.000000f),
-        new stars_type("Iota Geminorum", 111.51082460443274f/15, 27.53100911040583f, 0.000000f),
-        new stars_type("Upsilon Geminorum", 114.1317257137815f/15, 26.655942385766544f, 0.000000f),
-        new stars_type("Wasat", 110.00409175329717f/15, 21.706662711709033f, 0.000000f),
-        new stars_type("Mekbuda", 106.04571780422269f/15, 20.29783595770087f, 0.000000f),
-        new stars_type("Alhena", 99.15054509766834f/15, 16.34484748237026f, 0.000000f),
+        new stars_type("1 Geminorum", 90.96828975357269f/15, 22.991653600620577f, 4.31f),
+        new stars_type("Propus", 93.4369219411265f/15, 22.60247193995005f, 3.28f),
+        new stars_type("Tejat", 95.98773443674125f/15, 22.356343965590995f, 2.91f),
+        new stars_type("Mebsuta", 101.10562608637606f/15, 24.87886180185512f, 3.19f),
+        new stars_type("Tau Geminorum", 107.87149066662214f/15, 30.160378254773047f, 4.53f),
+        new stars_type("Iota Geminorum", 111.51082460443274f/15, 27.53100911040583f, 3.94f),
+        new stars_type("Upsilon Geminorum", 114.1317257137815f/15, 26.655942385766544f, 4.16f),
+        new stars_type("Wasat", 110.00409175329717f/15, 21.706662711709033f, 3.59f),
+        new stars_type("Mekbuda", 106.04571780422269f/15, 20.29783595770087f, 4.16f),
+        new stars_type("Alhena", 99.15054509766834f/15, 16.34484748237026f, 1.92f),
         new stars_type("end", 0, 0, 0),
 
         new stars_type("start", 0, 0, 0),
-        new stars_type("Nu Geminorum", 90.76460922102582f/15, 27.337930559242455f, 0.000000f),
-        new stars_type("Mebsuta", 101.10562608637606f/15, 24.87886180185512f, 0.000000f),
+        new stars_type("Nu Geminorum", 90.76460922102582f/15, 27.337930559242455f, 4.09f),
+        new stars_type("Mebsuta", 101.10562608637606f/15, 24.87886180185512f, 3.19f),
         new stars_type("end", 0, 0, 0),
 
         new stars_type("start", 0, 0, 0),
-        new stars_type("Theta Geminorum", 103.18446664250823f/15, 33.68578499485399f, 0.000000f),
-        new stars_type("Tau Geminorum", 107.87149066662214f/15, 30.160378254773047f, 0.000000f),
-        new stars_type("Castor", 113.658355403213f/15, 31.610478805878525f, 0.000000f),
+        new stars_type("Theta Geminorum", 103.18446664250823f/15, 33.68578499485399f, 3.63f),
+        new stars_type("Tau Geminorum", 107.87149066662214f/15, 30.160378254773047f, 4.53f),
+        new stars_type("Castor", 113.658355403213f/15, 31.610478805878525f, 1.58f),
         new stars_type("end", 0, 0, 0),
 
         new stars_type("start", 0, 0, 0),
-        new stars_type("Pollux", 116.2065438829245f/15, 27.769179905166133f, 0.000000f),
-        new stars_type("Upsilon Geminorum", 114.1317257137815f/15, 26.655942385766544f, 0.000000f),
-        new stars_type("Kappa Geminorum", 116.2195504199731f/15, 24.147113064950293f, 0.000000f),
+        new stars_type("Pollux", 116.2065438829245f/15, 27.769179905166133f, 1.29f),
+        new stars_type("Upsilon Geminorum", 114.1317257137815f/15, 26.655942385766544f, 4.16f),
+        new stars_type("Kappa Geminorum", 116.2195504199731f/15, 24.147113064950293f, 3.72f),
         new stars_type("end", 0, 0, 0),
 
         new stars_type("start", 0, 0, 0),
-        new stars_type("Xi Geminorum", 101.26134656822293f/15, 12.625353338104633f, 0.000000f),
-        new stars_type("Lambda Geminorum A", 109.24057067532596f/15, 16.563537747132038f, 0.000000f),
-        new stars_type("Wasat", 110.00409175329717f/15, 21.706662711709033f, 0.000000f),
+        new stars_type("Xi Geminorum", 101.26134656822293f/15, 12.625353338104633f, 3.44f),
+        new stars_type("Lambda Geminorum A", 109.24057067532596f/15, 16.563537747132038f, 3.61f),
+        new stars_type("Wasat", 110.00409175329717f/15, 21.706662711709033f, 3.59f),
         new stars_type("end", 0, 0, 0),
         new stars_type("Constellation: Gemini", 0.000000f, 0.000000f, 0.000000f),
         #endregion
@@ -469,13 +464,13 @@ public class StarCreator : MonoBehaviour
         #region Auriga
         new stars_type("Constellation: Auriga", 0.000000f, 0.000000f, 0.000000f),
         new stars_type("start", 0, 0, 0),
-        new stars_type("Menkalinan", 90.24228333908634f/15, 44.98095102469142f, 0.000000f),
-        new stars_type("Capella", 79.14364079496094f/15, 45.71962374693095f, 0.000000f),
-        new stars_type("Zeta Aurigae", 75.59610120911057f/15, 40.80211121783874f, 0.000000f),
-        new stars_type("Hassaleh", 74.00332027893697f/15, 32.983075382685826f, 0.000000f),
-        new stars_type("Elnath", 81.57083529450648f/15, 28.641781623968633f, 0.000000f),
-        new stars_type("Theta Aurigae", 90.00015170587346f/15, 37.17078761795807f, 0.000000f),
-        new stars_type("Menkalinan", 90.24228333908634f/15, 44.98095102469142f, 0.000000f),
+        new stars_type("Menkalinan", 90.24228333908634f/15, 44.98095102469142f, 1.90f),
+        new stars_type("Capella", 79.14364079496094f/15, 45.71962374693095f, 0.24f),
+        new stars_type("Zeta Aurigae", 75.59610120911057f/15, 40.80211121783874f, 3.84f),
+        new stars_type("Hassaleh", 74.00332027893697f/15, 32.983075382685826f, 2.83f),
+        new stars_type("Elnath", 81.57083529450648f/15, 28.641781623968633f, 1.61f),
+        new stars_type("Theta Aurigae", 90.00015170587346f/15, 37.17078761795807f, 2.61f),
+        new stars_type("Menkalinan", 90.24228333908634f/15, 44.98095102469142f, 1.90f),
         new stars_type("end", 0, 0, 0),
         new stars_type("Constellation: Auriga", 0.000000f, 0.000000f, 0.000000f),
         #endregion
@@ -483,33 +478,32 @@ public class StarCreator : MonoBehaviour
         #region Taurus
         new stars_type("Constellation: Taurus", 0.000000f, 0.000000f, 0.000000f),
         new stars_type("start", 0, 0, 0),
-        new stars_type("Elnath", 81.57083529450648f/15, 28.641781623968633f, 0.000000f),
-        new stars_type("Tau Tauri", 70.7307662104994f/15, 22.730374363246664f, 0.000000f),
-        new stars_type("Ain", 66.9641033230681f/15, 18.997222141099066f, 0.000000f),
-        new stars_type("Delta3 Tauri A", 66.3543892058143f/15, 17.651605224364197f, 0.000000f),
-        new stars_type("Ain", 66.9641033230681f/15, 18.997222141099066f, 0.000000f),
-        new stars_type("Aldebaran", 69.01801469499635f/15, 16.23411618843057f, 0.000000f),
-        new stars_type("Theta1 Tauri", 67.16864749026514f/15, 15.686429292514367f, 0.000000f),
-        new stars_type("Theta2 Tauri", 67.36450513117276f/15, 15.77115967368875f, 0.000000f),
-        new stars_type("Gamma Tauri", 65.05871186308119f/15, 15.374621742949984f, 0.000000f),
-        new stars_type("Delta Tauri", 65.48336868603155f/15, 17.676407965779113f, 0.000000f),
-        new stars_type("Delta3 Tauri A", 66.3543892058143f/15, 17.651605224364197f, 0.000000f),
+        new stars_type("Elnath", 81.57083529450648f/15, 28.641781623968633f, 1.61f),
+        new stars_type("Tau Tauri", 70.7307662104994f/15, 22.730374363246664f, 4.22f),
+        new stars_type("Ain", 66.9641033230681f/15, 18.997222141099066f, 3.69f),
+        new stars_type("Aldebaran", 69.01801469499635f/15, 16.23411618843057f, 1.00f),
+        new stars_type("Theta1 Tauri", 67.16864749026514f/15, 15.686429292514367f, 4.00f),
+        new stars_type("Theta2 Tauri", 67.36450513117276f/15, 15.77115967368875f, 3.45f),
+        new stars_type("Gamma Tauri", 65.05871186308119f/15, 15.374621742949984f, 3.80f),
+        new stars_type("Delta Tauri", 65.48336868603155f/15, 17.676407965779113f, 3.92f),
+        new stars_type("Delta3 Tauri A", 66.3543892058143f/15, 17.651605224364197f, 4.31f),
+        new stars_type("Ain", 66.9641033230681f/15, 18.997222141099066f, 3.69f),
         new stars_type("end", 0, 0, 0),
 
         new stars_type("start", 0, 0, 0),
-        new stars_type("Delta Tauri", 65.48336868603155f/15, 17.676407965779113f, 0.000000f),
-        new stars_type("Pleiades", 56.888193674042256f/15, 24.045970935572253f, 0.000000f),
+        new stars_type("Delta Tauri", 65.48336868603155f/15, 17.676407965779113f, 3.92f),
+        new stars_type("Pleiades", 56.888193674042256f/15, 24.045970935572253f, 1.59f),
         new stars_type("end", 0, 0, 0),
 
         new stars_type("start", 0, 0, 0),
-        new stars_type("Aldebaran", 69.01801469499635f/15, 16.23411618843057f, 0.000000f),
-        new stars_type("Zeta Tauri", 84.40509021913617f/15, 20.868944902381596f, 0.000000f),
+        new stars_type("Aldebaran", 69.01801469499635f/15, 16.23411618843057f, 1.00f),
+        new stars_type("Zeta Tauri", 84.40509021913617f/15, 20.868944902381596f, 2.91f),
         new stars_type("end", 0, 0, 0),
 
         new stars_type("start", 0, 0, 0),
-        new stars_type("Gamma Tauri", 65.05871186308119f/15, 15.374621742949984f, 0.000000f),
-        new stars_type("Lambda Tauri", 60.42993339045191f/15, 12.459584850322635f, 0.000000f),
-        new stars_type("Omicron Tauri", 51.13842206766417f/15, 8.781337495766852f, 0.000000f),
+        new stars_type("Gamma Tauri", 65.05871186308119f/15, 15.374621742949984f, 3.80f),
+        new stars_type("Lambda Tauri", 60.42993339045191f/15, 12.459584850322635f, 3.38f),
+        new stars_type("Omicron Tauri", 51.13842206766417f/15, 8.781337495766852f, 3.77f),
         new stars_type("end", 0, 0, 0),
         new stars_type("Constellation: Taurus", 0.000000f, 0.000000f, 0.000000f),
         #endregion
@@ -517,24 +511,23 @@ public class StarCreator : MonoBehaviour
         #region Perseus
         new stars_type("Constellation: Perseus", 0.000000f, 0.000000f, 0.000000f),
         new stars_type("start", 0, 0, 0),
-        new stars_type("Miram", 42.224965619464264f/15, 56.01172427262863f, 0.000000f),
-        new stars_type("Gamma Persei", 45.75614659900449f/15, 53.43858663918914f, 0.000000f),
-        new stars_type("Mirfak", 50.92279149212425f/15, 49.60333434834531f, 0.000000f),
-        new stars_type("Delta Persei", 55.632024894592824f/15, 47.70524536439001f, 0.000000f),
-        new stars_type("Epsilon Persei", 59.45970650843326f/15, 39.73453040143972f, 0.000000f),
-        new stars_type("Menkib", 59.56279936581256f/15, 35.793576915725005f, 0.000000f),
-        new stars_type("Zeta Persei", 58.21889712447938f/15, 31.959757150141655f, 0.000000f),
-        new stars_type("Omicron Persei A", 55.756929776761055f/15, 32.31726250371995f, 0.000000f),
+        new stars_type("Miram", 42.224965619464264f/15, 56.01172427262863f, 3.89f),
+        new stars_type("Gamma Persei", 45.75614659900449f/15, 53.43858663918914f, 3.05f),
+        new stars_type("Mirfak", 50.92279149212425f/15, 49.60333434834531f, 1.89f),
+        new stars_type("Delta Persei", 55.632024894592824f/15, 47.70524536439001f, 2.97f),
+        new stars_type("Epsilon Persei", 59.45970650843326f/15, 39.73453040143972f, 2.83f),
+        new stars_type("Menkib", 59.56279936581256f/15, 35.793576915725005f, 4.00f),
+        new stars_type("Zeta Persei", 58.21889712447938f/15, 31.959757150141655f, 2.89f),
+        new stars_type("Omicron Persei A", 55.756929776761055f/15, 32.31726250371995f, 3.84f),
         new stars_type("end", 0, 0, 0),
 
         new stars_type("start", 0, 0, 0),
-        new stars_type("Mirfak", 50.92279149212425f/15, 49.60333434834531f, 0.000000f),
-        new stars_type("Algol", 46.82404733691389f/15, 40.73536995582118f, 0.000000f),
-        new stars_type("Rho Persei", 46.32364598795892f/15, 38.5633139217738f, 0.000000f),
-        new stars_type("16 Persei", 42.683207012298595f/15, 38.0457601625787f, 0.000000f),
+        new stars_type("Mirfak", 50.92279149212425f/15, 49.60333434834531f, 1.89f),
+        new stars_type("Algol", 46.82404733691389f/15, 40.73536995582118f, 2.09f),
+        new stars_type("Rho Persei", 46.32364598795892f/15, 38.5633139217738f, 3.28f),
+        new stars_type("16 Persei", 42.683207012298595f/15, 38.0457601625787f, 4.28f),
         new stars_type("end", 0, 0, 0),
         new stars_type("Constellation: Perseus", 0.000000f, 0.000000f, 0.000000f),
-        #endregion
         #endregion
 
         #region TODO
@@ -1060,9 +1053,6 @@ public class StarCreator : MonoBehaviour
         new stars_type("HD 95212", 165.06132998545385f/15, 45.52628265960704f, 5.59f),
         new stars_type("15 Leonis Minoris", 147.15085557933895f/15, 46.01535441812499f, 5.19f),
         new stars_type("31 Ursae Majoris", 148.9252195111679f/15, 49.81765974029488f, 5.28f)
-
-
-
 #endregion
     };
 
