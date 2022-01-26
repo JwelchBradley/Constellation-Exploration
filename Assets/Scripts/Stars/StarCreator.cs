@@ -1153,9 +1153,9 @@ public class StarCreator : MonoBehaviour
 
     private bool connectTheDotsGame = false;
 
-    private Dictionary<string, List<GameObject>> connectTheDotGames = new Dictionary<string, List<GameObject>>();
+    private static Dictionary<string, List<GameObject>> connectTheDotGames = new Dictionary<string, List<GameObject>>();
 
-    public Dictionary<string, List<GameObject>> ConnectTheDotGames
+    public static Dictionary<string, List<GameObject>> ConnectTheDotGames
     {
         get => connectTheDotGames;
     }
