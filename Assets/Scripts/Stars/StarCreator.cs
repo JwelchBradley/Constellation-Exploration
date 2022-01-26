@@ -28,7 +28,6 @@ public class StarCreator : MonoBehaviour
     /// </summary>
     private int maxParticles = 1;
 
-
     // new stars_type("", 0.000000f, 0.000000f, 0.000000f),     // The base star data used for any star
     // new stars_type("start", 0, 0, 0),                        // A node for starting a line renderer
     // new stars_type("end", 0, 0, 0),                          // A node for ending a line render
@@ -1099,6 +1098,7 @@ public class StarCreator : MonoBehaviour
     #endregion
 
     #region Constellations
+    #region Lines
     /// <summary>
     /// The prefab that will be spawned to create constellation lines.
     /// </summary>
@@ -1138,6 +1138,28 @@ public class StarCreator : MonoBehaviour
     /// A bool reference to see if a constellation line renderer has been started.
     /// </summary>
     private bool hasStart = false;
+    #endregion
+
+    #region Connect The Dots Reference
+    [Tooltip("The prefab for connect the dot minigames")]
+    [SerializeField]
+    private GameObject connectTheDotsSphere;
+
+    private List<GameObject> currentConnectTheDotsGame = new List<GameObject>();
+
+    [Tooltip("The list of constellations that will be connect the dot games")]
+    [SerializeField]
+    private List<string> connectTheDotsConstelllations = new List<string>();
+
+    private bool connectTheDotsGame = false;
+
+    private Dictionary<string, List<GameObject>> connectTheDotGames = new Dictionary<string, List<GameObject>>();
+
+    public Dictionary<string, List<GameObject>> ConnectTheDotGames
+    {
+        get => connectTheDotGames;
+    }
+    #endregion
     #endregion
     #endregion
 
@@ -1241,6 +1263,20 @@ public class StarCreator : MonoBehaviour
         {
             isConstellation = !isConstellation;
 
+            if (connectTheDotsConstelllations.Contains(ParseConstellationName(a)))
+            {
+                if (connectTheDotsGame)
+                {
+                    connectTheDotGames.Add(ParseConstellationName(a), currentConnectTheDotsGame);
+                }
+                else
+                {
+                    currentConnectTheDotsGame = new List<GameObject>();
+                }
+
+                connectTheDotsGame = !connectTheDotsGame;
+            }
+
             if (isConstellation)
             {
                 currentConstellation = ParseConstellationName(a);
@@ -1271,12 +1307,18 @@ public class StarCreator : MonoBehaviour
     /// <param name="pos">The spawn position of the star.</param>
     private void SpawnStar(int a, bool nameStartEnd, Vector3 pos)
     {
-        if (!alreadyUsedNames.Contains(star_Database[a].name) && !nameStartEnd)
+        if (!alreadyUsedNames.Contains(star_Database[a].name) && !nameStartEnd && !star_Database[a].name.Contains("Constellation"))
         {
             // Sets the values of the star
             particleStars[alreadyUsedNames.Count].position = pos;
             particleStars[alreadyUsedNames.Count].remainingLifetime = Mathf.Infinity;
             particleStars[alreadyUsedNames.Count].startSize = 2.0f * (8.0f - star_Database[a].mag);
+
+            if (connectTheDotsGame)
+            {
+                GameObject node = Instantiate(connectTheDotsSphere, pos, Quaternion.identity, transform);
+                currentConnectTheDotsGame.Add(node);
+            }
 
             alreadyUsedNames.Add(star_Database[a].name);
         }
