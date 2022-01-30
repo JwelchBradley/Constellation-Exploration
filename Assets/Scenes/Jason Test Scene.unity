@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.072358884, g: 0.07418779, b: 0.12138278, a: 1}
+  m_IndirectSpecularColor: {r: 0.013443773, g: 0.9233482, b: 0.9239309, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -209,6 +209,59 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 708.33344, y: 260.8277, z: 0}
   m_Center: {x: 198.68906, y: 13.901403, z: -0.4989094}
+--- !u!1 &32420588
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 32420590}
+  - component: {fileID: 32420589}
+  m_Layer: 0
+  m_Name: TempScript
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &32420589
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 32420588}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 922b2c605678e124b9c00ec3345bd2c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  test: 0
+  timer: 0
+  lrst: []
+  points: []
+  refrence: []
+  line: {fileID: 0}
+  tests: {x: 0, y: 0, z: 0}
+  DistanceToPoint: 0
+  currentLine: 1
+  currentLineRenderer: 0
+--- !u!4 &32420590
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 32420588}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -135.47058, y: 396.9741, z: 1058.7607}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &173478104
 GameObject:
   m_ObjectHideFlags: 0
