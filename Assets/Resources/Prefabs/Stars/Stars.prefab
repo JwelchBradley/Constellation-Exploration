@@ -4817,8 +4817,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: afa7d82fd0cedcf44bac0a5eb57972f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  connectTheDotsSphere: {fileID: 6812941687943991739, guid: e8600e82666cdc94a97a13cd566d7083, type: 3}
   constellationLines: {fileID: 622292844340446134, guid: 188b32be9df1b9f4a8c8aea85d8305f3, type: 3}
+  defaultLineColor: {r: 1, g: 1, b: 1, a: 0.19607843}
+  connectTheDotsSphere: {fileID: 6812941687943991739, guid: e8600e82666cdc94a97a13cd566d7083, type: 3}
   connectTheDotsConstelllations:
   - Perseus
   - Cepheus

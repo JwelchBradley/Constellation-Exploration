@@ -1095,6 +1095,28 @@ public class StarCreator : MonoBehaviour
     /// The constant conversion rate from degrees to radians.
     /// </summary>
     private const float deg2rad = 0.0174533f;
+
+    private static Dictionary<string, ParticleSystem> constellationParticleSystems = new Dictionary<string, ParticleSystem>();
+
+    public static Dictionary<string, ParticleSystem> ConstellationParticleSystems
+    {
+        get => constellationParticleSystems;
+    }
+
+    private static List<string> constellationNames = new List<string>();
+
+    public static List<string> ConstellationNames
+    {
+        get => constellationNames;
+    }
+
+    private ParticleSystem[] particleSystems;
+
+    private int currentParticleSystem = 0;
+
+    private Particle[] currentParticleStars;
+
+    private int currentParticlesIndex = 0;
     #endregion
 
     #region Constellations
@@ -1105,6 +1127,13 @@ public class StarCreator : MonoBehaviour
     [SerializeField]
     [Tooltip("The constellation lines prefab")]
     private GameObject constellationLines;
+
+    [Tooltip("The default color of constellation lines")]
+    [ColorUsageAttribute(true, true)]
+    [SerializeField] private Color defaultLineColor;
+
+    [Tooltip("How thick the lines are")]
+    [SerializeField] private float lineThickness;
 
     /// <summary>
     /// The list of active constellations that holds reference to their
@@ -1169,6 +1198,7 @@ public class StarCreator : MonoBehaviour
     /// </summary>
     void Awake()
     {
+        particleSystems = GetComponentsInChildren<ParticleSystem>();
         InitializeStars();
     }
 
@@ -1177,12 +1207,21 @@ public class StarCreator : MonoBehaviour
     /// </summary>
     private void InitializeStars()
     {
-        ps = GetComponent<ParticleSystem>();
-        particleStars = new Particle[ps.main.maxParticles];
-        maxParticles = ps.main.maxParticles;
-
         Invoke("CreateParticleField", 0.05f);
         Invoke("SetRotation", 0.06f);
+    }
+
+    private void InitializeNewParticleSystem()
+    {
+        if (currentParticleSystem < particleSystems.Length)
+        {
+            ps = particleSystems[currentParticleSystem];
+            currentParticleStars = new Particle[ps.main.maxParticles];
+            ps.GetParticles(currentParticleStars);
+            maxParticles = ps.main.maxParticles;
+            currentParticlesIndex = 0;
+            Debug.Log(currentParticleSystem);
+        }
     }
 
     /// <summary>
@@ -1207,7 +1246,9 @@ public class StarCreator : MonoBehaviour
         #endregion
 
         // Gets the particles that will be modified into stars
-        ps.GetParticles(particleStars);
+        //ps.GetParticles(particleStars);
+        InitializeNewParticleSystem();
+
 
         // Assigns all of the stars to their places
         for (int a = 0; a < star_Database.Length; a++)
@@ -1227,8 +1268,15 @@ public class StarCreator : MonoBehaviour
             }
         }
 
-        // Sets the values of the particles
-        ps.SetParticles(particleStars, maxParticles);
+        // Sets the background stars
+        SetParticleSystem();
+    }
+
+    private void SetParticleSystem()
+    {
+        particleSystems[currentParticleSystem].SetParticles(currentParticleStars, particleSystems[currentParticleSystem].main.maxParticles);
+        currentParticleSystem++;
+        InitializeNewParticleSystem();
     }
 
     /// <summary>
@@ -1279,9 +1327,16 @@ public class StarCreator : MonoBehaviour
 
             if (isConstellation)
             {
+                constellationParticleSystems.Add(currentConstellation, particleSystems[currentParticleSystem]);
                 currentConstellation = ParseConstellationName(a);
 
                 constellations.Add(currentConstellation, new List<LineRenderer>());
+                constellationNames.Add(currentConstellation);
+            }
+
+            if (!isConstellation)
+            {
+                SetParticleSystem();
             }
         }
     }
@@ -1310,9 +1365,10 @@ public class StarCreator : MonoBehaviour
         if (!alreadyUsedNames.Contains(star_Database[a].name) && !nameStartEnd && !star_Database[a].name.Contains("Constellation"))
         {
             // Sets the values of the star
-            particleStars[alreadyUsedNames.Count].position = pos;
-            particleStars[alreadyUsedNames.Count].remainingLifetime = Mathf.Infinity;
-            particleStars[alreadyUsedNames.Count].startSize = 2.0f * (8.0f - star_Database[a].mag);
+            currentParticleStars[currentParticlesIndex].position = pos;
+            currentParticleStars[currentParticlesIndex].remainingLifetime = Mathf.Infinity;
+            currentParticleStars[currentParticlesIndex].startSize = 2.0f * (8.0f - star_Database[a].mag);
+            currentParticlesIndex++;
 
             if (connectTheDotsGame)
             {
@@ -1387,10 +1443,12 @@ public class StarCreator : MonoBehaviour
     /// <param name="starPositions"></param>
     private void CreateNewLineRenderer(ref LineRenderer constellationLine, ref List<Vector3> starPositions)
     {
-        GameObject tempRef = Instantiate(constellationLines);
-        tempRef.transform.parent = transform;
+        GameObject tempRef = Instantiate(constellationLines, particleSystems[currentParticleSystem].gameObject.transform);
         constellationLine = tempRef.GetComponent<LineRenderer>();
         constellationLine.positionCount = 0;
+        constellationLine.material.color = defaultLineColor;
+        constellationLine.startWidth = lineThickness;
+        constellationLine.endWidth = lineThickness;
         starPositions.Clear();
     }
 
