@@ -116,16 +116,23 @@ public class ConstellationInteraction : MonoBehaviour
 
     private void ChangeStarSize(float hoverStarSizeMod)
     {
-        StarCreator.ConstellationParticleSystems.TryGetValue(currentSelected, out ParticleSystem ps);
-        Particle[] particles = new Particle[ps.main.maxParticles];
-        ps.GetParticles(particles);
-
-        for (int i = 0; i < particles.Length; i++)
+        if(alreadySelectedExperiences.TryGetValue(currentSelected, out bool hasBeenSelected))
         {
-            particles[i].startSize = particles[i].size * hoverStarSizeMod;
+            return;
         }
 
-        ps.SetParticles(particles);
+        if(StarCreator.ConstellationParticleSystems.TryGetValue(currentSelected, out ParticleSystem ps))
+        {
+            Particle[] particles = new Particle[ps.main.maxParticles];
+            ps.GetParticles(particles);
+
+            for (int i = 0; i < particles.Length; i++)
+            {
+                particles[i].startSize = particles[i].size * hoverStarSizeMod;
+            }
+
+            ps.SetParticles(particles);
+        }
     }
 
     public void Interact()
