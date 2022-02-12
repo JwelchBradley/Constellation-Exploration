@@ -63,7 +63,7 @@ public class TemporaryScript : MonoBehaviour
                 if (lrs.material.color.a > 0)
                 {
                     h = lrs.material.color;
-                    h.a = h.a - .0001f;
+                    h.a = h.a - .00005f;
                     lrs.material.color = h;
                 }
                 else
