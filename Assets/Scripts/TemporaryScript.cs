@@ -15,41 +15,79 @@ public class TemporaryScript : MonoBehaviour
     public float DistanceToPoint;
     public int currentLine = 1;
     public int currentLineRenderer = 0;
+
+
+    private bool testing;
+
+    public Color h;
+
+    public Color oldColor;
+
+    private List<string> starts = new List<string> { "Perseus", "Monoceros", "Cancer" };
+
+    private List<string> duped;
     // Start is called before the first frame update
     void Start()
     {
-        //StarCreator.ConnectTheDotGames.TryGetValue(, out List<GameObject> name);
-        StartCoroutine(WaitWhileX(1, DisableLineRenderer()));
-        //make new line render to next 
+        duped = starts;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(KeyCode.Space))
+        if (starts.Count > 0)
         {
+            if(!testing)
+            {
+                StarCreator.Constellations.TryGetValue(starts[0], out List<LineRenderer> lr);
+                oldColor = (lr[0].material.color);
+                testing = true;
+            }
+            KillStarts();
+        }
+        else if(testing)
+        {
+            StartCoroutine(WaitWhileX(1, DisableLineRenderer("Perseus")));
+
+            testing = false;
+        }
+    }
+
+    private void KillStarts()
+    {
+        foreach (string name in starts)
+        {
+            StarCreator.Constellations.TryGetValue(name, out List<LineRenderer> lr);
+            foreach (LineRenderer lrs in lr)
+            {
+                if (lrs.material.color.a > 0)
+                {
+                    h = lrs.material.color;
+                    h.a = h.a - .0001f;
+                    lrs.material.color = h;
+                }
+                else
+                {
+                    h = lrs.material.color;
+                    h.a = 0;
+                    lrs.material.color = h;
+                    starts.Remove(name);
+                }
+            }
+
 
         }
     }
-    /*
-    private void LateUpdate()
-    {
-        if (!test)
-        {
-            test = !test;
-            StarCreator.ConnectTheDotGames.TryGetValue("Perseus", out List<GameObject> name);
-            StarCreator.Constellations.TryGetValue("Perseus", out List<LineRenderer> lr);
-            foreach (LineRenderer lrs in lr)
-            {
-                lrs.enabled = false;
-            }
-        }
-    }*/
-
+    
     private void FixedUpdate()
     {
         if (test)
         {
+            StarCreator.Constellations.TryGetValue("Perseus", out List<LineRenderer> lr);
+            foreach (LineRenderer lrs in lr)
+            {
+                lrs.material.color = oldColor;
+            }
             DrawLines(currentLine, ConstelationStuff("Perseus"), currentLineRenderer);
         }
     }
@@ -73,20 +111,24 @@ public class TemporaryScript : MonoBehaviour
         yield return null;
     }
     */
-    IEnumerator DisableLineRenderer()
+    /// <summary>
+    /// makes all points on linerenderer 0
+    /// </summary>
+    /// <returns></returns>
+    IEnumerator DisableLineRenderer(string name)
     {
         if (!test)
         {
             try
             {
-                StarCreator.Constellations.TryGetValue("Perseus", out List<LineRenderer> lr);
+                StarCreator.Constellations.TryGetValue(name, out List<LineRenderer> lr);
                 foreach (LineRenderer lrs in lr)
                 {
                     lrst.Add(lrs);
                     points.Add(new LinePoints());
                     for (int a = 0; a < lrs.positionCount; a++)
                     {
-                        points[points.Count-1].linePoints.Add(lrs.GetPosition(a));
+                        points[points.Count - 1].linePoints.Add(lrs.GetPosition(a));
                         lrs.SetPosition(a, lrs.GetPosition(0));
                     }
                 }
@@ -125,14 +167,20 @@ public class TemporaryScript : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="num"></param>
+    /// <param name="lr"></param>
+    /// <param name="linerRendererIndex"></param>
     private void DrawLines(int num, List<LineRenderer> lr, int linerRendererIndex)
     {
-        if(DistanceToPoint == 0 && currentLine < lr[linerRendererIndex].positionCount)
+        if (DistanceToPoint == 0 && currentLine < lr[linerRendererIndex].positionCount)
         {
             num++;
             currentLine++;
         }
-        else if(currentLine == lr[linerRendererIndex].positionCount && linerRendererIndex < lr.Count-1)
+        else if (currentLine == lr[linerRendererIndex].positionCount && linerRendererIndex < lr.Count - 1)
         {
             currentLine = 0;
             num = 0;
@@ -148,6 +196,11 @@ public class TemporaryScript : MonoBehaviour
 
     }
 
+    /// <summary>
+    /// returns the linerenderer of thing wanted
+    /// </summary>
+    /// <param name="test"></param>
+    /// <returns></returns>
     private List<LineRenderer> ConstelationStuff(string test)
     {
         StarCreator.Constellations.TryGetValue(test, out List<LineRenderer> lr);
