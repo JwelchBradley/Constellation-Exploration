@@ -378,6 +378,8 @@ MonoBehaviour:
   DistanceToPoint: 0
   currentLine: 1
   currentLineRenderer: 0
+  h: {r: 0, g: 0, b: 0, a: 0}
+  oldColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!4 &32420590
 Transform:
   m_ObjectHideFlags: 0
@@ -1002,7 +1004,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &246959219
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5659,7 +5661,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1155582899
 Transform:
   m_ObjectHideFlags: 0
