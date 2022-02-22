@@ -55,6 +55,10 @@ public class ConstellationInteraction : MonoBehaviour
 
     private GameObject activeExperience;
 
+    //jason Did
+    [SerializeField]
+    private LayerMask connectDotsLayer;
+
     private void Awake()
     {
         aud = GetComponent<AudioSource>();
@@ -112,6 +116,21 @@ public class ConstellationInteraction : MonoBehaviour
     {
         if(Input.GetKeyDown(KeyCode.Mouse0) && currentSelected != "")
         Interact();
+
+        //Jason Did
+        if(activeExperience != null && activeExperience.name.Equals("Perseus"))
+        {
+            if (Physics.Raycast(transform.position, transform.forward, out hit, Mathf.Infinity, connectDotsLayer))
+            {
+                ConnectTheDotsExperience.thisScript.SetPoint(hit.point);
+
+                if (hit.point == ConnectTheDotsExperience.thisScript.NextPoint())
+                {
+
+                }
+
+            }
+        }
     }
 
     private void ChangeStarSize(float hoverStarSizeMod)
