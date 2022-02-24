@@ -1920,14 +1920,14 @@ MonoBehaviour:
   constellationLayer:
     serializedVersion: 2
     m_Bits: 8
-  hoverColor: {r: 1, g: 1, b: 1, a: 1}
-  defaultColor: {r: 1, g: 0, b: 0, a: 1}
-  disabledColor: {r: 0, g: 0, b: 0, a: 0}
-  alreadyClickedColor: {r: 0, g: 0, b: 0, a: 0}
-  hoverStarSizeMod: 3
-  hoverSound: {fileID: 0}
+  hoverColor: {r: 2.1185474, g: 2.1185474, b: 2.1185474, a: 1}
+  defaultColor: {r: 1, g: 1, b: 1, a: 0.05882353}
+  disabledColor: {r: 1, g: 1, b: 1, a: 0.019607844}
+  alreadyClickedColor: {r: 1, g: 1, b: 1, a: 0.39215687}
+  hoverStarSizeMod: 10
+  hoverSound: {fileID: 8300000, guid: 4c17cd1f82b286b4e9052150296f88f1, type: 3}
   hoverBufferTime: 0.1
-  clickSound: {fileID: 0}
+  clickSound: {fileID: 8300000, guid: 6a77e7716a2bfc94a9f893fd20c3a0a5, type: 3}
 --- !u!114 &604331367
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8949,9 +8949,9 @@ MonoBehaviour:
   constellationLayer:
     serializedVersion: 2
     m_Bits: 8
-  hoverColor: {r: 2.828427, g: 0, b: 0, a: 1}
-  defaultColor: {r: 1, g: 1, b: 1, a: 0.39215687}
-  disabledColor: {r: 1, g: 1, b: 1, a: 0.39215687}
+  hoverColor: {r: 2.1185474, g: 2.1185474, b: 2.1185474, a: 1}
+  defaultColor: {r: 1, g: 1, b: 1, a: 0.05882353}
+  disabledColor: {r: 1, g: 1, b: 1, a: 0.019607844}
   alreadyClickedColor: {r: 1, g: 1, b: 1, a: 0.39215687}
   hoverStarSizeMod: 10
   hoverSound: {fileID: 8300000, guid: 4c17cd1f82b286b4e9052150296f88f1, type: 3}
@@ -10100,14 +10100,14 @@ MonoBehaviour:
   constellationLayer:
     serializedVersion: 2
     m_Bits: 8
-  hoverColor: {r: 1, g: 1, b: 1, a: 1}
-  defaultColor: {r: 1, g: 0, b: 0, a: 1}
-  disabledColor: {r: 0, g: 0, b: 0, a: 0}
-  alreadyClickedColor: {r: 0, g: 0, b: 0, a: 0}
-  hoverStarSizeMod: 3
-  hoverSound: {fileID: 0}
+  hoverColor: {r: 2.1185474, g: 2.1185474, b: 2.1185474, a: 1}
+  defaultColor: {r: 1, g: 1, b: 1, a: 0.05882353}
+  disabledColor: {r: 1, g: 1, b: 1, a: 0.019607844}
+  alreadyClickedColor: {r: 1, g: 1, b: 1, a: 0.39215687}
+  hoverStarSizeMod: 10
+  hoverSound: {fileID: 8300000, guid: 4c17cd1f82b286b4e9052150296f88f1, type: 3}
   hoverBufferTime: 0.1
-  clickSound: {fileID: 0}
+  clickSound: {fileID: 8300000, guid: 6a77e7716a2bfc94a9f893fd20c3a0a5, type: 3}
 --- !u!114 &1932662880
 MonoBehaviour:
   m_ObjectHideFlags: 0

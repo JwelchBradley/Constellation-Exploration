@@ -397,7 +397,7 @@ Light:
   m_Type: 1
   m_Shape: 0
   m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
-  m_Intensity: 1
+  m_Intensity: 0.2
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -1042,6 +1042,7 @@ GameObject:
   m_Component:
   - component: {fileID: 199475934}
   - component: {fileID: 199475935}
+  - component: {fileID: 199475936}
   m_Layer: 0
   m_Name: Raycast pos
   m_TagString: Untagged
@@ -1078,14 +1079,110 @@ MonoBehaviour:
   constellationLayer:
     serializedVersion: 2
     m_Bits: 8
-  hoverColor: {r: 1, g: 1, b: 1, a: 1}
-  defaultColor: {r: 1, g: 0, b: 0, a: 1}
-  disabledColor: {r: 0, g: 0, b: 0, a: 0}
-  alreadyClickedColor: {r: 0, g: 0, b: 0, a: 0}
-  hoverStarSizeMod: 3
-  hoverSound: {fileID: 0}
+  hoverColor: {r: 2.1185474, g: 2.1185474, b: 2.1185474, a: 1}
+  defaultColor: {r: 1, g: 1, b: 1, a: 0.05882353}
+  disabledColor: {r: 1, g: 1, b: 1, a: 0.019607844}
+  alreadyClickedColor: {r: 1, g: 1, b: 1, a: 0.39215687}
+  hoverStarSizeMod: 10
+  hoverSound: {fileID: 8300000, guid: 4c17cd1f82b286b4e9052150296f88f1, type: 3}
   hoverBufferTime: 0.1
-  clickSound: {fileID: 0}
+  clickSound: {fileID: 8300000, guid: 6a77e7716a2bfc94a9f893fd20c3a0a5, type: 3}
+--- !u!82 &199475936
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 199475933}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1001 &251597207
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3558,6 +3655,82 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 607.9295, y: 355.60797, z: 1}
   m_Center: {x: -65.8902, y: 126.15763, z: 0.000013665646}
+--- !u!1 &872833519
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 872833522}
+  - component: {fileID: 872833521}
+  - component: {fileID: 872833520}
+  m_Layer: 0
+  m_Name: Terrain
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 4294967295
+  m_IsActive: 1
+--- !u!154 &872833520
+TerrainCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 872833519}
+  m_Material: {fileID: 0}
+  m_Enabled: 1
+  m_TerrainData: {fileID: 15600000, guid: d5d44a82ea345824887787df5f0ece69, type: 2}
+  m_EnableTreeColliders: 1
+--- !u!218 &872833521
+Terrain:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 872833519}
+  m_Enabled: 1
+  serializedVersion: 6
+  m_TerrainData: {fileID: 15600000, guid: d5d44a82ea345824887787df5f0ece69, type: 2}
+  m_TreeDistance: 5000
+  m_TreeBillboardDistance: 50
+  m_TreeCrossFadeLength: 32
+  m_TreeMaximumFullLODCount: 50
+  m_DetailObjectDistance: 250
+  m_DetailObjectDensity: 1
+  m_HeightmapPixelError: 5
+  m_SplatMapDistance: 1000
+  m_HeightmapMaximumLOD: 0
+  m_ShadowCastingMode: 2
+  m_DrawHeightmap: 1
+  m_DrawInstanced: 0
+  m_DrawTreesAndFoliage: 1
+  m_ReflectionProbeUsage: 1
+  m_MaterialTemplate: {fileID: 2100000, guid: 4a381bb1687eaeb4ca8457d77276df63, type: 2}
+  m_BakeLightProbesForTrees: 1
+  m_PreserveTreePrototypeLayers: 0
+  m_DeringLightProbesForTrees: 1
+  m_ScaleInLightmap: 0.0256
+  m_LightmapParameters: {fileID: 15203, guid: 0000000000000000f000000000000000, type: 0}
+  m_GroupingID: 0
+  m_RenderingLayerMask: 1
+  m_AllowAutoConnect: 1
+--- !u!4 &872833522
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 872833519}
+  m_LocalRotation: {x: 0, y: -0.884825, z: 0, w: 0.4659235}
+  m_LocalPosition: {x: -141.29, y: 0, z: -188}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 17
+  m_LocalEulerAnglesHint: {x: 0, y: -124.46, z: 0}
 --- !u!1 &888288840
 GameObject:
   m_ObjectHideFlags: 0
@@ -6606,6 +6779,63 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 301.77008, y: 545.64526, z: 49.82022}
   m_Center: {x: 0.7758333, y: 88.13089, z: -49.523006}
+--- !u!1001 &1476606919
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2309825282699581518, guid: a7fa1ff4027681f458d3be51b8c251dd, type: 3}
+      propertyPath: m_RootOrder
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 2309825282699581518, guid: a7fa1ff4027681f458d3be51b8c251dd, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -100.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2309825282699581518, guid: a7fa1ff4027681f458d3be51b8c251dd, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 10.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2309825282699581518, guid: a7fa1ff4027681f458d3be51b8c251dd, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -111.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2309825282699581518, guid: a7fa1ff4027681f458d3be51b8c251dd, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2309825282699581518, guid: a7fa1ff4027681f458d3be51b8c251dd, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2309825282699581518, guid: a7fa1ff4027681f458d3be51b8c251dd, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2309825282699581518, guid: a7fa1ff4027681f458d3be51b8c251dd, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2309825282699581518, guid: a7fa1ff4027681f458d3be51b8c251dd, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2309825282699581518, guid: a7fa1ff4027681f458d3be51b8c251dd, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2309825282699581518, guid: a7fa1ff4027681f458d3be51b8c251dd, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3118168212067713780, guid: a7fa1ff4027681f458d3be51b8c251dd, type: 3}
+      propertyPath: m_Name
+      value: SatelliteDish
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a7fa1ff4027681f458d3be51b8c251dd, type: 3}
 --- !u!1 &1480666500
 GameObject:
   m_ObjectHideFlags: 0
@@ -8029,7 +8259,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7380235780188952213, guid: 644385b02e84c52429ba3e8b9c6523f5, type: 3}
       propertyPath: InitialModule.maxNumParticles
-      value: 19
+      value: 16
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 7380235780188952215, guid: 644385b02e84c52429ba3e8b9c6523f5, type: 3}
@@ -8779,6 +9009,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1753809472}
   - component: {fileID: 1753809473}
+  - component: {fileID: 1753809474}
   m_Layer: 0
   m_Name: Raycast pos
   m_TagString: Untagged
@@ -8815,14 +9046,110 @@ MonoBehaviour:
   constellationLayer:
     serializedVersion: 2
     m_Bits: 8
-  hoverColor: {r: 1, g: 1, b: 1, a: 1}
-  defaultColor: {r: 1, g: 0, b: 0, a: 1}
-  disabledColor: {r: 0, g: 0, b: 0, a: 0}
-  alreadyClickedColor: {r: 0, g: 0, b: 0, a: 0}
-  hoverStarSizeMod: 3
-  hoverSound: {fileID: 0}
+  hoverColor: {r: 2.1185474, g: 2.1185474, b: 2.1185474, a: 1}
+  defaultColor: {r: 1, g: 1, b: 1, a: 0.05882353}
+  disabledColor: {r: 1, g: 1, b: 1, a: 0.019607844}
+  alreadyClickedColor: {r: 1, g: 1, b: 1, a: 0.39215687}
+  hoverStarSizeMod: 10
+  hoverSound: {fileID: 8300000, guid: 4c17cd1f82b286b4e9052150296f88f1, type: 3}
   hoverBufferTime: 0.1
-  clickSound: {fileID: 0}
+  clickSound: {fileID: 8300000, guid: 6a77e7716a2bfc94a9f893fd20c3a0a5, type: 3}
+--- !u!82 &1753809474
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1753809471}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1001 &1758082123
 PrefabInstance:
   m_ObjectHideFlags: 0
