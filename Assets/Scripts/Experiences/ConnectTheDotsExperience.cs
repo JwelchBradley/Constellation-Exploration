@@ -18,7 +18,8 @@ public class ConnectTheDotsExperience : Experience
     private void Awake()
     {
         name = this.gameObject.name.Substring(0, this.gameObject.name.IndexOf('('));
-        GameObject.FindObjectOfType<RaycastedDots>().enabled = true;
+        GameObject.FindObjectsOfType<RaycastedDots>()[0].enabled = true;
+        GameObject.FindObjectsOfType<RaycastedDots>()[1].enabled = true;
         thisScript = this;
         StarCreator.Constellations.TryGetValue(name, out List<LineRenderer> lrs);
 

@@ -1155,6 +1155,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 0
   point: {x: 0, y: 0, z: 0}
+  expirence: 0
 --- !u!1001 &350530329
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1882,6 +1883,7 @@ GameObject:
   m_Component:
   - component: {fileID: 604331365}
   - component: {fileID: 604331366}
+  - component: {fileID: 604331367}
   m_Layer: 0
   m_Name: Raycast pos
   m_TagString: Untagged
@@ -1926,6 +1928,23 @@ MonoBehaviour:
   hoverSound: {fileID: 0}
   hoverBufferTime: 0.1
   clickSound: {fileID: 0}
+--- !u!114 &604331367
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 604331364}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d348aa798b237d947b613be1afb46f6d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dotsLayer:
+    serializedVersion: 2
+    m_Bits: 64
+  point: {x: 0, y: 0, z: 0}
+  expirence: 0
 --- !u!1 &652269787
 GameObject:
   m_ObjectHideFlags: 0
@@ -5623,7 +5642,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1155582899
 Transform:
   m_ObjectHideFlags: 0
@@ -8818,7 +8837,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!82 &1699302538
 AudioSource:
   m_ObjectHideFlags: 0
@@ -9051,6 +9070,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   point: {x: 0, y: 0, z: 0}
+  expirence: 0
 --- !u!1 &1701884568
 GameObject:
   m_ObjectHideFlags: 0
@@ -10043,6 +10063,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1932662878}
   - component: {fileID: 1932662879}
+  - component: {fileID: 1932662880}
   m_Layer: 0
   m_Name: Raycast pos
   m_TagString: Untagged
@@ -10087,6 +10108,23 @@ MonoBehaviour:
   hoverSound: {fileID: 0}
   hoverBufferTime: 0.1
   clickSound: {fileID: 0}
+--- !u!114 &1932662880
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1932662877}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d348aa798b237d947b613be1afb46f6d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dotsLayer:
+    serializedVersion: 2
+    m_Bits: 64
+  point: {x: 0, y: 0, z: 0}
+  expirence: 0
 --- !u!1 &1952598007 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 98bf64533e55b304ab9446d4eb11ae2c, type: 3}
@@ -10148,6 +10186,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 0
   point: {x: 0, y: 0, z: 0}
+  expirence: 0
 --- !u!1 &1961131770
 GameObject:
   m_ObjectHideFlags: 0
