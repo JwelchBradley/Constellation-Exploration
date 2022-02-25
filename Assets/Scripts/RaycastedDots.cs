@@ -65,6 +65,7 @@ public class RaycastedDots : MonoBehaviour
         else
         {
             expirence = false;
+            ConnectTheDotsExperience.thisScript.RemoveFinalPoint();
             enabled = false;
         }
 

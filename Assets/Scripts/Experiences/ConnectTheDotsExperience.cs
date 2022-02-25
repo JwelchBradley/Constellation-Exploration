@@ -45,15 +45,15 @@ public class ConnectTheDotsExperience : Experience
             case ("Perseus"):
                 pointer.Add(0, new List<int> { 1 });
                 pointer.Add(1, new List<int> { 0, 2 });
-                pointer.Add(2, new List<int> { 1, 3, 7 , 8 });
+                pointer.Add(2, new List<int> { 1, 3, 8 });
                 pointer.Add(3, new List<int> { 2, 4 });
                 pointer.Add(4, new List<int> { 3, 5 });
                 pointer.Add(5, new List<int> { 4, 6 });
                 pointer.Add(6, new List<int> { 5, 7 });
-                pointer.Add(7, new List<int> { 6 });
+                pointer.Add(7, new List<int> { 2 , 6 });
                 pointer.Add(8, new List<int> { 2, 9 });
                 pointer.Add(9, new List<int> { 8, 10 });
-                pointer.Add(10, new List<int> { 9 });
+                pointer.Add(10, new List<int> { 2 , 9 });
                 maxPoint = lrs[0].positionCount + lrs[1].positionCount;
                 break;
             case ("Cassiopeia"):
@@ -227,6 +227,12 @@ public class ConnectTheDotsExperience : Experience
             //}
         }
         return false;
+    }
+
+    public void RemoveFinalPoint()
+    {
+        StarCreator.Constellations.TryGetValue(name, out List<LineRenderer> lrs);
+        lrs[0].positionCount--;
     }
 
 }
