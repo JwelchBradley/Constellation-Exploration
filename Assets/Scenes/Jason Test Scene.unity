@@ -1154,6 +1154,9 @@ MonoBehaviour:
   dotsLayer:
     serializedVersion: 2
     m_Bits: 0
+  constelationLayer:
+    serializedVersion: 2
+    m_Bits: 0
   point: {x: 0, y: 0, z: 0}
   expirence: 0
 --- !u!1001 &350530329
@@ -1943,6 +1946,9 @@ MonoBehaviour:
   dotsLayer:
     serializedVersion: 2
     m_Bits: 64
+  constelationLayer:
+    serializedVersion: 2
+    m_Bits: 0
   point: {x: 0, y: 0, z: 0}
   expirence: 0
 --- !u!1 &652269787
@@ -5642,7 +5648,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1155582899
 Transform:
   m_ObjectHideFlags: 0
@@ -8837,7 +8843,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!82 &1699302538
 AudioSource:
   m_ObjectHideFlags: 0
@@ -9069,6 +9075,9 @@ MonoBehaviour:
   dotsLayer:
     serializedVersion: 2
     m_Bits: 64
+  constelationLayer:
+    serializedVersion: 2
+    m_Bits: 8
   point: {x: 0, y: 0, z: 0}
   expirence: 0
 --- !u!1 &1701884568
@@ -10123,6 +10132,9 @@ MonoBehaviour:
   dotsLayer:
     serializedVersion: 2
     m_Bits: 64
+  constelationLayer:
+    serializedVersion: 2
+    m_Bits: 0
   point: {x: 0, y: 0, z: 0}
   expirence: 0
 --- !u!1 &1952598007 stripped
@@ -10183,6 +10195,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dotsLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  constelationLayer:
     serializedVersion: 2
     m_Bits: 0
   point: {x: 0, y: 0, z: 0}

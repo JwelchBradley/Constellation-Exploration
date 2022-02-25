@@ -5,113 +5,226 @@ using UnityEngine;
 public class ConnectTheDotsExperience : Experience
 {
     public List<Vector3> points = new List<Vector3>();
-    public List<Vector3> otherPoints = new List<Vector3>();
-    public List<Vector3> newPoints = new List<Vector3>();
-    private bool test;
+
     public static ConnectTheDotsExperience thisScript;
+
     public string name;
-    public int currentPoint;
+
+    public int totalPoints;
+    public int currentPoints;
+
     public int maxPoint;
+
+    public List<int> p0;
+    public List<int> p1;
+    public List<int> p2;
+    public List<int> p3;
+    public List<int> p4;
+    public List<int> p5;
+    public List<int> p6;
+    public List<int> p7;
+    public List<int> p8;
+    public List<int> p9;
+    public List<int> p10;
+
     [SerializeField]
-    private int currentLR = 0;
+    public Dictionary<int, List<int>> pointer = new Dictionary<int, List<int>>();
+
+    private RaycastedDots dot;
 
     private void Awake()
     {
         name = this.gameObject.name.Substring(0, this.gameObject.name.IndexOf('('));
-        GameObject.FindObjectOfType<RaycastedDots>().enabled = true;
+        dot = GameObject.FindObjectOfType<RaycastedDots>();
+        dot.enabled = true;
         thisScript = this;
         StarCreator.Constellations.TryGetValue(name, out List<LineRenderer> lrs);
 
-        
+        switch (name)
+        {
+            case ("Perseus"):
+                pointer.Add(0, new List<int> { 1 });
+                pointer.Add(1, new List<int> { 0, 2 });
+                pointer.Add(2, new List<int> { 1, 3, 7 , 8 });
+                pointer.Add(3, new List<int> { 2, 4 });
+                pointer.Add(4, new List<int> { 3, 5 });
+                pointer.Add(5, new List<int> { 4, 6 });
+                pointer.Add(6, new List<int> { 5, 7 });
+                pointer.Add(7, new List<int> { 6 });
+                pointer.Add(8, new List<int> { 2, 9 });
+                pointer.Add(9, new List<int> { 8, 10 });
+                pointer.Add(10, new List<int> { 9 });
+                maxPoint = lrs[0].positionCount + lrs[1].positionCount;
+                break;
+            case ("Cassiopeia"):
+                pointer.Add(0, new List<int> { 1 });
+                pointer.Add(1, new List<int> { 0, 2 });
+                pointer.Add(2, new List<int> { 1, 3 });
+                pointer.Add(3, new List<int> { 2, 4 });
+                pointer.Add(4, new List<int> { 3 });
+                maxPoint = lrs[0].positionCount;
+                break;
+            case ("Cepheus"):
+                pointer.Add(0, new List<int> { 1, 2, 3 });
+                pointer.Add(1, new List<int> { 0, 2 });
+                pointer.Add(2, new List<int> { 0, 1, 4 });
+                pointer.Add(3, new List<int> { 0, 4 });
+                pointer.Add(4, new List<int> { 2, 3 });
+                maxPoint = lrs[0].positionCount;
+                break;
+            default:
+                break;
+        }
 
-        if (lrs.Count > 1)
+
+        for (int lrsNum = 0; lrsNum < lrs.Count; lrsNum++)
         {
-            for (int a = 0; a < lrs[0].positionCount; a++)
+            for (int a = 0; a < lrs[lrsNum].positionCount; a++)
             {
-                points.Add(lrs[0].GetPosition(a));
-                maxPoint++;
-            }
-            for (int a = 0; a < lrs[1].positionCount; a++)
-            {
-                otherPoints.Add(lrs[1].GetPosition(a));
-            }
-            foreach (LineRenderer lr in lrs)
-            {
-                lr.positionCount = 1;
-            }
-        }
-        else
-        {
-            foreach (LineRenderer lr in lrs)
-            {
-                for (int a = 0; a < lr.positionCount; a++)
+                if (points.Contains(lrs[lrsNum].GetPosition(a)))
                 {
-                    points.Add(lr.GetPosition(a));
+
                 }
-                lr.positionCount = 1;
-                
+                else
+                {
+                    points.Add(lrs[lrsNum].GetPosition(a));
+                }
             }
-            
+            lrs[lrsNum].positionCount = 1;
         }
-        newPoints.Add(lrs[0].GetPosition(0));
-        print(lrs[currentLR].positionCount);
+
+        lrs[0].positionCount = 1;
         AddPoint();
     }
-
-    // Start is called before the first frame update
-    void Start()
+    private void Update()
     {
-        //transformforward of hand
-        //if(Physics.Raycast(hand))
+        for (int a = 0; a < maxPoint; a++)
+        {
+            pointer.TryGetValue(a, out List<int> nums);
+            switch (a)
+            {
+                case (0):
+                    p0 = nums;
+                    break;
+                case (1):
+                    p1 = nums;
+                    break;
+                case (2):
+                    p2 = nums;
+                    break;
+                case (3):
+                    p3 = nums;
+                    break;
+                case (4):
+                    p4 = nums;
+                    break;
+                case (5):
+                    p5 = nums;
+                    break;
+                case (6):
+                    p6 = nums;
+                    break;
+                case (7):
+                    p7 = nums;
+                    break;
+                case (8):
+                    p8 = nums;
+                    break;
+                case (9):
+                    p9 = nums;
+                    break;
+                case (10):
+                    p10 = nums;
+                    break;
+            }
+        }
     }
 
-    public Vector3 NextPoint()
+    public List<Vector3> NextPoint()
     {
-        StarCreator.Constellations.TryGetValue(this.gameObject.name.Substring(0, this.gameObject.name.IndexOf('(')), out List<LineRenderer> lrs);
-        if (currentLR == 0)
+        StarCreator.Constellations.TryGetValue(name, out List<LineRenderer> lrs);
+        pointer.TryGetValue(currentPoints, out List<int> nums);
+
+        print(nums[0] + " number ");
+        List<Vector3> nextPoints = new List<Vector3>();
+        foreach (int num in nums)
         {
-            return points[lrs[currentLR].positionCount - 1];
+            nextPoints.Add(points[num]);
+            print(num);
         }
-        else
-        {
-            return otherPoints[lrs[currentLR].positionCount - 1];
-        }
+
+        return nextPoints;
     }
+
 
     public bool AddPoint()
     {
-        StarCreator.Constellations.TryGetValue(this.gameObject.name.Substring(0, this.gameObject.name.IndexOf('(')), out List<LineRenderer> lrs);
-        currentPoint++;
-        print(lrs.Count + " " + currentLR);
-        if (currentPoint == maxPoint && lrs.Count == currentLR + 1)
+        StarCreator.Constellations.TryGetValue(name, out List<LineRenderer> lrs);
+        lrs[0].positionCount++;
+        totalPoints++;
+        if (totalPoints == maxPoint)
         {
             //Finish Expirence
             return true;
-        }
-        else
-        {
-            if (currentPoint == maxPoint)
-            {
-                currentPoint = 0;
-                currentLR++;
-                maxPoint = otherPoints.Count;
-            }
-            else
-            {
-                lrs[currentLR].positionCount++;
-            }
         }
         return false;
     }
 
     public bool SetPoint(Vector3 pos)
     {
-        StarCreator.Constellations.TryGetValue(this.gameObject.name.Substring(0, this.gameObject.name.IndexOf('(')), out List<LineRenderer> lrs);
-        lrs[currentLR].SetPosition(currentPoint, pos);
+        StarCreator.Constellations.TryGetValue(name, out List<LineRenderer> lrs);
+        lrs[0].SetPosition(totalPoints, pos);
 
-        if(pos == NextPoint())
+        print("SettingPoint");
+        List<Vector3> nextPoints = NextPoint();
+        if (nextPoints.Contains(pos))
         {
+            print("yes");
+            print((pos == points[0]).ToString() + " Node 1");
+            print((pos != points[0]).ToString() + " Not Node 1");
+            print((currentPoints == 0).ToString() + " Start");
+            print((currentPoints != 0).ToString() + " Not start");
+            print((pos == points[0] && currentPoints != 0).ToString() + " point 1");
+            print((pos != points[0] && currentPoints == 0).ToString() + " point 1");
+            //if (pos == points[0] && currentPoints != 0 || pos != points[0] && currentPoints == 0)
+            //{
+            //print(true);
+
+
+            pointer.TryGetValue(currentPoints, out List<int> nums);
+
+            print(nums[0] + " number ");
+            //List<Vector3> nextPoints = new List<Vector3>();
+            foreach (int num in nums)
+            {
+                if(points[num] == pos)
+                {
+                    print(num + " HOW ARE YOU ");
+                    pointer.TryGetValue(num, out List<int> numer);
+                    numer.Remove(currentPoints);
+                    currentPoints = num;
+                    
+                    break;
+                }
+                
+            }
+            nums.Remove(currentPoints);
+            /*
+
+            pointer.TryGetValue(totalPoints - 1, out List<int> val);
+                currentPoints = val[val.IndexOf(points.IndexOf(pos))];
+
+                pointer.TryGetValue(currentPoints, out List<int> newVal);
+                val.Remove(points.IndexOf(pos));
+                print(newVal.IndexOf(totalPoints - 1) + " " + newVal[newVal.IndexOf(totalPoints - 1)]);
+                newVal.Remove(newVal.IndexOf(totalPoints - 1));*/
+
             return AddPoint();
+            //}
+            //else
+            //{
+                //return false;
+            //}
         }
         return false;
     }
