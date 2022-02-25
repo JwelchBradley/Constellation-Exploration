@@ -12,8 +12,7 @@ public class ConstellationInteraction : MonoBehaviour
 
     private static string currentSelected = "";
 
-    private string thisSelected = "";
-
+    #region Colors
     [SerializeField]
     [ColorUsageAttribute(true, true)]
     private Color hoverColor;
@@ -22,21 +21,19 @@ public class ConstellationInteraction : MonoBehaviour
     [ColorUsageAttribute(true, true)]
     private Color defaultColor;
 
-    [SerializeField]
-    [ColorUsageAttribute(true, true)]
-    private Color disabledColor;
-
-    [SerializeField]
-    [ColorUsageAttribute(true, true)]
-    private Color alreadyClickedColor;
-
-    [SerializeField]
-    private float hoverStarSizeMod = 3.0f;
-
     public Color DefaultColor
     {
         get => defaultColor;
     }
+
+    [SerializeField]
+    [ColorUsageAttribute(true, true)]
+    private Color alreadyClickedColor;
+    #endregion
+
+    #region Hover
+    [SerializeField]
+    private float hoverStarSizeMod = 3.0f;
 
     [Tooltip("The sound made when the user hovers over the constellation")]
     [SerializeField] private AudioClip hoverSound;
@@ -48,12 +45,13 @@ public class ConstellationInteraction : MonoBehaviour
 
     [Tooltip("The sound made when the user clicks on the constellation")]
     [SerializeField] private AudioClip clickSound;
+    #endregion
 
     private Dictionary<string, bool> alreadySelectedExperiences = new Dictionary<string, bool>();
 
     private AudioSource aud;
 
-    private GameObject activeExperience;
+    private static GameObject activeExperience;
 
 
     private void Awake()
@@ -145,6 +143,7 @@ public class ConstellationInteraction : MonoBehaviour
 
             if(activeExperience != null)
             StartCoroutine(ConstellationExperienceTimer(activeExperience.GetComponent<Experience>().ExperienceTimer));
+
             aud.PlayOneShot(clickSound);
             ChangeOtherLines(false);
         }

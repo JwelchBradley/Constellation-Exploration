@@ -22,10 +22,12 @@ public class HandController : MonoBehaviour
     private Hand hand;
 
     #region Constellation Interactions
-    static List<ConstellationInteraction> cis = new List<ConstellationInteraction>();
+    //static List<ConstellationInteraction> cis = new List<ConstellationInteraction>();
 
     [SerializeField]
     ConstellationInteraction ci;
+
+    private static bool neitherEnabled = true;
     #endregion
 
     /// <summary>
@@ -43,22 +45,19 @@ public class HandController : MonoBehaviour
     {
         hand.SetGrip(controller.selectAction.action.ReadValue<float>());
 
-        if(controller.selectAction.action.ReadValue<float>() == 1)
+        if(neitherEnabled && controller.selectAction.action.ReadValue<float>() == 1)
         {
+            neitherEnabled = false;
             ci.enabled = true;
-
-            if (controller.activateAction.action.ReadValue<float>() == 1)
-            {
-                ci.Interact();
-            }
         }
-        else if(ci.enabled)
+        else if(!neitherEnabled && ci.enabled && controller.selectAction.action.ReadValue<float>() == 0)
         {
-            bool neitherEnabled = false;
+            neitherEnabled = true;
             ci.enabled = false;
 
             if (neitherEnabled)
             {
+                /*
                 foreach(ConstellationInteraction ci in cis)
                 {
                     if (!ci.enabled)
@@ -66,7 +65,15 @@ public class HandController : MonoBehaviour
                         neitherEnabled = true;
                         break;
                     }
-                }
+                }*/
+            }
+        }
+
+        if (ci.enabled)
+        {
+            if (controller.activateAction.action.ReadValue<float>() == 1)
+            {
+                ci.Interact();
             }
         }
 

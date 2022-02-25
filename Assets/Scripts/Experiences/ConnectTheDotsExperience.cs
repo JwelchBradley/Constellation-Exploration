@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class ConnectTheDotsExperience : Experience
 {
+    [SerializeField]
+    private AudioClip connectDotSound;
+
     public List<Vector3> points = new List<Vector3>();
 
     public static ConnectTheDotsExperience thisScript;
@@ -32,8 +35,9 @@ public class ConnectTheDotsExperience : Experience
 
     private RaycastedDots dot;
 
-    private void Awake()
+    protected override void Awake()
     {
+        base.Awake();
         name = this.gameObject.name.Substring(0, this.gameObject.name.IndexOf('('));
         dot = GameObject.FindObjectOfType<RaycastedDots>();
         dot.enabled = true;
@@ -162,6 +166,7 @@ public class ConnectTheDotsExperience : Experience
         StarCreator.Constellations.TryGetValue(name, out List<LineRenderer> lrs);
         lrs[0].positionCount++;
         totalPoints++;
+        lrs[0].SetPosition(totalPoints, lrs[0].GetPosition(totalPoints-1));
         if (totalPoints == maxPoint)
         {
             //Finish Expirence
@@ -170,9 +175,13 @@ public class ConnectTheDotsExperience : Experience
         return false;
     }
 
-    public bool SetPoint(Vector3 pos)
+    public bool SetPoint(Vector3 pos, bool hit)
     {
         StarCreator.Constellations.TryGetValue(name, out List<LineRenderer> lrs);
+        if (!hit)
+        {
+            pos = lrs[0].transform.InverseTransformPoint(pos);
+        }
         lrs[0].SetPosition(totalPoints, pos);
 
         print("SettingPoint");
@@ -190,6 +199,7 @@ public class ConnectTheDotsExperience : Experience
             //{
             //print(true);
 
+            aud.PlayOneShot(connectDotSound);
 
             pointer.TryGetValue(currentPoints, out List<int> nums);
 

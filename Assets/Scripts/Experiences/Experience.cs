@@ -14,12 +14,13 @@ public class Experience : MonoBehaviour
         get => experienceTimer;
     }
 
-    AudioSource aud;
+    protected AudioSource aud;
 
     // Start is called before the first frame update
-    void Awake()
+    protected virtual void Awake()
     {
         aud = GetComponent<AudioSource>();
+        if(aud.clip != null)
         experienceTimer = aud.clip.length;
     }
 }
