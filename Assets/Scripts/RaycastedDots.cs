@@ -20,6 +20,7 @@ public class RaycastedDots : MonoBehaviour
     public Vector3 subtract;
 
     public bool expirence;
+    public bool useable;
     // Start is called before the first frame update
     void Start()
     {
@@ -30,42 +31,50 @@ public class RaycastedDots : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //add = transform.forward.normalized + starCreator.transform.forward.normalized;
-        //subtract = Vector3.Cross(transform.forward.normalized, starCreator.transform.forward.normalized).normalized;
-        Debug.DrawLine(transform.position, subtract, Color.blue);
-        //print(transform.forward.normalized + " " + starCreator.transform.localPosition);
-        if (!expirence)
-        {
-            /*
-            if (Physics.Raycast(transform.position, transform.forward.normalized, out constellationHit, Mathf.Infinity, constelationLayer))
-            {*/
 
-                if (Physics.Raycast(transform.position, transform.forward.normalized, out dotHit, Mathf.Infinity, dotsLayer))
+        Debug.DrawLine(transform.position, subtract, Color.blue);
+
+        if (Input.GetKeyDown(KeyCode.Mouse0) || useable)
+        {
+
+            if (!useable && Physics.Raycast(transform.position, transform.forward.normalized, out dotHit, Mathf.Infinity, dotsLayer) &&
+                ConnectTheDotsExperience.thisScript.points.IndexOf(dotHit.collider.gameObject.transform.localPosition) == 0)
+            {
+                expirence = ConnectTheDotsExperience.thisScript.SetPoint(dotHit.collider.gameObject.transform.localPosition, true);
+                useable = true;
+            }
+            else if(useable)
+            {
+                if (!expirence)
                 {
-                    point = dotHit.collider.gameObject.transform.localPosition;
-                    Debug.DrawLine(this.gameObject.transform.position, dotHit.point, Color.red);
-                    print(dotHit.collider.gameObject.transform.localPosition);
-                    print(ConnectTheDotsExperience.thisScript.points.IndexOf(dotHit.collider.gameObject.transform.localPosition));
-                    //StarCreator.Constellations.TryGetValue(ConnectTheDotsExperience.thisScript.name, out List<LineRenderer> lrs);
-                    expirence = ConnectTheDotsExperience.thisScript.SetPoint(dotHit.collider.gameObject.transform.localPosition, true);
+                    if (Physics.Raycast(transform.position, transform.forward.normalized, out dotHit, Mathf.Infinity, dotsLayer))
+                    {
+                        point = dotHit.collider.gameObject.transform.localPosition;
+                        Debug.DrawLine(this.gameObject.transform.position, dotHit.point, Color.red);
+                        print(dotHit.collider.gameObject.transform.localPosition);
+                        print(ConnectTheDotsExperience.thisScript.points.IndexOf(dotHit.collider.gameObject.transform.localPosition));
+                        //StarCreator.Constellations.TryGetValue(ConnectTheDotsExperience.thisScript.name, out List<LineRenderer> lrs);
+                        expirence = ConnectTheDotsExperience.thisScript.SetPoint(dotHit.collider.gameObject.transform.localPosition, true);
+                    }
+                    else
+                    {
+                        point = transform.position + transform.forward * 1000;
+                        expirence = ConnectTheDotsExperience.thisScript.SetPoint(point, false);
+
+                        Debug.Log(point);
+                    }
+
                 }
+                
                 else
                 {
-                //Debug.DrawLine(constellationHit.point - constellationHit.collider.transform.position, constellationHit.point, Color.blue);
-                //expirence = ConnectTheDotsExperience.thisScript.SetPoint(constellationHit.point - constellationHit.collider.transform.position);
-                //point = constellationHit.point;
-                point = transform.position + transform.forward * 1000;
-                expirence = ConnectTheDotsExperience.thisScript.SetPoint(point, false);
-                    
-                Debug.Log(point);
+                    expirence = false;
+                    ConnectTheDotsExperience.thisScript.RemoveFinalPoint();
+                    enabled = false;
+                    useable = false;
                 }
-            //}
-        }
-        else
-        {
-            expirence = false;
-            ConnectTheDotsExperience.thisScript.RemoveFinalPoint();
-            enabled = false;
+                
+            }
         }
 
 

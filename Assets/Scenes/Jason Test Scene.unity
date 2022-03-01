@@ -1162,6 +1162,7 @@ MonoBehaviour:
   add: {x: 0, y: 0, z: 0}
   subtract: {x: 0, y: 0, z: 0}
   expirence: 0
+  useable: 0
 --- !u!1001 &350530329
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1928,7 +1929,6 @@ MonoBehaviour:
     m_Bits: 8
   hoverColor: {r: 2.1185474, g: 2.1185474, b: 2.1185474, a: 1}
   defaultColor: {r: 1, g: 1, b: 1, a: 0.05882353}
-  disabledColor: {r: 1, g: 1, b: 1, a: 0.019607844}
   alreadyClickedColor: {r: 1, g: 1, b: 1, a: 0.39215687}
   hoverStarSizeMod: 10
   hoverSound: {fileID: 8300000, guid: 4c17cd1f82b286b4e9052150296f88f1, type: 3}
@@ -1957,6 +1957,7 @@ MonoBehaviour:
   add: {x: 0, y: 0, z: 0}
   subtract: {x: 0, y: 0, z: 0}
   expirence: 0
+  useable: 0
 --- !u!1 &652269787
 GameObject:
   m_ObjectHideFlags: 0
@@ -4241,7 +4242,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &986372492
 GameObject:
@@ -5654,7 +5655,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1155582899
 Transform:
   m_ObjectHideFlags: 0
@@ -5670,7 +5671,7 @@ Transform:
   - {fileID: 1120520365}
   - {fileID: 438229926}
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1168050359
 GameObject:
@@ -8849,7 +8850,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!82 &1699302538
 AudioSource:
   m_ObjectHideFlags: 0
@@ -8963,7 +8964,6 @@ MonoBehaviour:
     m_Bits: 8
   hoverColor: {r: 2.1185474, g: 2.1185474, b: 2.1185474, a: 1}
   defaultColor: {r: 1, g: 1, b: 1, a: 0.05882353}
-  disabledColor: {r: 1, g: 1, b: 1, a: 0.019607844}
   alreadyClickedColor: {r: 1, g: 1, b: 1, a: 0.39215687}
   hoverStarSizeMod: 10
   hoverSound: {fileID: 8300000, guid: 4c17cd1f82b286b4e9052150296f88f1, type: 3}
@@ -9064,7 +9064,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1699302544
 MonoBehaviour:
@@ -9089,6 +9089,7 @@ MonoBehaviour:
   add: {x: 0, y: 0, z: 0}
   subtract: {x: 0, y: 0, z: 0}
   expirence: 0
+  useable: 0
 --- !u!1 &1701884568
 GameObject:
   m_ObjectHideFlags: 0
@@ -10120,7 +10121,6 @@ MonoBehaviour:
     m_Bits: 8
   hoverColor: {r: 2.1185474, g: 2.1185474, b: 2.1185474, a: 1}
   defaultColor: {r: 1, g: 1, b: 1, a: 0.05882353}
-  disabledColor: {r: 1, g: 1, b: 1, a: 0.019607844}
   alreadyClickedColor: {r: 1, g: 1, b: 1, a: 0.39215687}
   hoverStarSizeMod: 10
   hoverSound: {fileID: 8300000, guid: 4c17cd1f82b286b4e9052150296f88f1, type: 3}
@@ -10149,6 +10149,7 @@ MonoBehaviour:
   add: {x: 0, y: 0, z: 0}
   subtract: {x: 0, y: 0, z: 0}
   expirence: 0
+  useable: 0
 --- !u!1 &1952598007 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 98bf64533e55b304ab9446d4eb11ae2c, type: 3}
@@ -10217,6 +10218,7 @@ MonoBehaviour:
   add: {x: 0, y: 0, z: 0}
   subtract: {x: 0, y: 0, z: 0}
   expirence: 0
+  useable: 0
 --- !u!1 &1961131770
 GameObject:
   m_ObjectHideFlags: 0
