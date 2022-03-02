@@ -51,9 +51,10 @@ public class RaycastedDots : MonoBehaviour
                     {
                         point = dotHit.collider.gameObject.transform.localPosition;
                         Debug.DrawLine(this.gameObject.transform.position, dotHit.point, Color.red);
-                        print(dotHit.collider.gameObject.transform.localPosition);
-                        print(ConnectTheDotsExperience.thisScript.points.IndexOf(dotHit.collider.gameObject.transform.localPosition));
-                        //StarCreator.Constellations.TryGetValue(ConnectTheDotsExperience.thisScript.name, out List<LineRenderer> lrs);
+
+                        //print(dotHit.collider.gameObject.transform.localPosition);
+                        //print(ConnectTheDotsExperience.thisScript.points.IndexOf(dotHit.collider.gameObject.transform.localPosition));
+
                         expirence = ConnectTheDotsExperience.thisScript.SetPoint(dotHit.collider.gameObject.transform.localPosition, true);
                     }
                     else
@@ -61,7 +62,7 @@ public class RaycastedDots : MonoBehaviour
                         point = transform.position + transform.forward * 1000;
                         expirence = ConnectTheDotsExperience.thisScript.SetPoint(point, false);
 
-                        Debug.Log(point);
+                        //print(point);
                     }
 
                 }

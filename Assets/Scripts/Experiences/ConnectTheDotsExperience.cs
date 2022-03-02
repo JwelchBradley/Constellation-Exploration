@@ -16,7 +16,6 @@ public class ConnectTheDotsExperience : Experience
     public int totalPoints;
     public int currentPoints;
 
-    public int maxPoint;
 
     public List<int> p0;
     public List<int> p1;
@@ -58,7 +57,6 @@ public class ConnectTheDotsExperience : Experience
                 pointer.Add(8, new List<int> { 2, 9 });
                 pointer.Add(9, new List<int> { 8, 10 });
                 pointer.Add(10, new List<int> { 2 , 9 });
-                maxPoint = lrs[0].positionCount + lrs[1].positionCount;
                 break;
             case ("Cassiopeia"):
                 pointer.Add(0, new List<int> { 1 });
@@ -66,7 +64,6 @@ public class ConnectTheDotsExperience : Experience
                 pointer.Add(2, new List<int> { 1, 3 });
                 pointer.Add(3, new List<int> { 2, 4 });
                 pointer.Add(4, new List<int> { 3 });
-                maxPoint = lrs[0].positionCount;
                 break;
             case ("Cepheus"):
                 pointer.Add(0, new List<int> { 1, 2, 3 });
@@ -74,7 +71,6 @@ public class ConnectTheDotsExperience : Experience
                 pointer.Add(2, new List<int> { 0, 1, 4 });
                 pointer.Add(3, new List<int> { 0, 4 });
                 pointer.Add(4, new List<int> { 2, 3 });
-                maxPoint = lrs[0].positionCount;
                 break;
             default:
                 break;
@@ -102,7 +98,7 @@ public class ConnectTheDotsExperience : Experience
     }
     private void Update()
     {
-        for (int a = 0; a < maxPoint; a++)
+        for (int a = 0; a < 10; a++)
         {
             pointer.TryGetValue(a, out List<int> nums);
             switch (a)
@@ -167,12 +163,25 @@ public class ConnectTheDotsExperience : Experience
         lrs[0].positionCount++;
         totalPoints++;
         lrs[0].SetPosition(totalPoints, lrs[0].GetPosition(totalPoints-1));
-        if (totalPoints == maxPoint)
+        print(totalPoints + " " + lrs[0].GetPosition(totalPoints));
+        List<bool> h = new List<bool>();
+        for (int a = 0; a < pointer.Count; a++)
         {
-            //Finish Expirence
-            return true;
+            pointer.TryGetValue(a, out List<int> vals);
+            if (vals.Count <= 0)
+            {
+                h.Add(true);
+            }
+            else
+            {
+                h.Add(false);
+            }
         }
-        return false;
+        if(h.Contains(false))
+        {
+            return false;
+        }
+        return true;
     }
 
     public bool SetPoint(Vector3 pos, bool hit)
@@ -188,13 +197,7 @@ public class ConnectTheDotsExperience : Experience
         List<Vector3> nextPoints = NextPoint();
         if (nextPoints.Contains(pos))
         {
-            print("yes");
-            print((pos == points[0]).ToString() + " Node 1");
-            print((pos != points[0]).ToString() + " Not Node 1");
-            print((currentPoints == 0).ToString() + " Start");
-            print((currentPoints != 0).ToString() + " Not start");
-            print((pos == points[0] && currentPoints != 0).ToString() + " point 1");
-            print((pos != points[0] && currentPoints == 0).ToString() + " point 1");
+
             //if (pos == points[0] && currentPoints != 0 || pos != points[0] && currentPoints == 0)
             //{
             //print(true);
@@ -209,6 +212,38 @@ public class ConnectTheDotsExperience : Experience
             {
                 if(points[num] == pos)
                 {
+                    if(currentPoints == 7)
+                    {
+                        
+                        for (int a = currentPoints-1; a >= 2; a--)
+                        {
+                            if (a != 2)
+                            {
+                                lrs[0].positionCount++;
+                                lrs[0].SetPosition(totalPoints, points[a]);
+                                totalPoints++;
+                            }
+                            else
+                            {
+                                lrs[0].SetPosition(totalPoints, points[a]);
+                            }
+
+                        }
+                        pointer.TryGetValue(10, out List<int> rem);
+                        rem.Remove(2);
+                    }
+                    else if(currentPoints == 10)
+                    {
+                        for (int a = currentPoints - 1; a > 7; a--)
+                        {
+                                lrs[0].positionCount++;
+                                lrs[0].SetPosition(totalPoints, points[a]);
+                                totalPoints++;
+                        }
+                        lrs[0].SetPosition(totalPoints, points[2]);
+                        pointer.TryGetValue(7, out List<int> rem);
+                        rem.Remove(2);
+                    }
                     print(num + " HOW ARE YOU ");
                     pointer.TryGetValue(num, out List<int> numer);
                     numer.Remove(currentPoints);
@@ -219,6 +254,7 @@ public class ConnectTheDotsExperience : Experience
                 
             }
             nums.Remove(currentPoints);
+            print(pointer.Count);
             /*
 
             pointer.TryGetValue(totalPoints - 1, out List<int> val);
@@ -243,6 +279,11 @@ public class ConnectTheDotsExperience : Experience
     {
         StarCreator.Constellations.TryGetValue(name, out List<LineRenderer> lrs);
         lrs[0].positionCount--;
+    }
+
+    public bool IsEmpty()
+    {
+        return false;
     }
 
 }
