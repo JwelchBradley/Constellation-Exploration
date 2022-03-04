@@ -156,7 +156,7 @@ public class ConnectTheDotsExperience : Experience
         StarCreator.Constellations.TryGetValue(name, out List<LineRenderer> lrs);
         pointer.TryGetValue(currentPoints, out List<int> nums);
 
-        print(nums[0] + " number ");
+        //print(nums[0] + " number ");
         List<Vector3> nextPoints = new List<Vector3>();
         foreach (int num in nums)
         {
@@ -174,7 +174,7 @@ public class ConnectTheDotsExperience : Experience
         lrs[0].positionCount++;
         totalPoints++;
         lrs[0].SetPosition(totalPoints, lrs[0].GetPosition(totalPoints-1));
-        print(totalPoints + " " + lrs[0].GetPosition(totalPoints));
+        //print(totalPoints + " " + lrs[0].GetPosition(totalPoints));
         List<bool> h = new List<bool>();
         for (int a = 0; a < pointer.Count; a++)
         {
@@ -255,7 +255,7 @@ public class ConnectTheDotsExperience : Experience
                         pointer.TryGetValue(7, out List<int> rem);
                         rem.Remove(2);
                     }
-                    print(num + " HOW ARE YOU ");
+                    //print(num + " HOW ARE YOU ");
                     pointer.TryGetValue(num, out List<int> numer);
                     numer.Remove(currentPoints);
                     currentPoints = num;
@@ -265,7 +265,7 @@ public class ConnectTheDotsExperience : Experience
                 
             }
             nums.Remove(currentPoints);
-            print(pointer.Count);
+            //print(pointer.Count);
             /*
 
             pointer.TryGetValue(totalPoints - 1, out List<int> val);
@@ -286,10 +286,17 @@ public class ConnectTheDotsExperience : Experience
         return false;
     }
 
+    bool hasEnded = true;
     public void RemoveFinalPoint()
     {
+        hasEnded = false;
         StarCreator.Constellations.TryGetValue(name, out List<LineRenderer> lrs);
         lrs[0].positionCount--;
+    }
+
+    public bool HasNotEnded()
+    {
+        return hasEnded;
     }
 
     public bool IsEmpty()

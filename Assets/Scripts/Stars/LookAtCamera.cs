@@ -13,16 +13,34 @@ public class LookAtCamera : MonoBehaviour
     [Tooltip("Mark true if this is a text object")]
     private bool isText = true;
 
+    [SerializeField]
+    private bool shouldMove = true;
+
+    [SerializeField]
+    private bool shouldWait = false;
+
     // Start is called before the first frame update
     void Start()
     {
+
         camTransform = Camera.main.transform;
+        if(shouldMove)
         transform.position = (transform.position - camTransform.position).normalized * 1000;
 
         if (!isText)
         {
             transform.LookAt(camTransform.position);
+
+            if (shouldWait)
+            {
+                Invoke("LookAtCameraWait", 0.51f);
+            }
         }
+    }
+
+    private void LookAtCameraWait()
+    {
+        transform.LookAt(camTransform.position);
     }
 
     // Update is called once per frame

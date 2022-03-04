@@ -12,6 +12,11 @@ public class ConstellationInteraction : MonoBehaviour
 
     private static string currentSelected = "";
 
+    private static string rightSelected = "";
+    private static string leftSelected = "";
+    [SerializeField]
+    private bool isRight = true;
+
     #region Colors
     [SerializeField]
     [ColorUsageAttribute(true, true)]
@@ -41,24 +46,42 @@ public class ConstellationInteraction : MonoBehaviour
     [Tooltip("The time between potential hover sounds")]
     [SerializeField] private float hoverBufferTime = 0.1f;
 
-    private bool canHoverSound = true;
+    private static bool canHoverSound = true;
 
     [Tooltip("The sound made when the user clicks on the constellation")]
     [SerializeField] private AudioClip clickSound;
     #endregion
 
-    private Dictionary<string, bool> alreadySelectedExperiences = new Dictionary<string, bool>();
+    private static Dictionary<string, bool> alreadySelectedExperiences = new Dictionary<string, bool>();
+
+    [SerializeField]
+    private List<GameObject> notFinished = new List<GameObject>();
+    private static List<string> NotFinished = new List<string>();
 
     private AudioSource aud;
 
-    private static GameObject activeExperience;
-
+    public static GameObject activeExperience;
 
     private void Awake()
     {
+        if (isRight)
+        {
+            Invoke("DisableLate", 0.05f);
+        }
+
         aud = GetComponent<AudioSource>();
     }
 
+    private void DisableLate()
+    {
+        foreach (GameObject not in notFinished)
+        {
+            NotFinished.Add(not.name);
+            ChangeConstellationColor(alreadyClickedColor, not.name);
+        }
+    }
+
+    #region Hover
     // Update is called once per frame
     void FixedUpdate()
     {
@@ -74,43 +97,143 @@ public class ConstellationInteraction : MonoBehaviour
         {
             string name = hit.transform.gameObject.name;
 
-            if (!alreadySelectedExperiences.ContainsKey(name))
-            {
-                if (!currentSelected.Equals(name))
-                {
-                    if (!currentSelected.Equals(""))
-                    {
-                        ChangeConstellationColor(defaultColor);
-                        ChangeStarSize(1 / hoverStarSizeMod);
-                    }
+            if (NotFinished.Contains(name)) return;
 
-                    currentSelected = name;
+            if (name != "" && !alreadySelectedExperiences.ContainsKey(name))
+            {
+                if (isRight)
+                {
+                    if(name != rightSelected)
+                    {
+                        if (leftSelected != "" || rightSelected != "")
+                        {
+                            ResetCurrent();
+                        }
+
+                        rightSelected = name;
+                        currentSelected = rightSelected;
+
+                        SetNewHover();
+                    }
+                }
+                else
+                {
+                    if (name != leftSelected)
+                    {
+                        if (leftSelected != "" || rightSelected != "")
+                        {
+                            ResetCurrent();
+                        }
+
+                        leftSelected = name;
+                        currentSelected = leftSelected;
+
+                        SetNewHover();
+                    }
+                }
+            }
+            else if(currentSelected != "")
+            {
+                if (isRight)
+                {
+                    rightSelected = "";
+                }
+                else
+                {
+                    leftSelected = "";
+                }
+
+                ResetCurrent();
+                if (rightSelected == "" && leftSelected == "")
+                {
+                    currentSelected = "";
+                }
+                else if (isRight)
+                {
+                    currentSelected = leftSelected;
 
                     ChangeStarSize(hoverStarSizeMod);
                     ChangeConstellationColor(hoverColor);
-
-                    PlayHoverSound();
                 }
-            }
-            else
-            {
-                ChangeConstellationColor(defaultColor);
-                ChangeStarSize(1/hoverStarSizeMod);
-                currentSelected = "";
+                else
+                {
+                    currentSelected = rightSelected;
+
+                    ChangeStarSize(hoverStarSizeMod);
+                    ChangeConstellationColor(hoverColor);
+                }
             }
         }
         else if (!currentSelected.Equals(""))
         {
-            ChangeConstellationColor(defaultColor);
-            ChangeStarSize(1/hoverStarSizeMod);
-            currentSelected = "";
+            if (isRight)
+            {
+                rightSelected = "";
+            }
+            else
+            {
+                leftSelected = "";
+            }
+
+            ResetCurrent();
+            if (rightSelected == "" && leftSelected == "")
+            {
+                currentSelected = "";
+            }
+            else if (isRight)
+            {
+                currentSelected = leftSelected;
+
+                ChangeStarSize(hoverStarSizeMod);
+                ChangeConstellationColor(hoverColor);
+            }
+            else
+            {
+                currentSelected = rightSelected;
+
+                ChangeStarSize(hoverStarSizeMod);
+                ChangeConstellationColor(hoverColor);
+            }
         }
     }
+
+    private void SetNewHover()
+    {
+        ChangeStarSize(hoverStarSizeMod);
+        ChangeConstellationColor(hoverColor);
+
+        PlayHoverSound();
+    }
+
+    private void ResetCurrent()
+    {
+        ChangeConstellationColor(defaultColor);
+        ChangeStarSize(1 / hoverStarSizeMod);
+    }
+
+    #region Sound
+    private void PlayHoverSound()
+    {
+        if (canHoverSound)
+        {
+            aud.PlayOneShot(hoverSound);
+            canHoverSound = false;
+            StartCoroutine(HoverSoundWait());
+        }
+    }
+
+    private IEnumerator HoverSoundWait()
+    {
+        yield return new WaitForSeconds(hoverBufferTime);
+        canHoverSound = true;
+    }
+    #endregion
+    #endregion
 
     private void Update()
     {
         if(Input.GetKeyDown(KeyCode.Mouse0) && currentSelected != "")
-        Interact();
+        Interact(true);
     }
 
     private void ChangeStarSize(float hoverStarSizeMod)
@@ -120,7 +243,12 @@ public class ConstellationInteraction : MonoBehaviour
             return;
         }
 
-        if(StarCreator.ConstellationParticleSystems.TryGetValue(currentSelected, out ParticleSystem ps))
+        ChangeStarSizeOverrid(hoverStarSizeMod, currentSelected);
+    }
+
+    private void ChangeStarSizeOverrid(float hoverStarSizeMod, string name)
+    {
+        if (StarCreator.ConstellationParticleSystems.TryGetValue(name, out ParticleSystem ps))
         {
             Particle[] particles = new Particle[ps.main.maxParticles];
             ps.GetParticles(particles);
@@ -134,8 +262,11 @@ public class ConstellationInteraction : MonoBehaviour
         }
     }
 
-    public void Interact()
+    public void Interact(bool isRight)
     {
+        if (isRight && rightSelected == "") return;
+        else if (!isRight && leftSelected == "") return;
+
         if(activeExperience == null && !alreadySelectedExperiences.ContainsKey(currentSelected))
         {
             activeExperience = Instantiate(Resources.Load("Prefabs/Stars/Constellation Experiences/" + currentSelected, typeof(GameObject)), transform.position, Quaternion.identity) as GameObject;
@@ -152,11 +283,28 @@ public class ConstellationInteraction : MonoBehaviour
     private IEnumerator ConstellationExperienceTimer(float time)
     {
         yield return new WaitForSeconds(time);
-        activeExperience = null;
+        if(activeExperience.TryGetComponent(out ConnectTheDotsExperience ctde))
+        {
+            while (ctde.HasNotEnded())
+            {
+                yield return new WaitForFixedUpdate();
+            }
+        }
 
+        EndExperience();
+    }
+
+    private void EndExperience()
+    {
+        Destroy(activeExperience);
+
+        activeExperience = null;
         ChangeConstellationColor(alreadyClickedColor);
+        ChangeStarSizeOverrid(1 / hoverStarSizeMod, currentSelected);
 
         currentSelected = "";
+        rightSelected = "";
+        leftSelected = "";
         ChangeOtherLines(true);
     }
 
@@ -185,19 +333,11 @@ public class ConstellationInteraction : MonoBehaviour
         }
     }
 
-    private void PlayHoverSound()
+    private void ChangeConstellationColor(Color newColor, string name)
     {
-        if (canHoverSound)
+        foreach (LineRenderer lr in StarCreator.Constellations[name])
         {
-            aud.PlayOneShot(hoverSound);
-            canHoverSound = false;
-            StartCoroutine(HoverSoundWait());
+            lr.material.color = newColor;
         }
-    }
-
-    private IEnumerator HoverSoundWait()
-    {
-        yield return new WaitForSeconds(hoverBufferTime);
-        canHoverSound = true;
     }
 }

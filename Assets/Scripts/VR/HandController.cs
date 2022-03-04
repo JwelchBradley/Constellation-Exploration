@@ -27,6 +27,9 @@ public class HandController : MonoBehaviour
     [SerializeField]
     ConstellationInteraction ci;
 
+    [SerializeField]
+    private bool isRight = true;
+
     private static bool neitherEnabled = true;
     #endregion
 
@@ -47,13 +50,13 @@ public class HandController : MonoBehaviour
 
         if(neitherEnabled && controller.selectAction.action.ReadValue<float>() == 1)
         {
-            neitherEnabled = false;
-            ci.enabled = true;
+            //neitherEnabled = false;
+            //ci.enabled = true;
         }
         else if(!neitherEnabled && ci.enabled && controller.selectAction.action.ReadValue<float>() == 0)
         {
-            neitherEnabled = true;
-            ci.enabled = false;
+            //neitherEnabled = true;
+            //ci.enabled = false;
 
             if (neitherEnabled)
             {
@@ -73,7 +76,7 @@ public class HandController : MonoBehaviour
         {
             if (controller.activateAction.action.ReadValue<float>() == 1)
             {
-                ci.Interact();
+                ci.Interact(isRight);
             }
         }
 

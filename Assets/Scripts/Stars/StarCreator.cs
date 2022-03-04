@@ -1220,7 +1220,6 @@ public class StarCreator : MonoBehaviour
             ps.GetParticles(currentParticleStars);
             maxParticles = ps.main.maxParticles;
             currentParticlesIndex = 0;
-            Debug.Log(currentParticleSystem);
         }
     }
 
