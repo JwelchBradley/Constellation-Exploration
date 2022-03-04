@@ -34,7 +34,7 @@ public class RaycastedDots : MonoBehaviour
 
         Debug.DrawLine(transform.position, subtract, Color.blue);
 
-        if (Input.GetKeyDown(KeyCode.Mouse0) || useable)
+        /*if (Input.GetKeyDown(KeyCode.Mouse0) || useable)
         {
 
             if (!useable && Physics.Raycast(transform.position, transform.forward.normalized, out dotHit, Mathf.Infinity, dotsLayer) &&
@@ -44,7 +44,7 @@ public class RaycastedDots : MonoBehaviour
                 useable = true;
             }
             else if(useable)
-            {
+            {*/
                 if (!expirence)
                 {
                     if (Physics.Raycast(transform.position, transform.forward.normalized, out dotHit, Mathf.Infinity, dotsLayer))
@@ -74,10 +74,12 @@ public class RaycastedDots : MonoBehaviour
                     enabled = false;
                     useable = false;
                 }
-                
+                /*
             }
         }
-
+                */
+        //h.GetParticles[0].
+        
 
         //positions of the line inbetween the sphere
         //transform.forward.normalized * 1000 + transform.position

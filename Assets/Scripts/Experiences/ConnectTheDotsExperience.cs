@@ -95,6 +95,17 @@ public class ConnectTheDotsExperience : Experience
 
         lrs[0].positionCount = 1;
         AddPoint();
+
+        /*
+        StarCreator.ConstellationParticleSystems.TryGetValue("Perseus", out ParticleSystem h);
+        ParticleSystem.Particle[] particle = new ParticleSystem.Particle[h.particleCount];
+        int numOfPart = h.GetParticles(particle);
+        for (int a = 0; a < numOfPart; a++)
+        {
+            particle[a].size = 5f;
+            particle[a].startColor = Color.red;
+        }*/
+
     }
     private void Update()
     {

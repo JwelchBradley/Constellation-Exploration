@@ -1,7 +1,100 @@
 fileFormatVersion: 2
 guid: ab766bdb3435f724fb2b7fade813a931
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -562320734415244712
+    second: Perseus_BR_NB_NS_0
+  - first:
+      213: -5504827024245287091
+    second: Perseus_BR_NB_NS_1
+  - first:
+      213: -7862368401114490467
+    second: Perseus_BR_NB_NS_2
+  - first:
+      213: 1567735839002980368
+    second: Perseus_BR_NB_NS_3
+  - first:
+      213: 6469685607021050841
+    second: Perseus_BR_NB_NS_4
+  - first:
+      213: -7742775455900370700
+    second: Perseus_BR_NB_NS_5
+  - first:
+      213: -6981585798892949013
+    second: Perseus_BR_NB_NS_6
+  - first:
+      213: -567476050207142309
+    second: Perseus_BR_NB_NS_7
+  - first:
+      213: -9076282235818499354
+    second: Perseus_BR_NB_NS_8
+  - first:
+      213: -190288077604541090
+    second: Perseus_BR_NB_NS_9
+  - first:
+      213: 6412089874155282619
+    second: Perseus_BR_NB_NS_10
+  - first:
+      213: 9192119966365912547
+    second: Perseus_BR_NB_NS_11
+  - first:
+      213: 8868252322698117159
+    second: Perseus_BR_NB_NS_12
+  - first:
+      213: -6053318619721596202
+    second: Perseus_BR_NB_NS_13
+  - first:
+      213: 3888453266047101600
+    second: Perseus_BR_NB_NS_14
+  - first:
+      213: -1167937777809320275
+    second: Perseus_BR_NB_NS_15
+  - first:
+      213: -5659685010877095884
+    second: Perseus_BR_NB_NS_16
+  - first:
+      213: -5857591607295653558
+    second: Perseus_BR_NB_NS_17
+  - first:
+      213: -4554374286857115405
+    second: Perseus_BR_NB_NS_18
+  - first:
+      213: -2755425207662539778
+    second: Perseus_BR_NB_NS_19
+  - first:
+      213: -510297194627519278
+    second: Perseus_BR_NB_NS_20
+  - first:
+      213: 8008908605926299968
+    second: Perseus_BR_NB_NS_21
+  - first:
+      213: 5199374985959496874
+    second: Perseus_BR_NB_NS_22
+  - first:
+      213: 783692949169157506
+    second: Perseus_BR_NB_NS_23
+  - first:
+      213: 5712438212365371069
+    second: Perseus_BR_NB_NS_24
+  - first:
+      213: -5308934806394750944
+    second: Perseus_BR_NB_NS_25
+  - first:
+      213: -7074089651102224951
+    second: Perseus_BR_NB_NS_26
+  - first:
+      213: 1195923463480911111
+    second: Perseus_BR_NB_NS_27
+  - first:
+      213: 7404262321601671852
+    second: Perseus_BR_NB_NS_28
+  - first:
+      213: -2207594932390962640
+    second: Perseus_BR_NB_NS_29
+  - first:
+      213: -6485269588991153388
+    second: Perseus_BR_NB_NS_30
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -41,7 +134,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -101,7 +194,663 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Perseus_BR_NB_NS_0
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 1112
+        width: 104
+        height: 167
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -26.554932, y: 83.4436}
+        - {x: -39, y: 79.5}
+        - {x: -43, y: -38.5}
+        - {x: -52, y: -41.5}
+        - {x: -52, y: -46.5}
+        - {x: -28, y: -55.5}
+        - {x: -23, y: -52.5}
+        - {x: 35, y: -82.5}
+        - {x: 52, y: -83.5}
+        - {x: 52, y: -59.5011}
+        - {x: 47.909546, y: 14.117432}
+        - {x: 31.961823, y: 35.960327}
+        - {x: 18.483398, y: 53.233032}
+        - {x: 7.0194397, y: 53.923218}
+        - {x: -11.6440735, y: 60.28882}
+        - {x: -23.004608, y: 70.779785}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 852b757754c3238f0800000000000000
+      internalID: -562320734415244712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Perseus_BR_NB_NS_1
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 1214
+        width: 90
+        height: 79
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 13, y: 22.5}
+        - {x: 8, y: 28.5}
+        - {x: 4, y: 31.5}
+        - {x: -3, y: 33.5}
+        - {x: -13, y: 39.5}
+        - {x: -21, y: 39.5}
+        - {x: -32, y: 38.5}
+        - {x: -45, y: 28.5}
+        - {x: -45, y: 21.5}
+        - {x: -44, y: 17.5}
+        - {x: -42, y: 13.5}
+        - {x: -37, y: 7.5}
+        - {x: -31, y: 2.5}
+        - {x: -23, y: -0.5}
+        - {x: -10, y: -4.5}
+        - {x: -2, y: -4.5}
+        - {x: 4, y: -10.5}
+        - {x: 15, y: -25.5}
+        - {x: 25, y: -39.5}
+        - {x: 35, y: -39.5}
+        - {x: 41, y: -35.5}
+        - {x: 45, y: -29.5}
+        - {x: 44, y: -14.5}
+        - {x: 41, y: -10.5}
+        - {x: 37, y: -6.5}
+        - {x: 36, y: 0.5}
+        - {x: 34, y: 4.5}
+        - {x: 26, y: 11.5}
+        - {x: 25, y: 14.5}
+        - {x: 22, y: 18.5}
+        - {x: 16, y: 20.5}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4793edbcfcea93b0800000000000000
+      internalID: -5504827024245287091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Perseus_BR_NB_NS_2
+      rect:
+        serializedVersion: 2
+        x: 475
+        y: 1062
+        width: 19
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 3.5, y: 24.5}
+        - {x: 2.5, y: 25.5}
+        - {x: -2.5, y: 25.5}
+        - {x: -3.5, y: 23.5}
+        - {x: -4.5, y: 15.5}
+        - {x: -2.5, y: 12.5}
+        - {x: -3.5, y: -2.5}
+        - {x: -5.5, y: -9.5}
+        - {x: -8.5, y: -15.5}
+        - {x: -8.5, y: -16.5}
+        - {x: -5.5, y: -19.5}
+        - {x: -1.5, y: -25.5}
+        - {x: 3.5, y: -25.5}
+        - {x: 4.5, y: -21.5}
+        - {x: 2.5, y: -12.5}
+        - {x: 6.5, y: -7.5}
+        - {x: 6.5, y: -0.5}
+        - {x: 7.5, y: 11.5}
+        - {x: 8.5, y: 14.5}
+        - {x: 8.5, y: 23.5}
+        - {x: 4.5, y: 23.5}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d999056889143e290800000000000000
+      internalID: -7862368401114490467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Perseus_BR_NB_NS_3
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 1024
+        width: 85
+        height: 112
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -20.5, y: 56}
+        - {x: -25.5, y: 56}
+        - {x: -24.5, y: 50}
+        - {x: -30.5, y: 9}
+        - {x: -35.5, y: 8}
+        - {x: -42.5, y: 4}
+        - {x: -41.5, y: 0}
+        - {x: -37.5, y: -1}
+        - {x: -25.5, y: -11}
+        - {x: -12.5, y: -26}
+        - {x: -2.5, y: -44}
+        - {x: 1.5, y: -54}
+        - {x: 10.5, y: -56}
+        - {x: 42.5, y: -56}
+        - {x: 40.5, y: -49}
+        - {x: 36.5, y: -35}
+        - {x: 23.5, y: -17}
+        - {x: 16.5, y: -8}
+        - {x: 18.5, y: -2}
+        - {x: 21.5, y: 7}
+        - {x: 21.5, y: 20}
+        - {x: 19.5, y: 29}
+        - {x: 21.5, y: 35}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 010fb697077b1c510800000000000000
+      internalID: 1567735839002980368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Perseus_BR_NB_NS_4
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 979
+        width: 100
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 15, y: -22}
+        - {x: 50, y: -22}
+        - {x: 49, y: -19}
+        - {x: 48, y: -6}
+        - {x: 46, y: 7}
+        - {x: 43, y: 19}
+        - {x: 32, y: 40}
+        - {x: 24, y: 45}
+        - {x: 18, y: 48}
+        - {x: 13, y: 47}
+        - {x: 14, y: 42}
+        - {x: 6, y: 38}
+        - {x: 7, y: 36}
+        - {x: 20, y: 33}
+        - {x: 24, y: 31}
+        - {x: 19, y: 32}
+        - {x: 14, y: 34}
+        - {x: 3, y: 36}
+        - {x: -14, y: 34}
+        - {x: -24, y: 30}
+        - {x: -30, y: 24}
+        - {x: -37, y: 9}
+        - {x: -43, y: -5}
+        - {x: -45, y: -12}
+        - {x: -50, y: -41}
+        - {x: -50, y: -48}
+        - {x: -44, y: -48}
+        - {x: -30, y: -38}
+        - {x: -8, y: -28}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9db72fe18c0f8c950800000000000000
+      internalID: 6469685607021050841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Perseus_BR_NB_NS_6
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 945
+        width: 223
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -6.5, y: 11}
+        - {x: -15.5, y: 13}
+        - {x: -20.5, y: 24}
+        - {x: -25.5, y: 35}
+        - {x: -30.5, y: 42}
+        - {x: -37.5, y: 50}
+        - {x: -45.5, y: 59}
+        - {x: -53.5, y: 65}
+        - {x: -58.5, y: 68}
+        - {x: -89.5, y: 68}
+        - {x: -98.5, y: 67}
+        - {x: -109.5, y: 65}
+        - {x: -111.5, y: 62}
+        - {x: -111.5, y: 59}
+        - {x: -108.5, y: 58}
+        - {x: -105.5, y: 56}
+        - {x: -101.5, y: 51}
+        - {x: -95.5, y: 41}
+        - {x: -89.5, y: 27}
+        - {x: -87.5, y: 16}
+        - {x: -86.5, y: 4}
+        - {x: -84.5, y: -8}
+        - {x: -77.5, y: -10}
+        - {x: -58.5, y: -19}
+        - {x: -40.5, y: -31}
+        - {x: -22.5, y: -49}
+        - {x: -7.5, y: -67}
+        - {x: -0.5, y: -63}
+        - {x: 2.5, y: -61}
+        - {x: 21.5, y: -59}
+        - {x: 26.5, y: -48}
+        - {x: 26.5, y: 11}
+        - {x: 10.5, y: 11}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be1f218b4bc6c1f90800000000000000
+      internalID: -6981585798892949013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Perseus_BR_NB_NS_7
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 617
+        width: 280
+        height: 386
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -19, y: -180}
+        - {x: -13, y: -178}
+        - {x: -9, y: -171}
+        - {x: -7, y: -166}
+        - {x: 10, y: -162}
+        - {x: 28, y: -154}
+        - {x: 50, y: -139}
+        - {x: 82, y: -99}
+        - {x: 94, y: -75}
+        - {x: 104, y: -47}
+        - {x: 110, y: -21}
+        - {x: 121, y: -22}
+        - {x: 126, y: -21}
+        - {x: 134, y: -26}
+        - {x: 137, y: 21}
+        - {x: 135, y: 69}
+        - {x: 117, y: 121}
+        - {x: 98, y: 153}
+        - {x: 72, y: 177}
+        - {x: 46, y: 190}
+        - {x: 25, y: 193}
+        - {x: -9, y: 193}
+        - {x: -24, y: 190}
+        - {x: -58, y: 170}
+        - {x: -77, y: 156}
+        - {x: -118, y: 99}
+        - {x: -140, y: 25}
+        - {x: -140, y: -52}
+        - {x: -134, y: -95}
+        - {x: -117, y: -140}
+        - {x: -86, y: -178}
+        - {x: -45, y: -193}
+        - {x: -38, y: -193}
+        - {x: -34, y: -190}
+        - {x: -25, y: -189}
+        - {x: -20, y: -186}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5e8cd8f98bef18f0800000000000000
+      internalID: -567476050207142309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Perseus_BR_NB_NS_8
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 614
+        width: 166
+        height: 174
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 82, y: 79}
+        - {x: 83, y: 83}
+        - {x: 80, y: 87}
+        - {x: 62, y: 87}
+        - {x: 61, y: 81}
+        - {x: 59, y: 73}
+        - {x: 52, y: 49}
+        - {x: 48, y: 33}
+        - {x: 46, y: 32}
+        - {x: 35, y: 10}
+        - {x: 31, y: 4}
+        - {x: 30, y: 1}
+        - {x: 24, y: -6}
+        - {x: 21, y: -8}
+        - {x: 13, y: -19}
+        - {x: -2, y: -33}
+        - {x: -30, y: -51}
+        - {x: -48, y: -56}
+        - {x: -56, y: -58}
+        - {x: -57, y: -64}
+        - {x: -60, y: -69}
+        - {x: -65, y: -71}
+        - {x: -68, y: -77}
+        - {x: -74, y: -81}
+        - {x: -83, y: -81}
+        - {x: -83, y: -87}
+        - {x: -59, y: -87}
+        - {x: -58, y: -82}
+        - {x: -52, y: -80}
+        - {x: -49, y: -75}
+        - {x: -43, y: -70}
+        - {x: -22, y: -61}
+        - {x: -10, y: -54}
+        - {x: 8, y: -44}
+        - {x: 40, y: -9}
+        - {x: 42, y: -4}
+        - {x: 57, y: 19}
+        - {x: 65, y: 39}
+        - {x: 66, y: 45}
+        - {x: 70, y: 65}
+        - {x: 73, y: 76}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e2a9dc05619a0280800000000000000
+      internalID: -9076282235818499354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Perseus_BR_NB_NS_9
+      rect:
+        serializedVersion: 2
+        x: 514
+        y: 496
+        width: 267
+        height: 270
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 104.5, y: -32}
+        - {x: 71.5, y: 12}
+        - {x: 24.5, y: 56}
+        - {x: -16.5, y: 90}
+        - {x: -30.5, y: 98}
+        - {x: -81.5, y: 133}
+        - {x: -91.5, y: 129}
+        - {x: -98.5, y: 126}
+        - {x: -111.5, y: 123}
+        - {x: -133.5, y: 120}
+        - {x: -133.5, y: 115.5}
+        - {x: -97.5, y: 5.5}
+        - {x: -95.5, y: -11.5}
+        - {x: -87.5, y: -45.5}
+        - {x: -66.5, y: -102}
+        - {x: -61.5, y: -107}
+        - {x: -60.5, y: -113}
+        - {x: -50.5, y: -117}
+        - {x: -42.5, y: -114}
+        - {x: -16.5, y: -100}
+        - {x: -8.5, y: -96}
+        - {x: -1.5, y: -94}
+        - {x: 6.5, y: -87}
+        - {x: 17.5, y: -76}
+        - {x: 17.5, y: -75}
+        - {x: 5.5, y: -73}
+        - {x: -3.5, y: -70}
+        - {x: -1.5, y: -67}
+        - {x: -3.5, y: -62}
+        - {x: -10.5, y: -48}
+        - {x: -17.5, y: -34}
+        - {x: -4.5, y: -26}
+        - {x: 1.5, y: -35}
+        - {x: 16.5, y: -56}
+        - {x: 23.5, y: -55}
+        - {x: 42.5, y: -43}
+        - {x: 53.5, y: -39}
+        - {x: 71.5, y: -32}
+        - {x: 83.5, y: -30}
+        - {x: 90.5, y: -30}
+        - {x: 104.5, y: -37}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5da3696006fb5df0800000000000000
+      internalID: -190288077604541090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Perseus_BR_NB_NS_11
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 233
+        width: 85
+        height: 244
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ed04005868f09f70800000000000000
+      internalID: 9192119966365912547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Perseus_BR_NB_NS_13
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 413
+        width: 126
+        height: 190
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 55, y: 88}
+        - {x: 47, y: 92}
+        - {x: 44, y: 93}
+        - {x: 32, y: 93}
+        - {x: 12, y: 86}
+        - {x: -3, y: 80}
+        - {x: -16, y: 72}
+        - {x: -25, y: 67}
+        - {x: -30, y: 68}
+        - {x: -40, y: 82}
+        - {x: -48, y: 95}
+        - {x: -53, y: 95}
+        - {x: -63, y: 90}
+        - {x: -57, y: 77}
+        - {x: -47, y: 58}
+        - {x: -45, y: 56}
+        - {x: -49, y: 54}
+        - {x: -48, y: 52}
+        - {x: -40, y: 50}
+        - {x: -32, y: 49}
+        - {x: -27, y: 48}
+        - {x: -30, y: 45}
+        - {x: -40, y: 35}
+        - {x: -44, y: 30}
+        - {x: -49, y: 22}
+        - {x: -52, y: 17}
+        - {x: -56, y: 10}
+        - {x: -61, y: -1}
+        - {x: -61, y: -8}
+        - {x: -62, y: -32}
+        - {x: -57, y: -70}
+        - {x: -50, y: -79}
+        - {x: -44, y: -86}
+        - {x: -12, y: -85}
+        - {x: 7, y: -40}
+        - {x: 23, y: -11}
+        - {x: 46, y: 12}
+        - {x: 63, y: 28}
+        - {x: 63, y: 60}
+        - {x: 61, y: 86}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d28c3789ca4efba0800000000000000
+      internalID: -6053318619721596202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Perseus_BR_NB_NS_18
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 71
+        width: 266
+        height: 189
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 95, y: 33.5}
+        - {x: 92, y: 38.5}
+        - {x: 68, y: 41.5}
+        - {x: 58, y: 42.5}
+        - {x: 53, y: 44.5}
+        - {x: 55, y: 46.5}
+        - {x: 61, y: 46.5}
+        - {x: 68, y: 48.5}
+        - {x: 86, y: 50.5}
+        - {x: 104, y: 55.5}
+        - {x: 100, y: 60.5}
+        - {x: 90, y: 59.5}
+        - {x: 93, y: 61.5}
+        - {x: 97, y: 61.5}
+        - {x: 99, y: 63.5}
+        - {x: 104, y: 64.5}
+        - {x: 110, y: 65.5}
+        - {x: 114, y: 68.5}
+        - {x: 118, y: 71.5}
+        - {x: 117, y: 75.5}
+        - {x: 103, y: 75.5}
+        - {x: 110, y: 78.5}
+        - {x: 120, y: 82.5}
+        - {x: 127, y: 87.5}
+        - {x: 126, y: 90.5}
+        - {x: 112, y: 89.5}
+        - {x: 93, y: 86.5}
+        - {x: 83, y: 77.5}
+        - {x: 87, y: 83.5}
+        - {x: 85, y: 85.5}
+        - {x: 75, y: 82.5}
+        - {x: 63, y: 75.5}
+        - {x: 44, y: 64.5}
+        - {x: 24, y: 40.5}
+        - {x: 22, y: 49.5}
+        - {x: 16, y: 57.5}
+        - {x: 8, y: 64.5}
+        - {x: -8, y: 64.5}
+        - {x: -22, y: 56.5}
+        - {x: -25, y: 39.5}
+        - {x: -22, y: 34.5}
+        - {x: -24, y: 32.5}
+        - {x: -40, y: 49.5}
+        - {x: -57, y: 61.5}
+        - {x: -76, y: 70.5}
+        - {x: -94, y: 71.5}
+        - {x: -133, y: 71.5}
+        - {x: -130, y: 65.5}
+        - {x: -107, y: 58.5}
+        - {x: -120, y: 57.5}
+        - {x: -122, y: 51.5}
+        - {x: -97, y: 44.5}
+        - {x: -103, y: 43.5}
+        - {x: -103, y: 39.5}
+        - {x: -95, y: 36.5}
+        - {x: -56, y: 34.5}
+        - {x: -54, y: 33.5}
+        - {x: -58, y: 31.5}
+        - {x: -77, y: 26.5}
+        - {x: -91, y: 22.5}
+        - {x: -95, y: 17.5}
+        - {x: -89, y: 14.5}
+        - {x: -77, y: 15.5}
+        - {x: -40, y: 22.5}
+        - {x: -45, y: 19.5}
+        - {x: -60, y: 10.5}
+        - {x: -64, y: 5.5}
+        - {x: -62, y: 2.5}
+        - {x: -56, y: 2.5}
+        - {x: -29, y: 12.5}
+        - {x: -35, y: -14.5}
+        - {x: -35, y: -57.5}
+        - {x: -33, y: -73.5}
+        - {x: -31, y: -84.5}
+        - {x: -26, y: -86.5}
+        - {x: -20, y: -90.5}
+        - {x: -12, y: -93.5}
+        - {x: 8, y: -94.5}
+        - {x: 28, y: -93.5}
+        - {x: 38, y: -88.5}
+        - {x: 51, y: -75.5}
+        - {x: 49, y: -70.5}
+        - {x: 49, y: -59.5}
+        - {x: 48, y: -40.5}
+        - {x: 44, y: -21.5}
+        - {x: 40, y: 2.5}
+        - {x: 32, y: 21.5}
+        - {x: 45, y: 18.5}
+        - {x: 66, y: 14.5}
+        - {x: 68, y: 19.5}
+        - {x: 61, y: 24.5}
+        - {x: 43, y: 32.5}
+        - {x: 91, y: 28.5}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f865b957bc9bc0c0800000000000000
+      internalID: -4554374286857115405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
