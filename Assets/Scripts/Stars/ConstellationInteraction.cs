@@ -70,6 +70,10 @@ public class ConstellationInteraction : MonoBehaviour
         }
 
         aud = GetComponent<AudioSource>();
+        foreach(GameObject displayName in displayNameList)
+        {
+            displayNames.Add(displayName.name, displayName);
+        }
     }
 
     private void DisableLate()
@@ -103,7 +107,7 @@ public class ConstellationInteraction : MonoBehaviour
             {
                 if (isRight)
                 {
-                    if(name != rightSelected)
+                    if(name != rightSelected && name != currentSelected)
                     {
                         if (leftSelected != "" || rightSelected != "")
                         {
@@ -118,7 +122,7 @@ public class ConstellationInteraction : MonoBehaviour
                 }
                 else
                 {
-                    if (name != leftSelected)
+                    if (name != leftSelected && name != currentSelected)
                     {
                         if (leftSelected != "" || rightSelected != "")
                         {
@@ -152,53 +156,57 @@ public class ConstellationInteraction : MonoBehaviour
                 {
                     currentSelected = leftSelected;
 
-                    ChangeStarSize(hoverStarSizeMod);
-                    ChangeConstellationColor(hoverColor);
+                    SetNewHover();
                 }
                 else
                 {
                     currentSelected = rightSelected;
 
-                    ChangeStarSize(hoverStarSizeMod);
-                    ChangeConstellationColor(hoverColor);
+                    SetNewHover();
                 }
             }
         }
         else if (!currentSelected.Equals(""))
         {
+            string current = "";
+
             if (isRight)
             {
+                current = rightSelected;
                 rightSelected = "";
             }
             else
             {
+                current = leftSelected;
                 leftSelected = "";
             }
 
-            ResetCurrent();
-            if (rightSelected == "" && leftSelected == "")
+            if(current != "")
             {
-                currentSelected = "";
-            }
-            else if (isRight)
-            {
-                currentSelected = leftSelected;
+                ResetCurrent();
+                if (rightSelected == "" && leftSelected == "")
+                {
+                    currentSelected = "";
+                }
+                else if (isRight)
+                {
+                    currentSelected = leftSelected;
 
-                ChangeStarSize(hoverStarSizeMod);
-                ChangeConstellationColor(hoverColor);
-            }
-            else
-            {
-                currentSelected = rightSelected;
+                    SetNewHover();
+                }
+                else
+                {
+                    currentSelected = rightSelected;
 
-                ChangeStarSize(hoverStarSizeMod);
-                ChangeConstellationColor(hoverColor);
+                    SetNewHover();
+                }
             }
         }
     }
 
     private void SetNewHover()
     {
+        ChangeDisplayName(true);
         ChangeStarSize(hoverStarSizeMod);
         ChangeConstellationColor(hoverColor);
 
@@ -207,6 +215,7 @@ public class ConstellationInteraction : MonoBehaviour
 
     private void ResetCurrent()
     {
+        ChangeDisplayName(false);
         ChangeConstellationColor(defaultColor);
         ChangeStarSize(1 / hoverStarSizeMod);
     }
@@ -259,6 +268,17 @@ public class ConstellationInteraction : MonoBehaviour
             }
 
             ps.SetParticles(particles);
+        }
+    }
+
+    [SerializeField]
+    private List<GameObject> displayNameList;
+    private static Dictionary<string, GameObject> displayNames = new Dictionary<string, GameObject>();
+    private void ChangeDisplayName(bool on)
+    {
+        if(displayNames.TryGetValue(currentSelected, out GameObject displayName))
+        {
+            displayName.SetActive(on);
         }
     }
 

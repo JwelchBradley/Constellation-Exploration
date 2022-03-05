@@ -55,7 +55,7 @@ public class DisableAfterShortTime : MonoBehaviour
             while (sr.color != Color.clear)
             {
                 sr.color = Color.Lerp(sr.color, Color.clear, Time.fixedDeltaTime * fadeOutSpeed);
-                text.color = Color.Lerp(text.color, Color.clear, Time.fixedDeltaTime * fadeOutSpeed);
+                //text.color = Color.Lerp(text.color, Color.clear, Time.fixedDeltaTime * fadeOutSpeed);
                 yield return new WaitForFixedUpdate();
             }
         }
