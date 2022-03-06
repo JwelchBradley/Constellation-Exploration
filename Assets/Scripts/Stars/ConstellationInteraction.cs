@@ -297,6 +297,7 @@ public class ConstellationInteraction : MonoBehaviour
 
             aud.PlayOneShot(clickSound);
             ChangeOtherLines(false);
+            ChangeDisplayName(false);
         }
     }
 
