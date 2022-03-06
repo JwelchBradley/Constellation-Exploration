@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using static UnityEngine.ParticleSystem;
 
 public class ConnectTheDotsExperience : Experience
 {
@@ -16,24 +17,14 @@ public class ConnectTheDotsExperience : Experience
     public int totalPoints;
     public int currentPoints;
 
-
-    public List<int> p0;
-    public List<int> p1;
-    public List<int> p2;
-    public List<int> p3;
-    public List<int> p4;
-    public List<int> p5;
-    public List<int> p6;
-    public List<int> p7;
-    public List<int> p8;
-    public List<int> p9;
-    public List<int> p10;
-
     [SerializeField]
     public Dictionary<int, List<int>> pointer = new Dictionary<int, List<int>>();
 
     private RaycastedDots dot;
 
+    public Color lerped;
+    public float value = 0;
+    public float time;
     protected override void Awake()
     {
         base.Awake();
@@ -96,59 +87,6 @@ public class ConnectTheDotsExperience : Experience
         lrs[0].positionCount = 1;
         AddPoint();
 
-        /*
-        StarCreator.ConstellationParticleSystems.TryGetValue("Perseus", out ParticleSystem h);
-        ParticleSystem.Particle[] particle = new ParticleSystem.Particle[h.particleCount];
-        int numOfPart = h.GetParticles(particle);
-        for (int a = 0; a < numOfPart; a++)
-        {
-            particle[a].size = 5f;
-            particle[a].startColor = Color.red;
-        }*/
-
-    }
-    private void Update()
-    {
-        for (int a = 0; a < 10; a++)
-        {
-            pointer.TryGetValue(a, out List<int> nums);
-            switch (a)
-            {
-                case (0):
-                    p0 = nums;
-                    break;
-                case (1):
-                    p1 = nums;
-                    break;
-                case (2):
-                    p2 = nums;
-                    break;
-                case (3):
-                    p3 = nums;
-                    break;
-                case (4):
-                    p4 = nums;
-                    break;
-                case (5):
-                    p5 = nums;
-                    break;
-                case (6):
-                    p6 = nums;
-                    break;
-                case (7):
-                    p7 = nums;
-                    break;
-                case (8):
-                    p8 = nums;
-                    break;
-                case (9):
-                    p9 = nums;
-                    break;
-                case (10):
-                    p10 = nums;
-                    break;
-            }
-        }
     }
 
     public List<Vector3> NextPoint()
@@ -156,17 +94,22 @@ public class ConnectTheDotsExperience : Experience
         StarCreator.Constellations.TryGetValue(name, out List<LineRenderer> lrs);
         pointer.TryGetValue(currentPoints, out List<int> nums);
 
-        //print(nums[0] + " number ");
+        //Color Shit
+        value = Mathf.PingPong(Time.time, 1);
+        lerped = Color.Lerp(Color.white, Color.red, value);
+        StarCreator.ConstellationParticleSystems.TryGetValue(name, out ParticleSystem h);
+        Particle[] particles = new Particle[h.main.maxParticles];
+        h.GetParticles(particles);
+
         List<Vector3> nextPoints = new List<Vector3>();
         foreach (int num in nums)
         {
             nextPoints.Add(points[num]);
-            print(num);
+            particles[num].startColor = lerped;
         }
-
+        h.SetParticles(particles);
         return nextPoints;
     }
-
 
     public bool AddPoint()
     {
@@ -174,7 +117,7 @@ public class ConnectTheDotsExperience : Experience
         lrs[0].positionCount++;
         totalPoints++;
         lrs[0].SetPosition(totalPoints, lrs[0].GetPosition(totalPoints-1));
-        //print(totalPoints + " " + lrs[0].GetPosition(totalPoints));
+
         List<bool> h = new List<bool>();
         for (int a = 0; a < pointer.Count; a++)
         {
@@ -195,6 +138,22 @@ public class ConnectTheDotsExperience : Experience
         return true;
     }
 
+    public void ResetColor()
+    {
+        pointer.TryGetValue(currentPoints, out List<int> nums);
+
+        //Particle shit
+        StarCreator.ConstellationParticleSystems.TryGetValue(name, out ParticleSystem k);
+        Particle[] particles = new Particle[k.main.maxParticles];
+        k.GetParticles(particles);
+
+        foreach (int num in nums)
+        {
+            particles[num].startColor = Color.white;
+        }
+        k.SetParticles(particles);
+    }
+
     public bool SetPoint(Vector3 pos, bool hit)
     {
         StarCreator.Constellations.TryGetValue(name, out List<LineRenderer> lrs);
@@ -209,16 +168,11 @@ public class ConnectTheDotsExperience : Experience
         if (nextPoints.Contains(pos))
         {
 
-            //if (pos == points[0] && currentPoints != 0 || pos != points[0] && currentPoints == 0)
-            //{
-            //print(true);
-
             aud.PlayOneShot(connectDotSound);
 
             pointer.TryGetValue(currentPoints, out List<int> nums);
 
-            print(nums[0] + " number ");
-            //List<Vector3> nextPoints = new List<Vector3>();
+
             foreach (int num in nums)
             {
                 if(points[num] == pos)
@@ -255,8 +209,9 @@ public class ConnectTheDotsExperience : Experience
                         pointer.TryGetValue(7, out List<int> rem);
                         rem.Remove(2);
                     }
-                    //print(num + " HOW ARE YOU ");
+
                     pointer.TryGetValue(num, out List<int> numer);
+                    ResetColor();
                     numer.Remove(currentPoints);
                     currentPoints = num;
                     
