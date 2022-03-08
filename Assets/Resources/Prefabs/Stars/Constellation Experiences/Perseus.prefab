@@ -288,7 +288,7 @@ MonoBehaviour:
   lerped: {r: 0, g: 0, b: 0, a: 0}
   value: 0
   time: 0
-  aimedColor: {r: 0.43431714, g: 0.003114995, b: 0.6603774, a: 1}
+  aimedColor: {r: 1, g: 0.78039217, b: 0.5568628, a: 1}
 --- !u!82 &4524840091355503136
 AudioSource:
   m_ObjectHideFlags: 0
