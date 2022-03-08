@@ -17,6 +17,8 @@ public class ConnectTheDotsExperience : Experience
     public int totalPoints;
     public int currentPoints;
 
+    public static bool audioFinished = false;
+
     [SerializeField]
     public Dictionary<int, List<int>> pointer = new Dictionary<int, List<int>>();
 
@@ -25,14 +27,15 @@ public class ConnectTheDotsExperience : Experience
     public Color lerped;
     public float value = 0;
     public float time;
+
+    public Color aimedColor;
+
     protected override void Awake()
     {
         base.Awake();
+        audioFinished = false;
         name = this.gameObject.name.Substring(0, this.gameObject.name.IndexOf('('));
-        dot = GameObject.FindObjectOfType<RaycastedDots>();
-        dot.enabled = true;
         thisScript = this;
-        StarCreator.Constellations.TryGetValue(name, out List<LineRenderer> lrs);
 
         switch (name)
         {
@@ -67,25 +70,7 @@ public class ConnectTheDotsExperience : Experience
                 break;
         }
 
-
-        for (int lrsNum = 0; lrsNum < lrs.Count; lrsNum++)
-        {
-            for (int a = 0; a < lrs[lrsNum].positionCount; a++)
-            {
-                if (points.Contains(lrs[lrsNum].GetPosition(a)))
-                {
-
-                }
-                else
-                {
-                    points.Add(lrs[lrsNum].GetPosition(a));
-                }
-            }
-            lrs[lrsNum].positionCount = 1;
-        }
-
-        lrs[0].positionCount = 1;
-        AddPoint();
+        StartCoroutine("wait");
 
     }
 
@@ -96,9 +81,10 @@ public class ConnectTheDotsExperience : Experience
 
         //Color Shit
         value = Mathf.PingPong(Time.time, 1);
-        lerped = Color.Lerp(Color.white, Color.red, value);
+        lerped = Color.Lerp(Color.white, aimedColor, value);
         StarCreator.ConstellationParticleSystems.TryGetValue(name, out ParticleSystem h);
         Particle[] particles = new Particle[h.main.maxParticles];
+
         h.GetParticles(particles);
 
         List<Vector3> nextPoints = new List<Vector3>();
@@ -259,4 +245,37 @@ public class ConnectTheDotsExperience : Experience
         return false;
     }
 
+    public IEnumerator wait()
+    {
+        while (!audioFinished)
+        {
+            yield return null;
+        }
+
+        StarCreator.Constellations.TryGetValue(name, out List<LineRenderer> lrs);
+
+        for (int lrsNum = 0; lrsNum < lrs.Count; lrsNum++)
+        {
+            for (int a = 0; a < lrs[lrsNum].positionCount; a++)
+            {
+                if (points.Contains(lrs[lrsNum].GetPosition(a)))
+                {
+
+                }
+                else
+                {
+                    points.Add(lrs[lrsNum].GetPosition(a));
+                }
+            }
+            lrs[lrsNum].positionCount = 1;
+        }
+
+        lrs[0].positionCount = 1;
+
+        dot = GameObject.FindObjectOfType<RaycastedDots>();
+        dot.enabled = true;
+
+        AddPoint();
+
+    }
 }

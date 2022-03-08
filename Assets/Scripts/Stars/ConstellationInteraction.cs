@@ -308,6 +308,7 @@ public class ConstellationInteraction : MonoBehaviour
         {
             while (ctde.HasNotEnded())
             {
+                ConnectTheDotsExperience.audioFinished = true;
                 yield return new WaitForFixedUpdate();
             }
         }
