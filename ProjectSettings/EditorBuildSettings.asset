@@ -4,7 +4,10 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Star Test.unity
+    guid: 7d6cbfb34116b244c91cdc2e47fdb5af
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 38c27e19d019ea44c89e2b72eac8a4b5, type: 2}
     Unity.XR.WindowsMR.Settings: {fileID: 11400000, guid: b9beac202b525e94380eab94ff2a5232, type: 2}
