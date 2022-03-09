@@ -28,60 +28,34 @@ public class RaycastedDots : MonoBehaviour
         print(starCreator.gameObject.name);
     }
 
-    // Update is called once per frame
-    void Update()
+    private void Update()
     {
-
-        Debug.DrawLine(transform.position, subtract, Color.blue);
-
-        /*if (Input.GetKeyDown(KeyCode.Mouse0) || useable)
+        if (!expirence)
         {
-
-            if (!useable && Physics.Raycast(transform.position, transform.forward.normalized, out dotHit, Mathf.Infinity, dotsLayer) &&
-                ConnectTheDotsExperience.thisScript.points.IndexOf(dotHit.collider.gameObject.transform.localPosition) == 0)
+            if (Physics.Raycast(transform.position, transform.forward.normalized, out dotHit, Mathf.Infinity, dotsLayer))
             {
+                point = dotHit.collider.gameObject.transform.localPosition;
+                Debug.DrawLine(this.gameObject.transform.position, dotHit.point, Color.red);
+
                 expirence = ConnectTheDotsExperience.thisScript.SetPoint(dotHit.collider.gameObject.transform.localPosition, true);
-                useable = true;
             }
-            else if(useable)
-            {*/
-                if (!expirence)
-                {
-                    if (Physics.Raycast(transform.position, transform.forward.normalized, out dotHit, Mathf.Infinity, dotsLayer))
-                    {
-                        point = dotHit.collider.gameObject.transform.localPosition;
-                        Debug.DrawLine(this.gameObject.transform.position, dotHit.point, Color.red);
-
-                        //print(dotHit.collider.gameObject.transform.localPosition);
-                        //print(ConnectTheDotsExperience.thisScript.points.IndexOf(dotHit.collider.gameObject.transform.localPosition));
-
-                        expirence = ConnectTheDotsExperience.thisScript.SetPoint(dotHit.collider.gameObject.transform.localPosition, true);
-                    }
-                    else
-                    {
-                        point = transform.position + transform.forward * 1000;
-                        expirence = ConnectTheDotsExperience.thisScript.SetPoint(point, false);
-
-                        //print(point);
-                    }
-
-                }
-                
-                else
-                {
-                    expirence = false;
-                    ConnectTheDotsExperience.thisScript.RemoveFinalPoint();
-                    enabled = false;
-                    useable = false;
-                }
-                /*
+            else
+            {
+                point = transform.position + transform.forward * 1000;
+                expirence = ConnectTheDotsExperience.thisScript.SetPoint(point, false);
             }
+
         }
-                */
-        //h.GetParticles[0].
-        
 
-        //positions of the line inbetween the sphere
-        //transform.forward.normalized * 1000 + transform.position
+        else
+        {
+            expirence = false;
+            ConnectTheDotsExperience.thisScript.RemoveFinalPoint();
+            enabled = false;
+            useable = false;
+        }
     }
+
+
+    
 }

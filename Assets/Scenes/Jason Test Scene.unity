@@ -368,18 +368,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 922b2c605678e124b9c00ec3345bd2c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  test: 0
-  timer: 0
-  lrst: []
-  points: []
-  refrence: []
-  line: {fileID: 0}
-  tests: {x: 0, y: 0, z: 0}
-  DistanceToPoint: 0
-  currentLine: 1
-  currentLineRenderer: 0
-  h: {r: 0, g: 0, b: 0, a: 0}
-  oldColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!4 &32420590
 Transform:
   m_ObjectHideFlags: 0
@@ -507,6 +495,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isText: 1
+  shouldMove: 1
+  shouldWait: 0
 --- !u!114 &60813361
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -749,6 +739,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isText: 1
+  shouldMove: 1
+  shouldWait: 0
 --- !u!114 &150408786
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1044,8 +1036,28 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7380235780188952213, guid: 644385b02e84c52429ba3e8b9c6523f5, type: 3}
+      propertyPath: stopAction
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7380235780188952213, guid: 644385b02e84c52429ba3e8b9c6523f5, type: 3}
       propertyPath: InitialModule.maxNumParticles
       value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 7380235780188952213, guid: 644385b02e84c52429ba3e8b9c6523f5, type: 3}
+      propertyPath: EmissionModule.rateOverTime.scalar
+      value: 100000
+      objectReference: {fileID: 0}
+    - target: {fileID: 7380235780188952213, guid: 644385b02e84c52429ba3e8b9c6523f5, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7380235780188952213, guid: 644385b02e84c52429ba3e8b9c6523f5, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7380235780188952213, guid: 644385b02e84c52429ba3e8b9c6523f5, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.r
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 7380235780188952215, guid: 644385b02e84c52429ba3e8b9c6523f5, type: 3}
@@ -1583,6 +1595,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isText: 1
+  shouldMove: 1
+  shouldWait: 0
 --- !u!114 &475639934
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1927,6 +1941,7 @@ MonoBehaviour:
   constellationLayer:
     serializedVersion: 2
     m_Bits: 8
+  isRight: 1
   hoverColor: {r: 2.1185474, g: 2.1185474, b: 2.1185474, a: 1}
   defaultColor: {r: 1, g: 1, b: 1, a: 0.05882353}
   alreadyClickedColor: {r: 1, g: 1, b: 1, a: 0.39215687}
@@ -1934,6 +1949,8 @@ MonoBehaviour:
   hoverSound: {fileID: 8300000, guid: 4c17cd1f82b286b4e9052150296f88f1, type: 3}
   hoverBufferTime: 0.1
   clickSound: {fileID: 8300000, guid: 6a77e7716a2bfc94a9f893fd20c3a0a5, type: 3}
+  notFinished: []
+  displayNameList: []
 --- !u!114 &604331367
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2009,6 +2026,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isText: 1
+  shouldMove: 1
+  shouldWait: 0
 --- !u!114 &652269790
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2236,6 +2255,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hand: {fileID: 2047177328}
   ci: {fileID: 604331366}
+  isRight: 1
 --- !u!114 &699459138
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2749,6 +2769,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isText: 1
+  shouldMove: 1
+  shouldWait: 0
 --- !u!114 &712783886
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3144,6 +3166,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isText: 1
+  shouldMove: 1
+  shouldWait: 0
 --- !u!114 &808552790
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4443,6 +4467,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isText: 1
+  shouldMove: 1
+  shouldWait: 0
 --- !u!114 &1008983221
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4627,6 +4653,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isText: 1
+  shouldMove: 1
+  shouldWait: 0
 --- !u!114 &1013525178
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4861,7 +4889,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7380235780188952213, guid: 644385b02e84c52429ba3e8b9c6523f5, type: 3}
       propertyPath: InitialModule.maxNumParticles
-      value: 9
+      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 7380235780188952215, guid: 644385b02e84c52429ba3e8b9c6523f5, type: 3}
@@ -5046,6 +5074,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isText: 1
+  shouldMove: 1
+  shouldWait: 0
 --- !u!114 &1071675492
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5724,6 +5754,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isText: 1
+  shouldMove: 1
+  shouldWait: 0
 --- !u!114 &1168050362
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5940,6 +5972,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hand: {fileID: 1625455047}
   ci: {fileID: 1932662879}
+  isRight: 1
 --- !u!114 &1304691918
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6745,6 +6778,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isText: 1
+  shouldMove: 1
+  shouldWait: 0
 --- !u!114 &1381125496
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6977,6 +7012,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isText: 1
+  shouldMove: 1
+  shouldWait: 0
 --- !u!114 &1390602560
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7205,6 +7242,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isText: 1
+  shouldMove: 1
+  shouldWait: 0
 --- !u!114 &1425148675
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7998,6 +8037,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isText: 1
+  shouldMove: 1
+  shouldWait: 0
 --- !u!114 &1508400347
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8372,6 +8413,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isText: 1
+  shouldMove: 1
+  shouldWait: 0
 --- !u!114 &1618951038
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8696,6 +8739,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isText: 1
+  shouldMove: 1
+  shouldWait: 0
 --- !u!114 &1683200028
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8962,6 +9007,7 @@ MonoBehaviour:
   constellationLayer:
     serializedVersion: 2
     m_Bits: 8
+  isRight: 1
   hoverColor: {r: 2.1185474, g: 2.1185474, b: 2.1185474, a: 1}
   defaultColor: {r: 1, g: 1, b: 1, a: 0.05882353}
   alreadyClickedColor: {r: 1, g: 1, b: 1, a: 0.39215687}
@@ -8969,6 +9015,8 @@ MonoBehaviour:
   hoverSound: {fileID: 8300000, guid: 4c17cd1f82b286b4e9052150296f88f1, type: 3}
   hoverBufferTime: 0.1
   clickSound: {fileID: 8300000, guid: 6a77e7716a2bfc94a9f893fd20c3a0a5, type: 3}
+  notFinished: []
+  displayNameList: []
 --- !u!114 &1699302540
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9468,6 +9516,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isText: 1
+  shouldMove: 1
+  shouldWait: 0
 --- !u!114 &1858632776
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10119,6 +10169,7 @@ MonoBehaviour:
   constellationLayer:
     serializedVersion: 2
     m_Bits: 8
+  isRight: 1
   hoverColor: {r: 2.1185474, g: 2.1185474, b: 2.1185474, a: 1}
   defaultColor: {r: 1, g: 1, b: 1, a: 0.05882353}
   alreadyClickedColor: {r: 1, g: 1, b: 1, a: 0.39215687}
@@ -10126,6 +10177,8 @@ MonoBehaviour:
   hoverSound: {fileID: 8300000, guid: 4c17cd1f82b286b4e9052150296f88f1, type: 3}
   hoverBufferTime: 0.1
   clickSound: {fileID: 8300000, guid: 6a77e7716a2bfc94a9f893fd20c3a0a5, type: 3}
+  notFinished: []
+  displayNameList: []
 --- !u!114 &1932662880
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10948,6 +11001,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isText: 1
+  shouldMove: 1
+  shouldWait: 0
 --- !u!114 &2111991072
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11176,6 +11231,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isText: 1
+  shouldMove: 1
+  shouldWait: 0
 --- !u!114 &2133398279
 MonoBehaviour:
   m_ObjectHideFlags: 0
