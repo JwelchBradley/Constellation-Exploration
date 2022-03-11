@@ -152,7 +152,6 @@ public class ConnectTheDotsExperience : TransitionExperience
         }
         lrs[0].SetPosition(totalPoints, pos);
 
-        print("SettingPoint");
         List<Vector3> nextPoints = NextPoint();
         if (nextPoints.Contains(pos))
         {
@@ -235,7 +234,7 @@ public class ConnectTheDotsExperience : TransitionExperience
     {
         StarCreator.Constellations.TryGetValue(name, out List<LineRenderer> lrs);
         lrs[0].positionCount--;
-        Destroy(gameObject);
+        Destroy(gameObject, 1f);
     }
 
     public bool IsEmpty()

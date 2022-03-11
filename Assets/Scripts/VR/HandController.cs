@@ -21,6 +21,9 @@ public class HandController : MonoBehaviour
     [Tooltip("The hand that this script controls")]
     private Hand hand;
 
+    [HideInInspector]
+    public bool isPressed = false;
+
     #region Constellation Interactions
     //static List<ConstellationInteraction> cis = new List<ConstellationInteraction>();
 
@@ -32,6 +35,9 @@ public class HandController : MonoBehaviour
 
     private static bool neitherEnabled = true;
     #endregion
+
+    [SerializeField]
+    DraggingPlacable dp;
 
     /// <summary>
     /// Initializes necessary components.
@@ -79,8 +85,22 @@ if (ci.enabled)
         {
             if (controller.activateAction.action.ReadValue<float>() == 1)
             {
-                ci.Interact(isRight);
-                ci.ButtonClick();
+                if (!isPressed)
+                {
+                    ci.Interact(isRight);
+                    ci.ButtonClick();
+
+                    if (dp.enabled)
+                    {
+                        dp.Attach();
+                    }
+                }
+
+                isPressed = true;
+            }
+            else
+            {
+                isPressed = false;
             }
         }
 

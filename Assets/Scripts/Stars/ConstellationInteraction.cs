@@ -35,7 +35,7 @@ public class ConstellationInteraction : MonoBehaviour
 
     public static GameObject activeExperience;
 
-    bool isGroup = false;
+    static bool isGroup = false;
     private static List<string> currentGroupNames = new List<string>();
 
     private void Awake()
@@ -374,6 +374,19 @@ public class ConstellationInteraction : MonoBehaviour
         ChangeConstellationColor(constellationData.AlreadyClickedColor);
         ChangeStarSizeOverrid(1 / constellationData.HoverStarSizeMod, currentSelected);
 
+        if (isGroup)
+        {
+
+                    foreach (string name in currentGroupNames)
+                    {
+                        if (name != currentSelected)
+                        {
+                            ChangeConstellationColor(constellationData.AlreadyClickedColor, name);
+                            ChangeStarSizeOverrid(1 / constellationData.HoverStarSizeMod, name);
+                        }
+                    }
+        }
+
         currentSelected = "";
         rightSelected = "";
         leftSelected = "";
@@ -406,8 +419,6 @@ public class ConstellationInteraction : MonoBehaviour
 
             ps.SetParticles(particles);
         }
-
-        Debug.Log(true);
     }
 
     [SerializeField]

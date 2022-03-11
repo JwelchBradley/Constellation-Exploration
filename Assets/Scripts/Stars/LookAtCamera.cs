@@ -14,6 +14,9 @@ public class LookAtCamera : MonoBehaviour
     private bool isText = true;
 
     [SerializeField]
+    private bool isPlaceable = false;
+
+    [SerializeField]
     private bool shouldMove = true;
 
     [SerializeField]
@@ -49,6 +52,18 @@ public class LookAtCamera : MonoBehaviour
         if (isText)
         {
             transform.rotation = camTransform.rotation;
-        }        
+        }
+        else if (isPlaceable)
+        {
+            transform.LookAt(camTransform.position);
+
+            //transform.position = (transform.position - camTransform.position).normalized * 1000;
+
+            
+            if (transform.position.y < 0)
+            {
+                transform.position = new Vector3(transform.position.x, 0, transform.position.z);
+            }
+        }
     }
 }

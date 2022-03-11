@@ -36,6 +36,11 @@ public class DisableAfterShortTime : MonoBehaviour
         sr = GetComponentsInChildren<SpriteRenderer>();
         text = GetComponentInChildren<TextMeshPro>();
 
+        if (hoverObj != null)
+        {
+            hoverObj.SetActive(false);
+        }
+
         if (positionLate)
         {
             StartCoroutine(RemoveIfExperienceStart());

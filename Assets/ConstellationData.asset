@@ -26,7 +26,6 @@ MonoBehaviour:
     - Cepheus
     toSpawn: StartToCass
   notFinished:
-  - {fileID: 4537466073525887582, guid: d7e218f7beb695243a29a743e2fb41c6, type: 3}
   - {fileID: 3926200320632625252, guid: 07da5c44c8b38c44cb8cad06dbfa00c3, type: 3}
   - {fileID: 3137050065914468757, guid: 363ed774d95ae824b9ebc4dc9f04fe65, type: 3}
   - {fileID: 6094203120648379775, guid: d09aa68d404751241ba1b919979d7f72, type: 3}
