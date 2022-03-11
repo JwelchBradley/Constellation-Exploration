@@ -65,6 +65,9 @@ MonoBehaviour:
   distFromPlayer: 20
   yPos: 1.25
   positionLate: 0
+  normal: {fileID: 0}
+  hoverObj: {fileID: 0}
+  shouldFade: 1
 --- !u!1 &6017619297747129735
 GameObject:
   m_ObjectHideFlags: 0
@@ -280,7 +283,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dfbd6c181c694e448b9bbe9182888436, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isEnd: 0
+  nextToSpawn: {fileID: 8618233947694595850, guid: 1baed0c546f415040a9d9f2f9e92ce44, type: 3}
+  endAfterAudio: 0
   connectDotSound: {fileID: 8300000, guid: 064c708d94569704eaa32e9d25b07323, type: 3}
+  constellationData: {fileID: 11400000, guid: 34239e441be536f4da7ccbd05e778705, type: 2}
   points: []
   name: 
   totalPoints: 0

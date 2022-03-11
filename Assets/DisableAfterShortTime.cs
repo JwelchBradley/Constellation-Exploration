@@ -20,13 +20,20 @@ public class DisableAfterShortTime : MonoBehaviour
     [SerializeField]
     private bool positionLate = false;
 
-    private SpriteRenderer sr;
+    [SerializeField]
+    private GameObject normal;
+    [SerializeField]
+    private GameObject hoverObj;
+
+    public bool shouldFade = true;
+
+    private SpriteRenderer[] sr;
     private TextMeshPro text;
 
     // Start is called before the first frame update
     void Awake()
     {
-        sr = GetComponentInChildren<SpriteRenderer>();
+        sr = GetComponentsInChildren<SpriteRenderer>();
         text = GetComponentInChildren<TextMeshPro>();
 
         if (positionLate)
@@ -37,6 +44,7 @@ public class DisableAfterShortTime : MonoBehaviour
         else
             Position();
 
+        if(shouldFade)
         StartCoroutine(FadeOut());
     }
 
@@ -46,16 +54,39 @@ public class DisableAfterShortTime : MonoBehaviour
         transform.position = new Vector3(transform.position.x, yPos, transform.position.z);
     }
 
+    public void Hover(bool hover)
+    {
+        if (hover)
+        {
+            normal.SetActive(false);
+            hoverObj.SetActive(true);
+        }
+        else
+        {
+            hoverObj.SetActive(false);
+            normal.SetActive(true);
+        }
+    }
+
+    public void Fade()
+    {
+        StartCoroutine(FadeOut());
+    }
+
     private IEnumerator FadeOut()
     {
         yield return new WaitForSeconds(timeBeforeFadeOut);
 
-        if(sr != null)
+        if(sr.Length!=0)
         {
-            while (sr.color != Color.clear)
+            while (sr[0].color != Color.clear)
             {
-                sr.color = Color.Lerp(sr.color, Color.clear, Time.fixedDeltaTime * fadeOutSpeed);
-                //text.color = Color.Lerp(text.color, Color.clear, Time.fixedDeltaTime * fadeOutSpeed);
+                foreach(SpriteRenderer sprite in sr)
+                {
+                    sprite.color = Color.Lerp(sprite.color, Color.clear, Time.fixedDeltaTime * fadeOutSpeed);
+                    //text.color =SetButtonStatics(false); Color.Lerp(text.color, Color.clear, Time.fixedDeltaTime * fadeOutSpeed);
+                }
+
                 yield return new WaitForFixedUpdate();
             }
         }

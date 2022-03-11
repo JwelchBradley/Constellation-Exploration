@@ -1,0 +1,53 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 846de2390122257438003f9605a3ba3d, type: 3}
+  m_Name: ConstellationData
+  m_EditorClassIdentifier: 
+  lineWidth: 3
+  constellationLayer:
+    serializedVersion: 2
+    m_Bits: 8
+  buttonLayer:
+    serializedVersion: 2
+    m_Bits: 128
+  groupedConstellations:
+  - names:
+    - Cassiopeia
+    - Perseus
+    - Cepheus
+    toSpawn: StartToCass
+  notFinished:
+  - {fileID: 4537466073525887582, guid: d7e218f7beb695243a29a743e2fb41c6, type: 3}
+  - {fileID: 3926200320632625252, guid: 07da5c44c8b38c44cb8cad06dbfa00c3, type: 3}
+  - {fileID: 3137050065914468757, guid: 363ed774d95ae824b9ebc4dc9f04fe65, type: 3}
+  - {fileID: 6094203120648379775, guid: d09aa68d404751241ba1b919979d7f72, type: 3}
+  - {fileID: 7715746629770592612, guid: 9c43fa80d67dcce46932139d835cf8c8, type: 3}
+  - {fileID: 638482024288009120, guid: add6a1e3c5f38594d9cd4d3ae7f6b9cd, type: 3}
+  - {fileID: 7393475498755586803, guid: b96b613a19c8508449bf936ee4d322d6, type: 3}
+  - {fileID: 4792354711253180602, guid: 672db48d85529494e9ee52054ce785c0, type: 3}
+  - {fileID: 8866784146379267313, guid: 600763818c15b1047863e1982f586b32, type: 3}
+  - {fileID: 2836476244095175001, guid: c44acd29311bbd04c9b6674867329a44, type: 3}
+  - {fileID: 928308087330108434, guid: 872495b0d8309654cb59de2ac87f863a, type: 3}
+  - {fileID: 8393732472898573782, guid: 5554cf1d2fcf3184684dbbc57647f3c8, type: 3}
+  - {fileID: 5570855313703762492, guid: b33bd1e00e7500844b439a19b15062ad, type: 3}
+  - {fileID: 2395758033090339198, guid: a06e550e7c180f14ca3ea2845bf0f710, type: 3}
+  - {fileID: 872590184456566811, guid: cefb55aeef62bde4c903d71d43149f27, type: 3}
+  - {fileID: 6672548269083151298, guid: 12cdbd930ad4d23449e12afdc6b44e87, type: 3}
+  hoverColor: {r: 2.828427, g: 2.828427, b: 2.828427, a: 1}
+  defaultColor: {r: 1, g: 1, b: 1, a: 0.05882353}
+  groupColor: {r: 1, g: 1, b: 1, a: 0.19607843}
+  alreadyClickedColor: {r: 1, g: 1, b: 1, a: 0.019607844}
+  hoverStarSizeMod: 10
+  hoverGroupedStarSizeMod: 5
+  hoverSound: {fileID: 8300000, guid: 4c17cd1f82b286b4e9052150296f88f1, type: 3}
+  hoverBufferTime: 0.2
+  clickSound: {fileID: 8300000, guid: 6a77e7716a2bfc94a9f893fd20c3a0a5, type: 3}

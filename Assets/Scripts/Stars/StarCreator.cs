@@ -12,6 +12,9 @@ using static UnityEngine.ParticleSystem;
 public class StarCreator : MonoBehaviour
 {
     #region Fields
+    [SerializeField]
+    private ConstellationData constellationData;
+
     #region Star Particles
     /// <summary>
     /// The particles that will be modifed into the stars.
@@ -1128,12 +1131,14 @@ public class StarCreator : MonoBehaviour
     [Tooltip("The constellation lines prefab")]
     private GameObject constellationLines;
 
+    /*
     [Tooltip("The default color of constellation lines")]
     [ColorUsageAttribute(true, true)]
     [SerializeField] private Color defaultLineColor;
 
     [Tooltip("How thick the lines are")]
     [SerializeField] private float lineThickness;
+    */
 
     /// <summary>
     /// The list of active constellations that holds reference to their
@@ -1445,9 +1450,9 @@ public class StarCreator : MonoBehaviour
         GameObject tempRef = Instantiate(constellationLines, particleSystems[currentParticleSystem].gameObject.transform);
         constellationLine = tempRef.GetComponent<LineRenderer>();
         constellationLine.positionCount = 0;
-        constellationLine.material.color = defaultLineColor;
-        constellationLine.startWidth = lineThickness;
-        constellationLine.endWidth = lineThickness;
+        constellationLine.material.color = constellationData.DefaultColor;
+        constellationLine.startWidth = constellationData.LineWidth;
+        constellationLine.endWidth = constellationData.LineWidth;
         starPositions.Clear();
     }
 

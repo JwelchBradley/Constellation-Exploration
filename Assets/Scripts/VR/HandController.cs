@@ -48,6 +48,8 @@ public class HandController : MonoBehaviour
     {
         hand.SetGrip(controller.selectAction.action.ReadValue<float>());
 
+        #region Old Other trigger stuff
+        /*
         if(neitherEnabled && controller.selectAction.action.ReadValue<float>() == 1)
         {
             //neitherEnabled = false;
@@ -68,15 +70,17 @@ public class HandController : MonoBehaviour
                         neitherEnabled = true;
                         break;
                     }
-                }*/
-            }
-        }
+                }
+    }
+}*/
+#endregion
 
-        if (ci.enabled)
+if (ci.enabled)
         {
             if (controller.activateAction.action.ReadValue<float>() == 1)
             {
                 ci.Interact(isRight);
+                ci.ButtonClick();
             }
         }
 

@@ -8,59 +8,35 @@ public class ConstellationInteraction : MonoBehaviour
     RaycastHit hit;
 
     [SerializeField]
-    private LayerMask constellationLayer;
+    private ConstellationData constellationData;
 
+    // Constellation selection strings
     private static string currentSelected = "";
-
     private static string rightSelected = "";
     private static string leftSelected = "";
+
+    // Button Stuff
+    private static bool hasStarted = false;
+    private bool isOnButton = false;
+    private static bool rightOnButton = false;
+    private static bool leftOnButton = false;
+    private DisableAfterShortTime disableButton;
+
     [SerializeField]
     private bool isRight = true;
 
-    #region Colors
-    [SerializeField]
-    [ColorUsageAttribute(true, true)]
-    private Color hoverColor;
-
-    [SerializeField]
-    [ColorUsageAttribute(true, true)]
-    private Color defaultColor;
-
-    public Color DefaultColor
-    {
-        get => defaultColor;
-    }
-
-    [SerializeField]
-    [ColorUsageAttribute(true, true)]
-    private Color alreadyClickedColor;
-    #endregion
-
-    #region Hover
-    [SerializeField]
-    private float hoverStarSizeMod = 3.0f;
-
-    [Tooltip("The sound made when the user hovers over the constellation")]
-    [SerializeField] private AudioClip hoverSound;
-
-    [Tooltip("The time between potential hover sounds")]
-    [SerializeField] private float hoverBufferTime = 0.1f;
-
     private static bool canHoverSound = true;
-
-    [Tooltip("The sound made when the user clicks on the constellation")]
-    [SerializeField] private AudioClip clickSound;
-    #endregion
 
     private static Dictionary<string, bool> alreadySelectedExperiences = new Dictionary<string, bool>();
 
-    [SerializeField]
-    private List<GameObject> notFinished = new List<GameObject>();
     private static List<string> NotFinished = new List<string>();
 
     private AudioSource aud;
 
     public static GameObject activeExperience;
+
+    bool isGroup = false;
+    private static List<string> currentGroupNames = new List<string>();
 
     private void Awake()
     {
@@ -73,15 +49,16 @@ public class ConstellationInteraction : MonoBehaviour
         foreach(GameObject displayName in displayNameList)
         {
             displayNames.Add(displayName.name, displayName);
+            displayNameRenderers.Add(displayName.name, displayName.GetComponentInChildren<SpriteRenderer>());
         }
     }
 
     private void DisableLate()
     {
-        foreach (GameObject not in notFinished)
+        foreach (GameObject not in constellationData.NotFinished)
         {
             NotFinished.Add(not.name);
-            ChangeConstellationColor(alreadyClickedColor, not.name);
+            ChangeConstellationColor(constellationData.AlreadyClickedColor, not.name);
         }
     }
 
@@ -89,15 +66,69 @@ public class ConstellationInteraction : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        if(activeExperience == null)
+        if (!hasStarted)
+        {
+            CheckForButton();
+        }
+       else if(activeExperience == null)
         {
             CheckForHoverChange();
         }
     }
 
+    #region Start button
+    private void CheckForButton()
+    {
+        if (Physics.Raycast(transform.position, transform.forward, out hit, Mathf.Infinity, constellationData.ButtonLayer))
+        {
+            if (disableButton == null)
+                disableButton = hit.transform.root.gameObject.GetComponentInChildren<DisableAfterShortTime>();
+
+            if (!isOnButton) { PlayHoverSound(); }
+
+            SetButtonStatics(true);
+            disableButton.Hover(true);
+            isOnButton = true;
+        }
+        else
+        {
+            SetButtonStatics(false);
+
+            if (disableButton != null && !rightOnButton && !leftOnButton)
+            {
+                disableButton.Hover(false);
+                isOnButton = false;
+            }
+        }
+    }
+
+    private void SetButtonStatics(bool on)
+    {
+        if (isRight)
+        {
+            rightOnButton = on;
+        }
+        else
+        {
+            leftOnButton = on;
+        }
+    }
+
+    public void ButtonClick()
+    {
+        if (isOnButton && !hasStarted)
+        {
+            aud.PlayOneShot(constellationData.ClickSound);
+
+            disableButton.Fade();
+            hasStarted = true;
+        }
+    }
+    #endregion
+
     private void CheckForHoverChange()
     {
-        if (Physics.Raycast(transform.position, transform.forward, out hit, Mathf.Infinity, constellationLayer))
+        if (Physics.Raycast(transform.position, transform.forward, out hit, Mathf.Infinity, constellationData.ConstellationLayer))
         {
             string name = hit.transform.gameObject.name;
 
@@ -206,18 +237,58 @@ public class ConstellationInteraction : MonoBehaviour
 
     private void SetNewHover()
     {
-        ChangeDisplayName(true);
-        ChangeStarSize(hoverStarSizeMod);
-        ChangeConstellationColor(hoverColor);
+        ChangeDisplayName(currentSelected, true);
+        ChangeStarSize(constellationData.HoverStarSizeMod);
+        ChangeConstellationColor(constellationData.HoverColor);
+
+        CheckForConstellationGroup(constellationData.GroupColor, constellationData.HoverGroupedStarSizeMod, true);
 
         PlayHoverSound();
     }
 
     private void ResetCurrent()
     {
-        ChangeDisplayName(false);
-        ChangeConstellationColor(defaultColor);
-        ChangeStarSize(1 / hoverStarSizeMod);
+        ChangeDisplayName(currentSelected, false);
+        ChangeStarSize(1 / constellationData.HoverStarSizeMod);
+        ChangeConstellationColor(constellationData.DefaultColor);
+
+        isGroup = false;
+        CheckForConstellationGroup(constellationData.DefaultColor, 1/(constellationData.HoverGroupedStarSizeMod), false);
+    }
+
+    private void CheckForConstellationGroup(Color newColor, float sizeMod, bool active)
+    {
+        foreach(ListWrapper group in constellationData.GroupedConstellations)
+        {
+            if (group.names.Contains(currentSelected))
+            {
+                isGroup = active;
+                currentGroupNames = group.names;
+
+                foreach (string s in group.names)
+                {
+                    if(s != currentSelected)
+                    {
+                        ChangeDisplayName(s, active);
+                        ChangeDisplayNameColor(s, Color.white/2);
+                        ChangeStarSizeOverrid(sizeMod, s);
+                        SetGroupConstellationColor(s, newColor);
+                    }
+                    else
+                    {
+                        ChangeDisplayNameColor(s, Color.white);
+                    }
+                }
+            }
+        }
+    }
+
+    private void SetGroupConstellationColor(string name, Color newColor)
+    {
+        foreach (LineRenderer lr in StarCreator.Constellations[name])
+        {
+            lr.material.color = newColor;
+        }
     }
 
     #region Sound
@@ -225,7 +296,7 @@ public class ConstellationInteraction : MonoBehaviour
     {
         if (canHoverSound)
         {
-            aud.PlayOneShot(hoverSound);
+            aud.PlayOneShot(constellationData.HoverSound);
             canHoverSound = false;
             StartCoroutine(HoverSoundWait());
         }
@@ -233,7 +304,7 @@ public class ConstellationInteraction : MonoBehaviour
 
     private IEnumerator HoverSoundWait()
     {
-        yield return new WaitForSeconds(hoverBufferTime);
+        yield return new WaitForSeconds(constellationData.HoverBufferTime);
         canHoverSound = true;
     }
     #endregion
@@ -241,13 +312,79 @@ public class ConstellationInteraction : MonoBehaviour
 
     private void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Mouse0) && currentSelected != "")
-        Interact(true);
+        if (Input.GetKeyDown(KeyCode.Mouse0) && currentSelected != "")
+            Interact(true);
+        else if (Input.GetKeyDown(KeyCode.Mouse0) && isOnButton)
+            ButtonClick();
     }
 
+    #region Interact
+    public void Interact(bool isRight)
+    {
+        if (isRight && rightSelected == "") return;
+        else if (!isRight && leftSelected == "") return;
+
+        if(activeExperience == null && !alreadySelectedExperiences.ContainsKey(currentSelected))
+        {
+            string toSpawn = "";
+
+            if (isGroup)
+            {
+                foreach (ListWrapper group in constellationData.GroupedConstellations)
+                {
+                    if (group.names.Contains(currentSelected))
+                    {
+                        foreach(string name in group.names)
+                        {
+                            if(name != currentSelected)
+                            {
+                                ChangeStarSizeOverrid(1 / constellationData.HoverGroupedStarSizeMod, name);
+                                ChangeStarSizeOverrid(constellationData.HoverStarSizeMod, name);
+                                ChangeDisplayName(name, false);
+                                alreadySelectedExperiences.Add(name, true);
+                            }
+                        }
+
+                        toSpawn = group.toSpawn;
+                    }
+                }
+
+                ChangeConstellationColor(constellationData.GroupColor);
+            }
+            else
+            {
+                toSpawn = currentSelected;
+            }
+
+            activeExperience = Instantiate(Resources.Load("Prefabs/Stars/Constellation Experiences/" + toSpawn, typeof(GameObject)), transform.position, Quaternion.identity) as GameObject;
+            alreadySelectedExperiences.Add(currentSelected, true);
+            if(isGroup) { activeExperience = Instantiate(new GameObject("Empty")); }
+
+            aud.PlayOneShot(constellationData.ClickSound);
+            ChangeOtherLines(false);
+            ChangeDisplayName(currentSelected, false);
+        }
+    }
+
+    public void EndExperience()
+    {
+        Destroy(activeExperience);
+
+        activeExperience = null;
+        ChangeConstellationColor(constellationData.AlreadyClickedColor);
+        ChangeStarSizeOverrid(1 / constellationData.HoverStarSizeMod, currentSelected);
+
+        currentSelected = "";
+        rightSelected = "";
+        leftSelected = "";
+        ChangeOtherLines(true);
+    }
+    #endregion
+
+    #region Change Stuff
     private void ChangeStarSize(float hoverStarSizeMod)
     {
-        if(alreadySelectedExperiences.TryGetValue(currentSelected, out bool hasBeenSelected))
+        if (alreadySelectedExperiences.TryGetValue(currentSelected, out bool hasBeenSelected))
         {
             return;
         }
@@ -269,71 +406,36 @@ public class ConstellationInteraction : MonoBehaviour
 
             ps.SetParticles(particles);
         }
+
+        Debug.Log(true);
     }
 
     [SerializeField]
     private List<GameObject> displayNameList;
     private static Dictionary<string, GameObject> displayNames = new Dictionary<string, GameObject>();
-    private void ChangeDisplayName(bool on)
+    private static Dictionary<string, SpriteRenderer> displayNameRenderers = new Dictionary<string, SpriteRenderer>();
+    private void ChangeDisplayName(string name, bool on)
     {
-        if(displayNames.TryGetValue(currentSelected, out GameObject displayName))
+        if (displayNames.TryGetValue(name, out GameObject displayName))
         {
             displayName.SetActive(on);
         }
     }
 
-    public void Interact(bool isRight)
+    private void ChangeDisplayNameColor(string name, Color newColor)
     {
-        if (isRight && rightSelected == "") return;
-        else if (!isRight && leftSelected == "") return;
-
-        if(activeExperience == null && !alreadySelectedExperiences.ContainsKey(currentSelected))
+        if (displayNameRenderers.TryGetValue(name, out SpriteRenderer sr))
         {
-            activeExperience = Instantiate(Resources.Load("Prefabs/Stars/Constellation Experiences/" + currentSelected, typeof(GameObject)), transform.position, Quaternion.identity) as GameObject;
-            alreadySelectedExperiences.Add(currentSelected, true);
-
-            if(activeExperience != null)
-            StartCoroutine(ConstellationExperienceTimer(activeExperience.GetComponent<Experience>().ExperienceTimer));
-
-            aud.PlayOneShot(clickSound);
-            ChangeOtherLines(false);
-            ChangeDisplayName(false);
+            sr.color = newColor;
         }
-    }
-
-    private IEnumerator ConstellationExperienceTimer(float time)
-    {
-        yield return new WaitForSeconds(time);
-        if(activeExperience.TryGetComponent(out ConnectTheDotsExperience ctde))
-        {
-            while (ctde.HasNotEnded())
-            {
-                ConnectTheDotsExperience.audioFinished = true;
-                yield return new WaitForFixedUpdate();
-            }
-        }
-
-        EndExperience();
-    }
-
-    private void EndExperience()
-    {
-        Destroy(activeExperience);
-
-        activeExperience = null;
-        ChangeConstellationColor(alreadyClickedColor);
-        ChangeStarSizeOverrid(1 / hoverStarSizeMod, currentSelected);
-
-        currentSelected = "";
-        rightSelected = "";
-        leftSelected = "";
-        ChangeOtherLines(true);
     }
 
     private void ChangeOtherLines(bool shouldBeOn)
     {
         foreach(string name in StarCreator.ConstellationNames)
         {
+            if(currentGroupNames.Contains(name)) { continue; }
+
             if(name != currentSelected && ((!shouldBeOn && !alreadySelectedExperiences.ContainsKey(name) || shouldBeOn)))
             foreach (LineRenderer lr in StarCreator.Constellations[name])
             {
@@ -362,4 +464,13 @@ public class ConstellationInteraction : MonoBehaviour
             lr.material.color = newColor;
         }
     }
+    #endregion
+}
+
+[System.Serializable]
+public class ListWrapper
+{
+    public List<string> names;
+
+    public string toSpawn;
 }

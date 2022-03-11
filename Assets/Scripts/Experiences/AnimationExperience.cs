@@ -24,6 +24,8 @@ public class AnimationExperience : Experience
         StartCoroutine(StartVideo());
 
         RemoveLines();
+
+        FindObjectOfType<ConstellationInteraction>().Invoke("EndExperience", ExperienceTimer);
     }
 
     private IEnumerator StartVideo()

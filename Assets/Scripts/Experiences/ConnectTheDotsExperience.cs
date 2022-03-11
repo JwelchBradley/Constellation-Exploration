@@ -3,10 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using static UnityEngine.ParticleSystem;
 
-public class ConnectTheDotsExperience : Experience
+public class ConnectTheDotsExperience : TransitionExperience
 {
     [SerializeField]
     private AudioClip connectDotSound;
+
+    [SerializeField]
+    private ConstellationData constellationData;
 
     public List<Vector3> points = new List<Vector3>();
 
@@ -230,14 +233,9 @@ public class ConnectTheDotsExperience : Experience
     bool hasEnded = true;
     public void RemoveFinalPoint()
     {
-        hasEnded = false;
         StarCreator.Constellations.TryGetValue(name, out List<LineRenderer> lrs);
         lrs[0].positionCount--;
-    }
-
-    public bool HasNotEnded()
-    {
-        return hasEnded;
+        Destroy(gameObject);
     }
 
     public bool IsEmpty()
@@ -247,12 +245,19 @@ public class ConnectTheDotsExperience : Experience
 
     public IEnumerator wait()
     {
+        /*
         while (!audioFinished)
         {
             yield return null;
-        }
+        }*/
+        yield return null;
 
         StarCreator.Constellations.TryGetValue(name, out List<LineRenderer> lrs);
+
+        foreach (LineRenderer lr in lrs)
+        {
+            lr.material.color = constellationData.HoverColor;
+        }
 
         for (int lrsNum = 0; lrsNum < lrs.Count; lrsNum++)
         {
