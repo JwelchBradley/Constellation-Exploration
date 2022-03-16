@@ -353,6 +353,7 @@ public class ConstellationInteraction : MonoBehaviour
             }
             else
             {
+                currentGroupNames = null;
                 toSpawn = currentSelected;
             }
 
@@ -390,6 +391,8 @@ public class ConstellationInteraction : MonoBehaviour
         currentSelected = "";
         rightSelected = "";
         leftSelected = "";
+        currentGroupNames = null;
+        isGroup = false;
         ChangeOtherLines(true);
     }
     #endregion
@@ -445,9 +448,9 @@ public class ConstellationInteraction : MonoBehaviour
     {
         foreach(string name in StarCreator.ConstellationNames)
         {
-            if(currentGroupNames.Contains(name)) { continue; }
+            if(currentGroupNames != null && currentGroupNames.Contains(name)) { continue; }
 
-            if(name != currentSelected && ((!shouldBeOn && !alreadySelectedExperiences.ContainsKey(name) || shouldBeOn)))
+            if(name != currentSelected /*&& ((!shouldBeOn && !alreadySelectedExperiences.ContainsKey(name) || shouldBeOn))*/)
             foreach (LineRenderer lr in StarCreator.Constellations[name])
             {
                 lr.enabled = shouldBeOn;

@@ -10,9 +10,14 @@ public class DragPoint : MonoBehaviour
     [SerializeField]
     private GameObject snapObject;
 
+    [SerializeField]
+    private float snapDist = 30f;
+
     private Dragable dragable;
 
     private bool hasNotSnapped = true;
+
+    private bool isCloseEnough;
 
     private void OnTriggerEnter(Collider other)
     {
@@ -23,6 +28,22 @@ public class DragPoint : MonoBehaviour
 
             if(dragable.isBeingDragged)
             StartCoroutine(SnapRoutine());
+        }
+    }
+
+    private void OnTriggerStay(Collider other)
+    {
+        if (other.gameObject.Equals(snapObject))
+        {
+            Debug.Log(Vector3.Distance(other.gameObject.transform.position, transform.position));
+            if(Vector3.Distance(other.gameObject.transform.position, transform.position) <= snapDist)
+            {
+                isCloseEnough = true;
+            }
+            else
+            {
+                isCloseEnough = false;
+            }
         }
     }
 
@@ -40,7 +61,7 @@ public class DragPoint : MonoBehaviour
         {
             yield return null;
 
-            if (!dragable.isBeingDragged)
+            if (!dragable.isBeingDragged && isCloseEnough)
             {
                 Snap();
             }
