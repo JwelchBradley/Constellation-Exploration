@@ -30,6 +30,7 @@ public class ConnectTheDotsExperience : TransitionExperience
     public Color lerped;
     public float value = 0;
     public float time;
+    public float particleStartSize;
 
     public Color aimedColor;
 
@@ -83,20 +84,22 @@ public class ConnectTheDotsExperience : TransitionExperience
         pointer.TryGetValue(currentPoints, out List<int> nums);
 
         //Color Shit
+        /*
         value = Mathf.PingPong(Time.time, 1);
         lerped = Color.Lerp(Color.white, aimedColor, value);
         StarCreator.ConstellationParticleSystems.TryGetValue(name, out ParticleSystem h);
         Particle[] particles = new Particle[h.main.maxParticles];
 
         h.GetParticles(particles);
-
+        */
         List<Vector3> nextPoints = new List<Vector3>();
         foreach (int num in nums)
         {
+            //need to switch color only once
             nextPoints.Add(points[num]);
-            particles[num].startColor = lerped;
+            //particles[num].startColor = lerped;
         }
-        h.SetParticles(particles);
+        //h.SetParticles(particles);
         return nextPoints;
     }
 
@@ -106,6 +109,9 @@ public class ConnectTheDotsExperience : TransitionExperience
         lrs[0].positionCount++;
         totalPoints++;
         lrs[0].SetPosition(totalPoints, lrs[0].GetPosition(totalPoints-1));
+
+        SetStartSize();
+        StartCoroutine("ChangingColor");
 
         List<bool> h = new List<bool>();
         for (int a = 0; a < pointer.Count; a++)
@@ -135,7 +141,7 @@ public class ConnectTheDotsExperience : TransitionExperience
         StarCreator.ConstellationParticleSystems.TryGetValue(name, out ParticleSystem k);
         Particle[] particles = new Particle[k.main.maxParticles];
         k.GetParticles(particles);
-
+        particles[currentPoints].startSize = particleStartSize;
         foreach (int num in nums)
         {
             particles[num].startColor = Color.white;
@@ -208,6 +214,7 @@ public class ConnectTheDotsExperience : TransitionExperience
                 
             }
             nums.Remove(currentPoints);
+
             //print(pointer.Count);
             /*
 
@@ -282,4 +289,38 @@ public class ConnectTheDotsExperience : TransitionExperience
         AddPoint();
 
     }
+
+    public IEnumerator ChangingColor()
+    {
+        do
+        {
+            time += Time.deltaTime;
+            value = Mathf.PingPong(time, 1);
+            lerped = Color.Lerp(Color.white, aimedColor, value);
+            StarCreator.ConstellationParticleSystems.TryGetValue(name, out ParticleSystem h);
+            Particle[] particles = new Particle[h.main.maxParticles];
+            h.GetParticles(particles);
+
+            particles[currentPoints].startSize = value * 100 + particleStartSize;
+            particles[currentPoints].startColor = lerped;
+
+            h.SetParticles(particles);
+
+            yield return null;
+        } while (value > .06f);
+        time = 0;
+        value = 0;
+        
+        
+    }
+
+    public void SetStartSize()
+    {
+        StarCreator.ConstellationParticleSystems.TryGetValue(name, out ParticleSystem h);
+        Particle[] particles = new Particle[h.main.maxParticles];
+        h.GetParticles(particles);
+        particleStartSize = particles[currentPoints].startSize;
+    }
+
+
 }

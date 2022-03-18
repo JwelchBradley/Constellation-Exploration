@@ -495,6 +495,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isText: 1
+  isPlaceable: 0
   shouldMove: 1
   shouldWait: 0
 --- !u!114 &60813361
@@ -739,6 +740,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isText: 1
+  isPlaceable: 0
   shouldMove: 1
   shouldWait: 0
 --- !u!114 &150408786
@@ -1383,6 +1385,10 @@ PrefabInstance:
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7380235780188952215, guid: 644385b02e84c52429ba3e8b9c6523f5, type: 3}
+      propertyPath: constellationData
+      value: 
+      objectReference: {fileID: 11400000, guid: 34239e441be536f4da7ccbd05e778705, type: 2}
+    - target: {fileID: 7380235780188952215, guid: 644385b02e84c52429ba3e8b9c6523f5, type: 3}
       propertyPath: defaultLineColor.a
       value: 0.05882353
       objectReference: {fileID: 0}
@@ -1595,6 +1601,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isText: 1
+  isPlaceable: 0
   shouldMove: 1
   shouldWait: 0
 --- !u!114 &475639934
@@ -1938,18 +1945,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6228e7a094a3299499079ca25106c893, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  constellationLayer:
-    serializedVersion: 2
-    m_Bits: 8
+  constellationData: {fileID: 0}
   isRight: 1
-  hoverColor: {r: 2.1185474, g: 2.1185474, b: 2.1185474, a: 1}
-  defaultColor: {r: 1, g: 1, b: 1, a: 0.05882353}
-  alreadyClickedColor: {r: 1, g: 1, b: 1, a: 0.39215687}
-  hoverStarSizeMod: 10
-  hoverSound: {fileID: 8300000, guid: 4c17cd1f82b286b4e9052150296f88f1, type: 3}
-  hoverBufferTime: 0.1
-  clickSound: {fileID: 8300000, guid: 6a77e7716a2bfc94a9f893fd20c3a0a5, type: 3}
-  notFinished: []
   displayNameList: []
 --- !u!114 &604331367
 MonoBehaviour:
@@ -2026,6 +2023,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isText: 1
+  isPlaceable: 0
   shouldMove: 1
   shouldWait: 0
 --- !u!114 &652269790
@@ -2254,8 +2252,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hand: {fileID: 2047177328}
+  isPressed: 0
   ci: {fileID: 604331366}
   isRight: 1
+  dp: {fileID: 0}
 --- !u!114 &699459138
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2769,6 +2769,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isText: 1
+  isPlaceable: 0
   shouldMove: 1
   shouldWait: 0
 --- !u!114 &712783886
@@ -3166,6 +3167,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isText: 1
+  isPlaceable: 0
   shouldMove: 1
   shouldWait: 0
 --- !u!114 &808552790
@@ -4467,6 +4469,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isText: 1
+  isPlaceable: 0
   shouldMove: 1
   shouldWait: 0
 --- !u!114 &1008983221
@@ -4653,6 +4656,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isText: 1
+  isPlaceable: 0
   shouldMove: 1
   shouldWait: 0
 --- !u!114 &1013525178
@@ -5074,6 +5078,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isText: 1
+  isPlaceable: 0
   shouldMove: 1
   shouldWait: 0
 --- !u!114 &1071675492
@@ -5754,6 +5759,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isText: 1
+  isPlaceable: 0
   shouldMove: 1
   shouldWait: 0
 --- !u!114 &1168050362
@@ -5971,8 +5977,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hand: {fileID: 1625455047}
+  isPressed: 0
   ci: {fileID: 1932662879}
   isRight: 1
+  dp: {fileID: 0}
 --- !u!114 &1304691918
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6778,6 +6786,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isText: 1
+  isPlaceable: 0
   shouldMove: 1
   shouldWait: 0
 --- !u!114 &1381125496
@@ -7012,6 +7021,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isText: 1
+  isPlaceable: 0
   shouldMove: 1
   shouldWait: 0
 --- !u!114 &1390602560
@@ -7242,6 +7252,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isText: 1
+  isPlaceable: 0
   shouldMove: 1
   shouldWait: 0
 --- !u!114 &1425148675
@@ -8037,6 +8048,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isText: 1
+  isPlaceable: 0
   shouldMove: 1
   shouldWait: 0
 --- !u!114 &1508400347
@@ -8413,6 +8425,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isText: 1
+  isPlaceable: 0
   shouldMove: 1
   shouldWait: 0
 --- !u!114 &1618951038
@@ -8739,6 +8752,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isText: 1
+  isPlaceable: 0
   shouldMove: 1
   shouldWait: 0
 --- !u!114 &1683200028
@@ -9004,18 +9018,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6228e7a094a3299499079ca25106c893, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  constellationLayer:
-    serializedVersion: 2
-    m_Bits: 8
+  constellationData: {fileID: 11400000, guid: 34239e441be536f4da7ccbd05e778705, type: 2}
   isRight: 1
-  hoverColor: {r: 2.1185474, g: 2.1185474, b: 2.1185474, a: 1}
-  defaultColor: {r: 1, g: 1, b: 1, a: 0.05882353}
-  alreadyClickedColor: {r: 1, g: 1, b: 1, a: 0.39215687}
-  hoverStarSizeMod: 10
-  hoverSound: {fileID: 8300000, guid: 4c17cd1f82b286b4e9052150296f88f1, type: 3}
-  hoverBufferTime: 0.1
-  clickSound: {fileID: 8300000, guid: 6a77e7716a2bfc94a9f893fd20c3a0a5, type: 3}
-  notFinished: []
   displayNameList: []
 --- !u!114 &1699302540
 MonoBehaviour:
@@ -9133,7 +9137,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 8
   point: {x: 0, y: 0, z: 0}
-  starCreator: {fileID: 0}
+  starCreator: {fileID: 1862253764}
   add: {x: 0, y: 0, z: 0}
   subtract: {x: 0, y: 0, z: 0}
   expirence: 0
@@ -9516,6 +9520,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isText: 1
+  isPlaceable: 0
   shouldMove: 1
   shouldWait: 0
 --- !u!114 &1858632776
@@ -9651,6 +9656,11 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!1 &1862253764 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7380235780188952200, guid: 644385b02e84c52429ba3e8b9c6523f5, type: 3}
+  m_PrefabInstance: {fileID: 350530329}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1874036831
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10166,18 +10176,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6228e7a094a3299499079ca25106c893, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  constellationLayer:
-    serializedVersion: 2
-    m_Bits: 8
+  constellationData: {fileID: 0}
   isRight: 1
-  hoverColor: {r: 2.1185474, g: 2.1185474, b: 2.1185474, a: 1}
-  defaultColor: {r: 1, g: 1, b: 1, a: 0.05882353}
-  alreadyClickedColor: {r: 1, g: 1, b: 1, a: 0.39215687}
-  hoverStarSizeMod: 10
-  hoverSound: {fileID: 8300000, guid: 4c17cd1f82b286b4e9052150296f88f1, type: 3}
-  hoverBufferTime: 0.1
-  clickSound: {fileID: 8300000, guid: 6a77e7716a2bfc94a9f893fd20c3a0a5, type: 3}
-  notFinished: []
   displayNameList: []
 --- !u!114 &1932662880
 MonoBehaviour:
@@ -11001,6 +11001,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isText: 1
+  isPlaceable: 0
   shouldMove: 1
   shouldWait: 0
 --- !u!114 &2111991072
@@ -11231,6 +11232,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isText: 1
+  isPlaceable: 0
   shouldMove: 1
   shouldWait: 0
 --- !u!114 &2133398279
