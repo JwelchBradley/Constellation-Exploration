@@ -111,7 +111,11 @@ public class ConnectTheDotsExperience : TransitionExperience
         lrs[0].SetPosition(totalPoints, lrs[0].GetPosition(totalPoints-1));
 
         SetStartSize();
-        StartCoroutine("ChangingColor");
+
+        if (currentPoints == 0 && totalPoints == 1)
+        {
+            StartCoroutine("ChangingColor");
+        }
 
         List<bool> h = new List<bool>();
         for (int a = 0; a < pointer.Count; a++)
@@ -292,9 +296,10 @@ public class ConnectTheDotsExperience : TransitionExperience
 
     public IEnumerator ChangingColor()
     {
+        float num = time + 2;
         do
         {
-            time += Time.deltaTime;
+            time += .0025f;
             value = Mathf.PingPong(time, 1);
             lerped = Color.Lerp(Color.white, aimedColor, value);
             StarCreator.ConstellationParticleSystems.TryGetValue(name, out ParticleSystem h);
@@ -306,12 +311,9 @@ public class ConnectTheDotsExperience : TransitionExperience
 
             h.SetParticles(particles);
 
+            print(value);
             yield return null;
-        } while (value > .06f);
-        time = 0;
-        value = 0;
-        
-        
+        } while (time < num);
     }
 
     public void SetStartSize()
