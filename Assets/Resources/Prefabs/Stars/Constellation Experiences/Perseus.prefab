@@ -187,7 +187,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1927430440898979845
 Transform:
   m_ObjectHideFlags: 0
@@ -216,7 +216,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isText: 0
-  isPlaceable: 0
   shouldMove: 0
   shouldWait: 0
 --- !u!114 &5636068307093799232
@@ -296,7 +295,7 @@ MonoBehaviour:
   lerped: {r: 0, g: 0, b: 0, a: 0}
   value: 0
   time: 0
-  aimedColor: {r: 0.4509804, g: 0.02745098, b: 0.83137256, a: 1}
+  aimedColor: {r: 1, g: 0.78039217, b: 0.5568628, a: 1}
 --- !u!82 &4524840091355503136
 AudioSource:
   m_ObjectHideFlags: 0

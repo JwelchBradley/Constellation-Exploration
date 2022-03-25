@@ -59,12 +59,6 @@ public class DraggingPlacable : MonoBehaviour
     private void MoveToHandPos()
     {
         if(hit.transform != null)
-        {
-            hit.transform.position = transform.position + transform.forward * 1000;
-            if(hit.transform.position.y < 0)
-            {
-                hit.transform.position = new Vector3(hit.transform.position.x, 0, hit.transform.position.z);
-            }
-        }
+        hit.transform.position = transform.position + transform.forward * 1000;
     }
 }
