@@ -107,16 +107,6 @@ public class ConnectTheDotsExperience : TransitionExperience
         totalPoints++;
         lrs[0].SetPosition(totalPoints, lrs[0].GetPosition(totalPoints-1));
 
-<<<<<<< HEAD
-        SetStartSize();
-
-        if (currentPoints == 0 && totalPoints == 1)
-        {
-            StartCoroutine("ChangingColor");
-        }
-
-=======
->>>>>>> parent of f32c600 (Connect The Dots shit)
         List<bool> h = new List<bool>();
         for (int a = 0; a < pointer.Count; a++)
         {
@@ -292,39 +282,4 @@ public class ConnectTheDotsExperience : TransitionExperience
         AddPoint();
 
     }
-<<<<<<< HEAD
-
-    public IEnumerator ChangingColor()
-    {
-        float num = time + 2;
-        do
-        {
-            time += .0025f;
-            value = Mathf.PingPong(time, 1);
-            lerped = Color.Lerp(Color.white, aimedColor, value);
-            StarCreator.ConstellationParticleSystems.TryGetValue(name, out ParticleSystem h);
-            Particle[] particles = new Particle[h.main.maxParticles];
-            h.GetParticles(particles);
-
-            particles[currentPoints].startSize = value * 100 + particleStartSize;
-            particles[currentPoints].startColor = lerped;
-
-            h.SetParticles(particles);
-
-            print(value);
-            yield return null;
-        } while (time < num);
-    }
-
-    public void SetStartSize()
-    {
-        StarCreator.ConstellationParticleSystems.TryGetValue(name, out ParticleSystem h);
-        Particle[] particles = new Particle[h.main.maxParticles];
-        h.GetParticles(particles);
-        particleStartSize = particles[currentPoints].startSize;
-    }
-
-
-=======
->>>>>>> parent of f32c600 (Connect The Dots shit)
 }
