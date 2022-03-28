@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.XR.Interaction.Toolkit;
 using static UnityEngine.ParticleSystem;
 
 public class ConnectTheDotsExperience : TransitionExperience
@@ -24,6 +25,12 @@ public class ConnectTheDotsExperience : TransitionExperience
 
     [SerializeField]
     public Dictionary<int, List<int>> pointer = new Dictionary<int, List<int>>();
+
+    [SerializeField]
+    private float hapticFeedbackAmplitude = 0.25f;
+
+    [SerializeField]
+    private float hapticFeedbackDuration = 0.1f;
 
     private RaycastedDots dot;
 
@@ -143,7 +150,7 @@ public class ConnectTheDotsExperience : TransitionExperience
         k.SetParticles(particles);
     }
 
-    public bool SetPoint(Vector3 pos, bool hit)
+    public bool SetPoint(Vector3 pos, bool hit, ActionBasedController xr)
     {
         StarCreator.Constellations.TryGetValue(name, out List<LineRenderer> lrs);
         if (!hit)
@@ -155,6 +162,7 @@ public class ConnectTheDotsExperience : TransitionExperience
         List<Vector3> nextPoints = NextPoint();
         if (nextPoints.Contains(pos))
         {
+            xr.SendHapticImpulse(hapticFeedbackAmplitude, hapticFeedbackDuration);
 
             aud.PlayOneShot(connectDotSound);
 

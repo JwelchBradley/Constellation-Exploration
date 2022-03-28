@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.XR.Interaction.Toolkit;
 using static UnityEngine.ParticleSystem;
 
 public class ConstellationInteraction : MonoBehaviour
@@ -37,6 +38,9 @@ public class ConstellationInteraction : MonoBehaviour
 
     static bool isGroup = false;
     private static List<string> currentGroupNames = new List<string>();
+
+    [SerializeField]
+    private ActionBasedController thisXR;
 
     private void Awake()
     {
@@ -118,6 +122,8 @@ public class ConstellationInteraction : MonoBehaviour
     {
         if (isOnButton && !hasStarted)
         {
+            thisXR.SendHapticImpulse(constellationData.HapticFeedbackAmplitude, constellationData.HapticFeedbackDuration);
+
             aud.PlayOneShot(constellationData.ClickSound);
 
             disableButton.Fade();
@@ -324,6 +330,7 @@ public class ConstellationInteraction : MonoBehaviour
         if (isRight && rightSelected == "") return;
         else if (!isRight && leftSelected == "") return;
 
+
         if(activeExperience == null && !alreadySelectedExperiences.ContainsKey(currentSelected))
         {
             string toSpawn = "";
@@ -356,6 +363,8 @@ public class ConstellationInteraction : MonoBehaviour
                 currentGroupNames = null;
                 toSpawn = currentSelected;
             }
+
+            thisXR.SendHapticImpulse(constellationData.HapticFeedbackAmplitude, constellationData.HapticFeedbackDuration);
 
             activeExperience = Instantiate(Resources.Load("Prefabs/Stars/Constellation Experiences/" + toSpawn, typeof(GameObject)), transform.position, Quaternion.identity) as GameObject;
             alreadySelectedExperiences.Add(currentSelected, true);

@@ -13,8 +13,16 @@ public class AnimationExperience : Experience
     Material onMaterial;
     [SerializeField]
     Vector3 spawnPos;
+    Vector3 enlargePos;
+
+    Vector3 startingScale;
+
+    Vector3 enlargeScale = Vector3.one*3f;
+
     protected override void Awake()
     {
+        enlargePos = new Vector3(spawnPos.x, 500, spawnPos.z);
+        startingScale = transform.localScale;
         transform.position = spawnPos;
         base.Awake();
 
@@ -35,7 +43,32 @@ public class AnimationExperience : Experience
             yield return new WaitForFixedUpdate();
         }
 
+        StartCoroutine(MoveVideoDown());
+
         mr.material = onMaterial;
+    }
+
+    private IEnumerator MoveVideoDown()
+    {
+        while(transform.position != enlargePos)
+        {
+            MoveVideoHelper(enlargeScale, enlargePos);
+            yield return new WaitForFixedUpdate();
+        }
+
+        yield return new WaitForSeconds((float)vp.length - 10);
+        Debug.Log("make smaller");
+        while (transform.position != spawnPos)
+        {
+            MoveVideoHelper(startingScale, spawnPos);
+            yield return new WaitForFixedUpdate();
+        }
+    }
+
+    private void MoveVideoHelper(Vector3 targetScale, Vector3 targetPos)
+    {
+        transform.localScale = Vector3.MoveTowards(transform.localScale, targetScale, Time.fixedDeltaTime / 3);
+        transform.position = Vector3.MoveTowards(transform.position, targetPos, Time.fixedDeltaTime * 200);
     }
 
     private void RemoveLines()
@@ -43,7 +76,7 @@ public class AnimationExperience : Experience
         string name = gameObject.name;
         string a = "(Clone)";
         name = name.Replace(a, "");
-        Debug.Log(name);
+
         foreach (LineRenderer lr in StarCreator.Constellations[name])
         {
             lr.enabled = false;
@@ -71,8 +104,10 @@ public class AnimationExperience : Experience
         }
     }
 
-    private void OnDestroy()
+    protected override void OnDestroy()
     {
+        base.OnDestroy();
+
         foreach (LineRenderer lr in StarCreator.Constellations[name])
         {
             if(lr != null)

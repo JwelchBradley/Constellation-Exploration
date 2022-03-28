@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.XR.Interaction.Toolkit;
 
 public class RaycastedDots : MonoBehaviour
 {
@@ -21,6 +22,10 @@ public class RaycastedDots : MonoBehaviour
 
     public bool expirence;
     public bool useable;
+
+    [SerializeField]
+    private ActionBasedController xr;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -37,12 +42,12 @@ public class RaycastedDots : MonoBehaviour
                 point = dotHit.collider.gameObject.transform.localPosition;
                 Debug.DrawLine(this.gameObject.transform.position, dotHit.point, Color.red);
 
-                expirence = ConnectTheDotsExperience.thisScript.SetPoint(dotHit.collider.gameObject.transform.localPosition, true);
+                expirence = ConnectTheDotsExperience.thisScript.SetPoint(dotHit.collider.gameObject.transform.localPosition, true, xr);
             }
             else
             {
                 point = transform.position + transform.forward * 1000;
-                expirence = ConnectTheDotsExperience.thisScript.SetPoint(point, false);
+                expirence = ConnectTheDotsExperience.thisScript.SetPoint(point, false, xr);
             }
 
         }

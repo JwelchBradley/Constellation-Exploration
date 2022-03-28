@@ -284,6 +284,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dfbd6c181c694e448b9bbe9182888436, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  subtitle: []
   isEnd: 0
   nextToSpawn: {fileID: 8618233947694595850, guid: 1baed0c546f415040a9d9f2f9e92ce44, type: 3}
   endAfterAudio: 0

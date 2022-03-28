@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 846de2390122257438003f9605a3ba3d, type: 3}
   m_Name: ConstellationData
   m_EditorClassIdentifier: 
+  hapticFeedbackDuration: 0.2
+  hapticFeedbackAmplitude: 0.25
   lineWidth: 3
   constellationLayer:
     serializedVersion: 2
@@ -44,7 +46,7 @@ MonoBehaviour:
   hoverColor: {r: 2.828427, g: 2.828427, b: 2.828427, a: 1}
   defaultColor: {r: 1, g: 1, b: 1, a: 0.05882353}
   groupColor: {r: 1, g: 1, b: 1, a: 0.19607843}
-  alreadyClickedColor: {r: 1, g: 1, b: 1, a: 0.019607844}
+  alreadyClickedColor: {r: 1, g: 1, b: 1, a: 0.003921569}
   hoverStarSizeMod: 10
   hoverGroupedStarSizeMod: 5
   hoverSound: {fileID: 8300000, guid: 4c17cd1f82b286b4e9052150296f88f1, type: 3}

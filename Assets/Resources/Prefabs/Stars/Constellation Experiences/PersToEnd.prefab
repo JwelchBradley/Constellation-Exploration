@@ -54,7 +54,7 @@ PrefabInstance:
     - target: {fileID: 2580655099906826923, guid: acf8e73fa8f548c4db70fe82d85f92c7, type: 3}
       propertyPath: m_audioClip
       value: 
-      objectReference: {fileID: 8300000, guid: 6a77e7716a2bfc94a9f893fd20c3a0a5, type: 3}
+      objectReference: {fileID: 8300000, guid: 8948328542f78354da5590436a487da8, type: 3}
     - target: {fileID: 2580655099906826923, guid: acf8e73fa8f548c4db70fe82d85f92c7, type: 3}
       propertyPath: m_PlayOnAwake
       value: 1
@@ -66,6 +66,36 @@ PrefabInstance:
     - target: {fileID: 4977899314915778739, guid: acf8e73fa8f548c4db70fe82d85f92c7, type: 3}
       propertyPath: nextToSpawn
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4977899314915778739, guid: acf8e73fa8f548c4db70fe82d85f92c7, type: 3}
+      propertyPath: subtitle.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4977899314915778739, guid: acf8e73fa8f548c4db70fe82d85f92c7, type: 3}
+      propertyPath: subtitle.Array.data[0].subtitle
+      value: 'Luckily, heroic Perseus came across Andromeda whilst returning from
+        his quest to '
+      objectReference: {fileID: 0}
+    - target: {fileID: 4977899314915778739, guid: acf8e73fa8f548c4db70fe82d85f92c7, type: 3}
+      propertyPath: subtitle.Array.data[1].subtitle
+      value: "retrieve the head of Medusa. He used the gorgon\u2019s head to petrify
+        the beast,"
+      objectReference: {fileID: 0}
+    - target: {fileID: 4977899314915778739, guid: acf8e73fa8f548c4db70fe82d85f92c7, type: 3}
+      propertyPath: subtitle.Array.data[2].subtitle
+      value: saving the princess whom he later grew to love.
+      objectReference: {fileID: 0}
+    - target: {fileID: 4977899314915778739, guid: acf8e73fa8f548c4db70fe82d85f92c7, type: 3}
+      propertyPath: subtitle.Array.data[0].subtitleTime
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4977899314915778739, guid: acf8e73fa8f548c4db70fe82d85f92c7, type: 3}
+      propertyPath: subtitle.Array.data[1].subtitleTime
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4977899314915778739, guid: acf8e73fa8f548c4db70fe82d85f92c7, type: 3}
+      propertyPath: subtitle.Array.data[2].subtitleTime
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8459990715358038478, guid: acf8e73fa8f548c4db70fe82d85f92c7, type: 3}
       propertyPath: m_Name

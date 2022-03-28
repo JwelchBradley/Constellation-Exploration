@@ -54,7 +54,7 @@ PrefabInstance:
     - target: {fileID: 2580655099906826923, guid: acf8e73fa8f548c4db70fe82d85f92c7, type: 3}
       propertyPath: m_audioClip
       value: 
-      objectReference: {fileID: 8300000, guid: 6a77e7716a2bfc94a9f893fd20c3a0a5, type: 3}
+      objectReference: {fileID: 8300000, guid: bc9790d46d02b1949934f1f79bae1afd, type: 3}
     - target: {fileID: 2580655099906826923, guid: acf8e73fa8f548c4db70fe82d85f92c7, type: 3}
       propertyPath: m_PlayOnAwake
       value: 1
@@ -63,6 +63,26 @@ PrefabInstance:
       propertyPath: nextToSpawn
       value: 
       objectReference: {fileID: 4463540815631083492, guid: 65b5a2b9d34618d478c6b2caf5966086, type: 3}
+    - target: {fileID: 4977899314915778739, guid: acf8e73fa8f548c4db70fe82d85f92c7, type: 3}
+      propertyPath: subtitle.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4977899314915778739, guid: acf8e73fa8f548c4db70fe82d85f92c7, type: 3}
+      propertyPath: subtitle.Array.data[0].subtitle
+      value: 'The vain Queen Cassiopeia angered Poseidon after '
+      objectReference: {fileID: 0}
+    - target: {fileID: 4977899314915778739, guid: acf8e73fa8f548c4db70fe82d85f92c7, type: 3}
+      propertyPath: subtitle.Array.data[1].subtitle
+      value: claiming to be more beautiful than the nereids, nymphs of the sea.
+      objectReference: {fileID: 0}
+    - target: {fileID: 4977899314915778739, guid: acf8e73fa8f548c4db70fe82d85f92c7, type: 3}
+      propertyPath: subtitle.Array.data[0].subtitleTime
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4977899314915778739, guid: acf8e73fa8f548c4db70fe82d85f92c7, type: 3}
+      propertyPath: subtitle.Array.data[1].subtitleTime
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 8459990715358038478, guid: acf8e73fa8f548c4db70fe82d85f92c7, type: 3}
       propertyPath: m_Name
       value: CassToCeph

@@ -54,7 +54,7 @@ PrefabInstance:
     - target: {fileID: 2580655099906826923, guid: acf8e73fa8f548c4db70fe82d85f92c7, type: 3}
       propertyPath: m_audioClip
       value: 
-      objectReference: {fileID: 8300000, guid: 6a77e7716a2bfc94a9f893fd20c3a0a5, type: 3}
+      objectReference: {fileID: 8300000, guid: b871728bad4262c43809de181558d9ea, type: 3}
     - target: {fileID: 2580655099906826923, guid: acf8e73fa8f548c4db70fe82d85f92c7, type: 3}
       propertyPath: m_PlayOnAwake
       value: 1
@@ -63,6 +63,28 @@ PrefabInstance:
       propertyPath: nextToSpawn
       value: 
       objectReference: {fileID: 7042789073976865744, guid: ce6415fedc0f40b4591140c6d38719eb, type: 3}
+    - target: {fileID: 4977899314915778739, guid: acf8e73fa8f548c4db70fe82d85f92c7, type: 3}
+      propertyPath: subtitle.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4977899314915778739, guid: acf8e73fa8f548c4db70fe82d85f92c7, type: 3}
+      propertyPath: subtitle.Array.data[0].subtitle
+      value: 'In order to appease the great sea monster Poseidon had sent after their
+        kingdom, '
+      objectReference: {fileID: 0}
+    - target: {fileID: 4977899314915778739, guid: acf8e73fa8f548c4db70fe82d85f92c7, type: 3}
+      propertyPath: subtitle.Array.data[1].subtitle
+      value: Cepheus and Cassiopeia chained their daughter Andromeda to a rock as
+        a sacrifice.
+      objectReference: {fileID: 0}
+    - target: {fileID: 4977899314915778739, guid: acf8e73fa8f548c4db70fe82d85f92c7, type: 3}
+      propertyPath: subtitle.Array.data[0].subtitleTime
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4977899314915778739, guid: acf8e73fa8f548c4db70fe82d85f92c7, type: 3}
+      propertyPath: subtitle.Array.data[1].subtitleTime
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 8459990715358038478, guid: acf8e73fa8f548c4db70fe82d85f92c7, type: 3}
       propertyPath: m_Name
       value: CephToPers

@@ -6,6 +6,14 @@ using UnityEngine;
 public class ConstellationData : ScriptableObject
 {
     [SerializeField]
+    private float hapticFeedbackDuration;
+    public float HapticFeedbackDuration { get => hapticFeedbackDuration; }
+
+    [SerializeField]
+    private float hapticFeedbackAmplitude;
+    public float HapticFeedbackAmplitude { get => hapticFeedbackAmplitude; }
+
+    [SerializeField]
     private float lineWidth = 3.0f;
     public float LineWidth { get => lineWidth; }
 
