@@ -11,6 +11,8 @@ using static UnityEngine.ParticleSystem;
 
 public class StarCreator : MonoBehaviour
 {
+    public List<Sprite> h;
+
     #region Fields
     [SerializeField]
     private ConstellationData constellationData;
@@ -1377,6 +1379,7 @@ public class StarCreator : MonoBehaviour
             if (connectTheDotsGame)
             {
                 GameObject node = Instantiate(connectTheDotsSphere, pos, Quaternion.identity, transform);
+                node.name = star_Database[a].name;
                 currentConnectTheDotsGame.Add(node);
             }
 

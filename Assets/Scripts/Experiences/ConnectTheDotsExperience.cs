@@ -40,12 +40,18 @@ public class ConnectTheDotsExperience : TransitionExperience
 
     public Color aimedColor;
 
+    private bool check = true;
+
     protected override void Awake()
     {
         base.Awake();
         audioFinished = false;
         name = this.gameObject.name.Substring(0, this.gameObject.name.IndexOf('('));
         thisScript = this;
+
+
+
+        StarCreator.Constellations.TryGetValue(name, out List<LineRenderer> lrs);
 
         switch (name)
         {
@@ -80,8 +86,79 @@ public class ConnectTheDotsExperience : TransitionExperience
                 break;
         }
 
-        StartCoroutine("wait");
+        var totalX = 0f;
+        var totalY = 0f;
+        var totalZ = 0f;
+        int numTotal = 0;
 
+        List<Vector3> vector3s = new List<Vector3>();
+
+        foreach (LineRenderer lr in lrs)
+        {
+            for (int a = 0; a < lr.positionCount; a++)
+            {
+                totalX += lr.GetPosition(a).x;
+                totalY += lr.GetPosition(a).y;
+                totalZ += lr.GetPosition(a).z;
+                numTotal++;
+
+                vector3s.Add(lr.GetPosition(a));
+            }
+        }
+
+        numTotal++;
+        
+        var centerX = totalX / numTotal;
+        var centerY = totalY / numTotal;
+        var centerZ = totalZ / numTotal;
+
+
+        Vector3 newHell = new Vector3(centerX, centerY, centerZ);
+
+        print(newHell);
+
+        gameObject.transform.position = Vector3.zero;
+
+        gameObject.transform.GetChild(1).transform.position += newHell;
+
+        //StartCoroutine("wait");
+        
+    }
+
+    private void Update()
+    {
+        if (check)
+        {
+            var totalX = 0f;
+            var totalY = 0f;
+            var totalZ = 0f;
+            int numTotal = 0;
+
+
+            foreach (ConnectTheDotsData he in GameObject.FindObjectsOfType<ConnectTheDotsData>())
+            {
+                if (!he.constelation.Equals(""))
+                {
+                    totalX += he.h.x;
+                    totalY += he.h.y;
+                    totalZ += he.h.z;
+                    numTotal++;
+                }
+            }
+
+            
+
+            var centerX = totalX / numTotal;
+            var centerY = totalY / numTotal;
+            var centerZ = totalZ / numTotal;
+
+            Vector3 newHell = new Vector3(centerX, centerY, centerZ);
+            print(newHell);
+            if(numTotal > 0)
+            {
+                check = false;
+            }
+        }
     }
 
     public List<Vector3> NextPoint()

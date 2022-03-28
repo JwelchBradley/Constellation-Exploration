@@ -5,6 +5,8 @@ using UnityEngine;
 public class ConnectTheDotsData : MonoBehaviour
 {
     private List<GameObject> nodes;
+    public Vector3 h;
+    public string constelation;
 
     // Start is called before the first frame update
     void Start()
@@ -15,6 +17,6 @@ public class ConnectTheDotsData : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        h = transform.position;
     }
 }
