@@ -85,7 +85,7 @@ public class ConnectTheDotsExperience : TransitionExperience
             default:
                 break;
         }
-
+        /*
         var totalX = 0f;
         var totalY = 0f;
         var totalZ = 0f;
@@ -120,8 +120,8 @@ public class ConnectTheDotsExperience : TransitionExperience
         gameObject.transform.position = Vector3.zero;
 
         gameObject.transform.GetChild(1).transform.position += newHell;
-
-        //StartCoroutine("wait");
+        */
+        StartCoroutine("wait");
         
     }
 
