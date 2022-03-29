@@ -127,7 +127,7 @@ public class ConnectTheDotsExperience : TransitionExperience
 
     private void Update()
     {
-        if (check)
+        /*if (check)
         {
             var totalX = 0f;
             var totalY = 0f;
@@ -158,7 +158,7 @@ public class ConnectTheDotsExperience : TransitionExperience
             {
                 check = false;
             }
-        }
+        }*/
     }
 
     public List<Vector3> NextPoint()
