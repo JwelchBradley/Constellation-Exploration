@@ -284,6 +284,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dfbd6c181c694e448b9bbe9182888436, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  subtitle: []
   isEnd: 0
   nextToSpawn: {fileID: 7951731816555383483, guid: e0cdaf468752798418deb27ec741bf89, type: 3}
   endAfterAudio: 0
@@ -293,6 +294,8 @@ MonoBehaviour:
   name: 
   totalPoints: 0
   currentPoints: 0
+  hapticFeedbackAmplitude: 0.25
+  hapticFeedbackDuration: 0.1
   lerped: {r: 0, g: 0, b: 0, a: 0}
   value: 0
   time: 0

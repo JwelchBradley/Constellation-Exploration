@@ -14,6 +14,8 @@ public class ConnectTheDotsExperience : TransitionExperience
 
     public List<Vector3> points = new List<Vector3>();
 
+    //public GameObject completedArt;
+
     public static ConnectTheDotsExperience thisScript;
 
     public string name;
