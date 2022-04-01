@@ -9,6 +9,9 @@ public class DraggingExperience : Experience
     DraggingPlacable[] dragging;
     private int completed = 0;
 
+    [SerializeField]
+    private AudioClip dragSpotPingSound;
+
     protected override void Awake()
     {
         base.Awake();
@@ -22,9 +25,11 @@ public class DraggingExperience : Experience
     {
         if (++completed == placeables.Count)
         {
-            Destroy(gameObject, ExperienceTimer);
+            aud.Play();
+            StartCoroutine(PlaySubtitles());
+            Destroy(gameObject, ExperienceTimer+0.05f);
         }
-        aud.Play();
+        aud.PlayOneShot(dragSpotPingSound);
     }
 
     protected void OnDestroy()

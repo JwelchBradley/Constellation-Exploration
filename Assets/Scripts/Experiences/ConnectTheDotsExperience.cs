@@ -328,7 +328,8 @@ public class ConnectTheDotsExperience : TransitionExperience
                 {
                     if(h.gameObject.name.Contains(name))
                     {
-                        h.artEnabled = true;
+                        h.ChangeArt(LookAt.ArtOnType.FULL);
+                        //h.artEnabled = true;
                     }
                 }
                 
@@ -338,7 +339,8 @@ public class ConnectTheDotsExperience : TransitionExperience
                 {
                     if (h.gameObject.name.Contains(name))
                     {
-                        h.artEnabled = true;
+                        h.ChangeArt(LookAt.ArtOnType.FULL);
+                        //h.artEnabled = true;
                     }
                 }
                 break;

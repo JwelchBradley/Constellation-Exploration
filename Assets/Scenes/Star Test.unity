@@ -4068,7 +4068,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cam: {fileID: 194762849}
-  artEnabled: 0
 --- !u!4 &414871364 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: b2606fa5dca421149b009d722591bb1e, type: 3}
@@ -5389,7 +5388,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cam: {fileID: 194762849}
-  artEnabled: 0
 --- !u!1001 &566587009
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7234,7 +7232,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &754585421
 Transform:
   m_ObjectHideFlags: 0
@@ -20648,7 +20646,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1731195963
 MonoBehaviour:
   m_ObjectHideFlags: 0

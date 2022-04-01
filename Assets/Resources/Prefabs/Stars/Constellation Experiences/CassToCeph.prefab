@@ -87,5 +87,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: CassToCeph
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 840139188876203638, guid: acf8e73fa8f548c4db70fe82d85f92c7, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: acf8e73fa8f548c4db70fe82d85f92c7, type: 3}

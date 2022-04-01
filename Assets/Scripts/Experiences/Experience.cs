@@ -19,6 +19,9 @@ public class Experience : MonoBehaviour
     protected AudioSource aud;
 
     [SerializeField]
+    protected bool playSubtitlesAtAwake = true;
+
+    [SerializeField]
     private List<SubtitleObject> subtitle = new List<SubtitleObject>();
 
     // Start is called before the first frame update
@@ -28,7 +31,7 @@ public class Experience : MonoBehaviour
         if(aud.clip != null)
         experienceTimer = aud.clip.length;
 
-        if (subtitle.Count != 0)
+        if (subtitle.Count != 0 && playSubtitlesAtAwake)
         {
             StartCoroutine(PlaySubtitles());
         }

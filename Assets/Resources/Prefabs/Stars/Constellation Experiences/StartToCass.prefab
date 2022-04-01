@@ -315,6 +315,7 @@ GameObject:
   - component: {fileID: 1437882215893524273}
   - component: {fileID: 2580655099906826923}
   - component: {fileID: 4977899314915778739}
+  - component: {fileID: 840139188876203638}
   m_Layer: 0
   m_Name: StartToCass
   m_TagString: Untagged
@@ -452,3 +453,19 @@ MonoBehaviour:
   isEnd: 0
   nextToSpawn: {fileID: 8783072286808657941, guid: e5eeb0b43d84ec243b4766d7164156c2, type: 3}
   endAfterAudio: 1
+--- !u!114 &840139188876203638
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8459990715358038478}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1b6d4443441ccb498a7dd32c1bacd4e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  constellationNames:
+  - Looking At Perseus
+  - Looking At Cassiopeia
+  - Cepheus

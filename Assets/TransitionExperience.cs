@@ -16,7 +16,7 @@ public class TransitionExperience : Experience
         base.Awake();
 
         if (endAfterAudio)
-            Destroy(gameObject, ExperienceTimer);
+            Destroy(gameObject, ExperienceTimer+0.25f);
     }
 
     protected void OnDestroy()
