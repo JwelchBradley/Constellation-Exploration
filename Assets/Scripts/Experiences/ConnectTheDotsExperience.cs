@@ -321,6 +321,30 @@ public class ConnectTheDotsExperience : TransitionExperience
     {
         StarCreator.Constellations.TryGetValue(name, out List<LineRenderer> lrs);
         lrs[0].positionCount--;
+        switch(name)
+        {
+            case ("Perseus"):
+                foreach(LookAt h in GameObject.FindObjectsOfType<LookAt>())
+                {
+                    if(h.gameObject.name.Contains(name))
+                    {
+                        h.artEnabled = true;
+                    }
+                }
+                
+                break;
+            case ("Cassiopeia"):
+                foreach (LookAt h in GameObject.FindObjectsOfType<LookAt>())
+                {
+                    if (h.gameObject.name.Contains(name))
+                    {
+                        h.artEnabled = true;
+                    }
+                }
+                break;
+            case ("Cepheus"):
+                break;
+        }
         Destroy(gameObject, 1f);
     }
 
