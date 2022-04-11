@@ -143,6 +143,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d34fcdee587fa54bb1f612fc825af76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playSubtitlesAtAwake: 1
   subtitle:
   - subtitle: Gemini, the half-divine twins.
     subtitleTime: 4
@@ -270,7 +271,7 @@ VideoPlayer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1312865440011713840}
   m_Enabled: 1
-  m_VideoClip: {fileID: 32900000, guid: 1644445effd960c4ca19bcb934c4f7bb, type: 3}
+  m_VideoClip: {fileID: 32900000, guid: b1eca4bb36572f44db5e0a9e605ceae0, type: 3}
   m_TargetCameraAlpha: 1
   m_TargetCamera3DLayout: 0
   m_TargetCamera: {fileID: 0}
@@ -363,8 +364,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: text
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: dcf3ce5538208f64da7b12cf9bbeded1, type: 2}
+  m_sharedMaterial: {fileID: -7788301409358393845, guid: dcf3ce5538208f64da7b12cf9bbeded1, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -388,8 +389,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 172
-  m_fontSizeBase: 172
+  m_fontSize: 272
+  m_fontSizeBase: 272
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18

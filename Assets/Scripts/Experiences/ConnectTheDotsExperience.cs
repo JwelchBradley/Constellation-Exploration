@@ -15,6 +15,10 @@ public class ConnectTheDotsExperience : TransitionExperience
     public List<Vector3> points = new List<Vector3>();
 
     //public GameObject completedArt;
+    #region debug
+    public List<ListofPoints> pointsOfPoints;
+    private int totalP;
+    #endregion
 
     public static ConnectTheDotsExperience thisScript;
 
@@ -65,10 +69,12 @@ public class ConnectTheDotsExperience : TransitionExperience
                 pointer.Add(4, new List<int> { 3, 5 });
                 pointer.Add(5, new List<int> { 4, 6 });
                 pointer.Add(6, new List<int> { 5, 7 });
-                pointer.Add(7, new List<int> { 2 , 6 });
+                pointer.Add(7, new List<int> { 2, 6 });
                 pointer.Add(8, new List<int> { 2, 9 });
                 pointer.Add(9, new List<int> { 8, 10 });
-                pointer.Add(10, new List<int> { 2 , 9 });
+                pointer.Add(10, new List<int> { 2, 9 });
+
+                totalP = 10;
                 break;
             case ("Cassiopeia"):
                 pointer.Add(0, new List<int> { 1 });
@@ -76,6 +82,8 @@ public class ConnectTheDotsExperience : TransitionExperience
                 pointer.Add(2, new List<int> { 1, 3 });
                 pointer.Add(3, new List<int> { 2, 4 });
                 pointer.Add(4, new List<int> { 3 });
+
+                totalP = 4;
                 break;
             case ("Cepheus"):
                 pointer.Add(0, new List<int> { 1, 2, 3 });
@@ -83,84 +91,31 @@ public class ConnectTheDotsExperience : TransitionExperience
                 pointer.Add(2, new List<int> { 0, 1, 4 });
                 pointer.Add(3, new List<int> { 0, 4 });
                 pointer.Add(4, new List<int> { 2, 3 });
+
+                totalP = 4;
                 break;
             default:
                 break;
         }
-        /*
-        var totalX = 0f;
-        var totalY = 0f;
-        var totalZ = 0f;
-        int numTotal = 0;
 
-        List<Vector3> vector3s = new List<Vector3>();
-
-        foreach (LineRenderer lr in lrs)
+        for (int a = 0; a < totalP; a++)
         {
-            for (int a = 0; a < lr.positionCount; a++)
+            ListofPoints l = new ListofPoints();
+            pointsOfPoints.Add(l);
+            pointer.TryGetValue(a, out List<int> h);
+            foreach(int j in h)
             {
-                totalX += lr.GetPosition(a).x;
-                totalY += lr.GetPosition(a).y;
-                totalZ += lr.GetPosition(a).z;
-                numTotal++;
-
-                vector3s.Add(lr.GetPosition(a));
+                l.avaliblePoints.Add(j);
             }
+            
         }
 
-        numTotal++;
-        
-        var centerX = totalX / numTotal;
-        var centerY = totalY / numTotal;
-        var centerZ = totalZ / numTotal;
-
-
-        Vector3 newHell = new Vector3(centerX, centerY, centerZ);
-
-        print(newHell);
-
-        gameObject.transform.position = Vector3.zero;
-
-        gameObject.transform.GetChild(1).transform.position += newHell;
-        */
         StartCoroutine("wait");
-        
+
     }
 
     private void Update()
     {
-        /*if (check)
-        {
-            var totalX = 0f;
-            var totalY = 0f;
-            var totalZ = 0f;
-            int numTotal = 0;
-
-
-            foreach (ConnectTheDotsData he in GameObject.FindObjectsOfType<ConnectTheDotsData>())
-            {
-                if (!he.constelation.Equals(""))
-                {
-                    totalX += he.h.x;
-                    totalY += he.h.y;
-                    totalZ += he.h.z;
-                    numTotal++;
-                }
-            }
-
-            
-
-            var centerX = totalX / numTotal;
-            var centerY = totalY / numTotal;
-            var centerZ = totalZ / numTotal;
-
-            Vector3 newHell = new Vector3(centerX, centerY, centerZ);
-            print(newHell);
-            if(numTotal > 0)
-            {
-                check = false;
-            }
-        }*/
     }
 
     public List<Vector3> NextPoint()
@@ -191,7 +146,7 @@ public class ConnectTheDotsExperience : TransitionExperience
         StarCreator.Constellations.TryGetValue(name, out List<LineRenderer> lrs);
         lrs[0].positionCount++;
         totalPoints++;
-        lrs[0].SetPosition(totalPoints, lrs[0].GetPosition(totalPoints-1));
+        lrs[0].SetPosition(totalPoints, lrs[0].GetPosition(totalPoints - 1));
 
         List<bool> h = new List<bool>();
         for (int a = 0; a < pointer.Count; a++)
@@ -206,7 +161,7 @@ public class ConnectTheDotsExperience : TransitionExperience
                 h.Add(false);
             }
         }
-        if(h.Contains(false))
+        if (h.Contains(false))
         {
             return false;
         }
@@ -250,12 +205,12 @@ public class ConnectTheDotsExperience : TransitionExperience
 
             foreach (int num in nums)
             {
-                if(points[num] == pos)
+                if (points[num] == pos)
                 {
-                    if(currentPoints == 7)
+                    if (currentPoints == 7)
                     {
-                        
-                        for (int a = currentPoints-1; a >= 2; a--)
+
+                        for (int a = currentPoints - 1; a >= 2; a--)
                         {
                             if (a != 2)
                             {
@@ -272,13 +227,13 @@ public class ConnectTheDotsExperience : TransitionExperience
                         pointer.TryGetValue(10, out List<int> rem);
                         rem.Remove(2);
                     }
-                    else if(currentPoints == 10)
+                    else if (currentPoints == 10)
                     {
                         for (int a = currentPoints - 1; a > 7; a--)
                         {
-                                lrs[0].positionCount++;
-                                lrs[0].SetPosition(totalPoints, points[a]);
-                                totalPoints++;
+                            lrs[0].positionCount++;
+                            lrs[0].SetPosition(totalPoints, points[a]);
+                            totalPoints++;
                         }
                         lrs[0].SetPosition(totalPoints, points[2]);
                         pointer.TryGetValue(7, out List<int> rem);
@@ -288,13 +243,23 @@ public class ConnectTheDotsExperience : TransitionExperience
                     pointer.TryGetValue(num, out List<int> numer);
                     ResetColor();
                     numer.Remove(currentPoints);
+
+                    if(pointsOfPoints.Count < num)
+                    pointsOfPoints[num].avaliblePoints.Remove(currentPoints);
+
+                    if(pointsOfPoints.Count < currentPoints)
+                    pointsOfPoints[currentPoints].avaliblePoints.Remove(num);
+
                     currentPoints = num;
-                    
+
                     break;
                 }
-                
+
             }
             nums.Remove(currentPoints);
+
+            
+            
             //print(pointer.Count);
             /*
 
@@ -310,7 +275,7 @@ public class ConnectTheDotsExperience : TransitionExperience
             //}
             //else
             //{
-                //return false;
+            //return false;
             //}
         }
         return false;
@@ -321,18 +286,18 @@ public class ConnectTheDotsExperience : TransitionExperience
     {
         StarCreator.Constellations.TryGetValue(name, out List<LineRenderer> lrs);
         lrs[0].positionCount--;
-        switch(name)
+        switch (name)
         {
             case ("Perseus"):
-                foreach(LookAt h in GameObject.FindObjectsOfType<LookAt>())
+                foreach (LookAt h in GameObject.FindObjectsOfType<LookAt>())
                 {
-                    if(h.gameObject.name.Contains(name))
+                    if (h.gameObject.name.Contains(name))
                     {
                         h.ChangeArt(LookAt.ArtOnType.FULL);
                         //h.artEnabled = true;
                     }
                 }
-                
+
                 break;
             case ("Cassiopeia"):
                 foreach (LookAt h in GameObject.FindObjectsOfType<LookAt>())
@@ -394,5 +359,11 @@ public class ConnectTheDotsExperience : TransitionExperience
 
         AddPoint();
 
+    }
+
+    [System.Serializable]
+    public class ListofPoints
+    {
+        public List<int> avaliblePoints = new List<int>();
     }
 }

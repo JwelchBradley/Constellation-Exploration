@@ -42,6 +42,8 @@ public class ConstellationInteraction : MonoBehaviour
     [SerializeField]
     private ActionBasedController thisXR;
 
+    private int finishedExperienceCount = 0;
+
     private void Awake()
     {
         if (isRight)
@@ -379,6 +381,11 @@ public class ConstellationInteraction : MonoBehaviour
     public void EndExperience()
     {
         Destroy(activeExperience);
+
+        if(++finishedExperienceCount == 3)
+        {
+            Instantiate(Resources.Load("Prefabs/End Text"));
+        }
 
         activeExperience = null;
         ChangeConstellationColor(constellationData.AlreadyClickedColor);

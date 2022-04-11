@@ -125,7 +125,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  - {fileID: -7788301409358393845, guid: dcf3ce5538208f64da7b12cf9bbeded1, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -169,8 +169,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Connect the dots to form the constellation
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: dcf3ce5538208f64da7b12cf9bbeded1, type: 2}
+  m_sharedMaterial: {fileID: -7788301409358393845, guid: dcf3ce5538208f64da7b12cf9bbeded1, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -284,6 +284,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dfbd6c181c694e448b9bbe9182888436, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playSubtitlesAtAwake: 1
   subtitle: []
   isEnd: 0
   nextToSpawn: {fileID: 8618233947694595850, guid: 1baed0c546f415040a9d9f2f9e92ce44, type: 3}
@@ -291,9 +292,12 @@ MonoBehaviour:
   connectDotSound: {fileID: 8300000, guid: 064c708d94569704eaa32e9d25b07323, type: 3}
   constellationData: {fileID: 11400000, guid: 34239e441be536f4da7ccbd05e778705, type: 2}
   points: []
+  pointsOfPoints: []
   name: 
   totalPoints: 0
   currentPoints: 0
+  hapticFeedbackAmplitude: 0.25
+  hapticFeedbackDuration: 0.1
   lerped: {r: 0, g: 0, b: 0, a: 0}
   value: 0
   time: 0

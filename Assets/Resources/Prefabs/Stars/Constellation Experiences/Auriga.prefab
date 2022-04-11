@@ -322,7 +322,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   de: {fileID: -2102134624367208699}
   snapObject: {fileID: 3596163004036543296}
-  snapDist: 60
+  snapDist: 100
 --- !u!1 &408824645232577086
 GameObject:
   m_ObjectHideFlags: 0
@@ -588,17 +588,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1907916489698353059}
-  m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
+  m_LocalRotation: {x: -0.052335896, y: 0.9986295, z: -0, w: 0}
   m_LocalPosition: {x: 0, y: 0, z: 201.4}
   m_LocalScale: {x: 0.10692, y: 0.106920004, z: 0.10692}
   m_Children:
   - {fileID: 6337248780852141224}
   m_Father: {fileID: 7162348122746018550}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: -6}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 61.6, y: 22.4}
+  m_AnchoredPosition: {x: 61.6, y: 100}
   m_SizeDelta: {x: 1920.0001, y: 1080}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!223 &7679791251034270210
@@ -919,7 +919,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3574023857235404197}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -216, y: 38, z: 234.84978}
+  m_LocalPosition: {x: -130, y: 45, z: 234.84978}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 688031257918541584}
@@ -1083,7 +1083,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -5, y: 0}
   m_SizeDelta: {x: 11.25, y: 5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!23 &3878593813570452107
@@ -1105,7 +1105,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  - {fileID: -7788301409358393845, guid: dcf3ce5538208f64da7b12cf9bbeded1, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1149,8 +1149,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Drag all of the parts to build the chariot
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: dcf3ce5538208f64da7b12cf9bbeded1, type: 2}
+  m_sharedMaterial: {fileID: -7788301409358393845, guid: dcf3ce5538208f64da7b12cf9bbeded1, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1182,7 +1182,7 @@ MonoBehaviour:
   m_fontSizeMax: 72
   m_fontStyle: 0
   m_HorizontalAlignment: 2
-  m_VerticalAlignment: 256
+  m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -1278,19 +1278,19 @@ MonoBehaviour:
   playSubtitlesAtAwake: 0
   subtitle:
   - subtitle: Auriga; the charioteer.
-    subtitleTime: 2
+    subtitleTime: 3
   - subtitle: King Erichthonius of Athens was a son of Hephaestus
-    subtitleTime: 3
+    subtitleTime: 3.5
   - subtitle: 'who was born from the earth and raised in secret by Athena. '
-    subtitleTime: 3
+    subtitleTime: 3.5
   - subtitle: 'She often protected Erichthonius and even taught him how to tame horses. '
     subtitleTime: 4
   - subtitle: He used this skill to help the Athenians plough farmland
-    subtitleTime: 3
+    subtitleTime: 3.5
   - subtitle: 'and also invent a four-horse chariot, or quadriga. '
-    subtitleTime: 3
+    subtitleTime: 4
   - subtitle: "Zeus was so impressed by Erichthonius\u2019s accomplishments that"
-    subtitleTime: 3
+    subtitleTime: 4
   - subtitle: 'he placed him in the sky after his death. '
     subtitleTime: 3
   placeables:
@@ -1309,7 +1309,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: fc690a85c9eb09047bf2e92e43a3e947, type: 3}
+  m_audioClip: {fileID: 8300000, guid: d4c04398c281f0148a724660df3eb55c, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -1503,7 +1503,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5091993015927851585}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -69.66261, y: 24.739517, z: -20.722694}
+  m_LocalPosition: {x: -13, y: 24.739517, z: -20.722694}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2505924552930574615}
@@ -1546,6 +1546,7 @@ MonoBehaviour:
   normal: {fileID: 0}
   hoverObj: {fileID: 0}
   shouldFade: 1
+  shouldMove: 1
 --- !u!1 &5167763195138965255
 GameObject:
   m_ObjectHideFlags: 0
@@ -2026,10 +2027,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: text
+  m_text: 
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: dcf3ce5538208f64da7b12cf9bbeded1, type: 2}
+  m_sharedMaterial: {fileID: -7788301409358393845, guid: dcf3ce5538208f64da7b12cf9bbeded1, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2053,8 +2054,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 172
-  m_fontSizeBase: 172
+  m_fontSize: 272
+  m_fontSizeBase: 272
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
