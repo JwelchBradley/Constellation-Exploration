@@ -65,7 +65,7 @@ MonoBehaviour:
   timeBeforeFadeOut: 1000
   fadeOutSpeed: 1.5
   distFromPlayer: 25
-  yPos: 6
+  yPos: 9
   positionLate: 0
   normal: {fileID: 0}
   hoverObj: {fileID: 0}
