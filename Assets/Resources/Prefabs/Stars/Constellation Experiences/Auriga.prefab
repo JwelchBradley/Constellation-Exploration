@@ -1083,7 +1083,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -5, y: 0}
+  m_AnchoredPosition: {x: -9.08, y: 0}
   m_SizeDelta: {x: 11.25, y: 5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!23 &3878593813570452107
@@ -1541,7 +1541,7 @@ MonoBehaviour:
   timeBeforeFadeOut: 3
   fadeOutSpeed: 1.5
   distFromPlayer: 20
-  yPos: 1.25
+  yPos: 7
   positionLate: 0
   normal: {fileID: 0}
   hoverObj: {fileID: 0}

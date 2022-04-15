@@ -310,6 +310,14 @@ public class ConnectTheDotsExperience : TransitionExperience
                 }
                 break;
             case ("Cepheus"):
+                foreach (LookAt h in GameObject.FindObjectsOfType<LookAt>())
+                {
+                    if (h.gameObject.name.Contains(name))
+                    {
+                        h.ChangeArt(LookAt.ArtOnType.FULL);
+                        //h.artEnabled = true;
+                    }
+                }
                 break;
         }
         Destroy(gameObject, 1f);

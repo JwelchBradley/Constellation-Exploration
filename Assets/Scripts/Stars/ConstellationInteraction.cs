@@ -320,10 +320,12 @@ public class ConstellationInteraction : MonoBehaviour
 
     private void Update()
     {
+#if UNITY_EDITOR
         if (Input.GetKeyDown(KeyCode.Mouse0) && currentSelected != "")
             Interact(true);
         else if (Input.GetKeyDown(KeyCode.Mouse0) && isOnButton)
             ButtonClick();
+#endif
     }
 
     #region Interact
@@ -489,6 +491,9 @@ public class ConstellationInteraction : MonoBehaviour
 
     private void ChangeConstellationColor(Color newColor, string name)
     {
+        if (!StarCreator.Constellations.TryGetValue(name, out List<LineRenderer> l)) return;
+
+
         foreach (LineRenderer lr in StarCreator.Constellations[name])
         {
             lr.material.color = newColor;

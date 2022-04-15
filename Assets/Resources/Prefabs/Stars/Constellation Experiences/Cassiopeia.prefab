@@ -26,7 +26,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5749582769252963609}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.3373835, y: -12.260477, z: -20.722694}
+  m_LocalPosition: {x: 0, y: -12.260477, z: -20.722694}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1784789890864131609}
@@ -64,11 +64,12 @@ MonoBehaviour:
   timeBeforeFadeOut: 3
   fadeOutSpeed: 1.5
   distFromPlayer: 20
-  yPos: 1.25
+  yPos: 7
   positionLate: 0
   normal: {fileID: 0}
   hoverObj: {fileID: 0}
   shouldFade: 1
+  shouldMove: 1
 --- !u!1 &6017619297747129735
 GameObject:
   m_ObjectHideFlags: 0
