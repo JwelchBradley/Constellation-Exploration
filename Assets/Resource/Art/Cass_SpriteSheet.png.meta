@@ -1,0 +1,3012 @@
+fileFormatVersion: 2
+guid: 74da4e038f16e5f448b55dd902cf209d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5106493700765698161
+    second: Cass_SpriteSheet_0
+  - first:
+      213: -4560682471497503862
+    second: Cass_SpriteSheet_1
+  - first:
+      213: -3083348417497067627
+    second: Cass_SpriteSheet_2
+  - first:
+      213: 8106171202848393606
+    second: Cass_SpriteSheet_3
+  - first:
+      213: -1911437394242169512
+    second: Cass_SpriteSheet_4
+  - first:
+      213: 6224884757913686833
+    second: Cass_SpriteSheet_5
+  - first:
+      213: 9018721468765385819
+    second: Cass_SpriteSheet_6
+  - first:
+      213: 1492109523044726111
+    second: Cass_SpriteSheet_7
+  - first:
+      213: 6926152268956997746
+    second: Cass_SpriteSheet_8
+  - first:
+      213: 811170582954002423
+    second: Cass_SpriteSheet_9
+  - first:
+      213: 6198731551334381278
+    second: Cass_SpriteSheet_10
+  - first:
+      213: -1656454936113210918
+    second: Cass_SpriteSheet_11
+  - first:
+      213: 6865459282350926221
+    second: Cass_SpriteSheet_12
+  - first:
+      213: 6875827984838280043
+    second: Cass_SpriteSheet_13
+  - first:
+      213: -374421205641333690
+    second: Cass_SpriteSheet_14
+  - first:
+      213: -140886244329716478
+    second: Cass_SpriteSheet_15
+  - first:
+      213: 2138405390434707168
+    second: Cass_SpriteSheet_16
+  - first:
+      213: -7842373897196626167
+    second: Cass_SpriteSheet_17
+  - first:
+      213: -3170048805639230949
+    second: Cass_SpriteSheet_18
+  - first:
+      213: -824445067986758989
+    second: Cass_SpriteSheet_19
+  - first:
+      213: 1311862473323481762
+    second: Cass_SpriteSheet_20
+  - first:
+      213: 2244030002509085299
+    second: Cass_SpriteSheet_21
+  - first:
+      213: -4457101505997584489
+    second: Cass_SpriteSheet_22
+  - first:
+      213: -3188061960089043921
+    second: Cass_SpriteSheet_23
+  - first:
+      213: -8189236072800843349
+    second: Cass_SpriteSheet_24
+  - first:
+      213: 1769651612086362035
+    second: Cass_SpriteSheet_25
+  - first:
+      213: 5173956230610499832
+    second: Cass_SpriteSheet_26
+  - first:
+      213: 9162696956140429225
+    second: Cass_SpriteSheet_27
+  - first:
+      213: -4077172520830167726
+    second: Cass_SpriteSheet_28
+  - first:
+      213: -994590393008389798
+    second: Cass_SpriteSheet_29
+  - first:
+      213: -1868756217181837215
+    second: Cass_SpriteSheet_30
+  - first:
+      213: 8276617589605969902
+    second: Cass_SpriteSheet_31
+  - first:
+      213: -7186048071521224875
+    second: Cass_SpriteSheet_32
+  - first:
+      213: 6081098423450932399
+    second: Cass_SpriteSheet_33
+  - first:
+      213: -3693525824107520240
+    second: Cass_SpriteSheet_34
+  - first:
+      213: -1231805467793531882
+    second: Cass_SpriteSheet_35
+  - first:
+      213: -4151838110318006366
+    second: Cass_SpriteSheet_36
+  - first:
+      213: 5178684660816122406
+    second: Cass_SpriteSheet_37
+  - first:
+      213: 1616850063049106089
+    second: Cass_SpriteSheet_38
+  - first:
+      213: 3433934140947061725
+    second: Cass_SpriteSheet_39
+  - first:
+      213: -5693189941059767575
+    second: Cass_SpriteSheet_40
+  - first:
+      213: -465625320582462053
+    second: Cass_SpriteSheet_41
+  - first:
+      213: 5729954207465904448
+    second: Cass_SpriteSheet_42
+  - first:
+      213: -9104190282931125276
+    second: Cass_SpriteSheet_43
+  - first:
+      213: 4967784201290480263
+    second: Cass_SpriteSheet_44
+  - first:
+      213: 2520972893551936324
+    second: Cass_SpriteSheet_45
+  - first:
+      213: -1935581105389508306
+    second: Cass_SpriteSheet_46
+  - first:
+      213: 5116666690308009419
+    second: Cass_SpriteSheet_47
+  - first:
+      213: 4070448154480955320
+    second: Cass_SpriteSheet_48
+  - first:
+      213: -1018168133625196077
+    second: Cass_SpriteSheet_49
+  - first:
+      213: -2276325255485059536
+    second: Cass_SpriteSheet_50
+  - first:
+      213: 7473582347460418666
+    second: Cass_SpriteSheet_51
+  - first:
+      213: 8225898919288180097
+    second: Cass_SpriteSheet_52
+  - first:
+      213: 8477637354286649587
+    second: Cass_SpriteSheet_53
+  - first:
+      213: 8844352654782354625
+    second: Cass_SpriteSheet_54
+  - first:
+      213: -8299451729423576263
+    second: Cass_SpriteSheet_55
+  - first:
+      213: 6922985022843807359
+    second: Cass_SpriteSheet_56
+  - first:
+      213: 7335608716471187068
+    second: Cass_SpriteSheet_57
+  - first:
+      213: 7556670591688451793
+    second: Cass_SpriteSheet_58
+  - first:
+      213: 4012013001757564825
+    second: Cass_SpriteSheet_59
+  - first:
+      213: -96598618969772607
+    second: Cass_SpriteSheet_60
+  - first:
+      213: 8133953467343907735
+    second: Cass_SpriteSheet_61
+  - first:
+      213: 2878653397113635652
+    second: Cass_SpriteSheet_62
+  - first:
+      213: -1347866284181636272
+    second: Cass_SpriteSheet_63
+  - first:
+      213: 3052450288027056606
+    second: Cass_SpriteSheet_64
+  - first:
+      213: 8241722420208836484
+    second: Cass_SpriteSheet_65
+  - first:
+      213: -3711425177178139567
+    second: Cass_SpriteSheet_66
+  - first:
+      213: -6878391379865733938
+    second: Cass_SpriteSheet_67
+  - first:
+      213: -6693209746684125384
+    second: Cass_SpriteSheet_68
+  - first:
+      213: 4316745755252065641
+    second: Cass_SpriteSheet_69
+  - first:
+      213: 1000821834361451963
+    second: Cass_SpriteSheet_70
+  - first:
+      213: 8711978523380886650
+    second: Cass_SpriteSheet_71
+  - first:
+      213: -884533044478053563
+    second: Cass_SpriteSheet_72
+  - first:
+      213: -1410640713106797084
+    second: Cass_SpriteSheet_73
+  - first:
+      213: -5947084817270489335
+    second: Cass_SpriteSheet_74
+  - first:
+      213: 8446620439725380366
+    second: Cass_SpriteSheet_75
+  - first:
+      213: 285557346339451540
+    second: Cass_SpriteSheet_76
+  - first:
+      213: 8331983814966803349
+    second: Cass_SpriteSheet_77
+  - first:
+      213: -6915116938839853702
+    second: Cass_SpriteSheet_78
+  - first:
+      213: -7258756207199288193
+    second: Cass_SpriteSheet_79
+  - first:
+      213: 5629652282365992600
+    second: Cass_SpriteSheet_80
+  - first:
+      213: 4553425442626001040
+    second: Cass_SpriteSheet_81
+  - first:
+      213: 4936680996544943503
+    second: Cass_SpriteSheet_82
+  - first:
+      213: -986563058615834653
+    second: Cass_SpriteSheet_83
+  - first:
+      213: -7585097815057473517
+    second: Cass_SpriteSheet_84
+  - first:
+      213: -8663291769855606447
+    second: Cass_SpriteSheet_85
+  - first:
+      213: 8759361466875079500
+    second: Cass_SpriteSheet_86
+  - first:
+      213: 7959782704285473216
+    second: Cass_SpriteSheet_87
+  - first:
+      213: 7354685381669418967
+    second: Cass_SpriteSheet_88
+  - first:
+      213: 2306575835233710115
+    second: Cass_SpriteSheet_89
+  - first:
+      213: -7728156427671964841
+    second: Cass_SpriteSheet_90
+  - first:
+      213: 1485956825223609896
+    second: Cass_SpriteSheet_91
+  - first:
+      213: -6524600906616197872
+    second: Cass_SpriteSheet_92
+  - first:
+      213: -4136750358987022939
+    second: Cass_SpriteSheet_93
+  - first:
+      213: -1994489269317190020
+    second: Cass_SpriteSheet_94
+  - first:
+      213: 6155801817880584228
+    second: Cass_SpriteSheet_95
+  - first:
+      213: -6584470983304462505
+    second: Cass_SpriteSheet_96
+  - first:
+      213: -7625638920847534343
+    second: Cass_SpriteSheet_97
+  - first:
+      213: 2298581506508460725
+    second: Cass_SpriteSheet_98
+  - first:
+      213: 3738288710883232487
+    second: Cass_SpriteSheet_99
+  - first:
+      213: 973431325381784682
+    second: Cass_SpriteSheet_100
+  - first:
+      213: 2445207359786533984
+    second: Cass_SpriteSheet_101
+  - first:
+      213: 4735415812008343036
+    second: Cass_SpriteSheet_102
+  - first:
+      213: 3015143882554105431
+    second: Cass_SpriteSheet_103
+  - first:
+      213: 2323941917396929086
+    second: Cass_SpriteSheet_104
+  - first:
+      213: 4711180188288196052
+    second: Cass_SpriteSheet_105
+  - first:
+      213: 4262619832765028007
+    second: Cass_SpriteSheet_106
+  - first:
+      213: 6192030618430782022
+    second: Cass_SpriteSheet_107
+  - first:
+      213: 8637432091164444641
+    second: Cass_SpriteSheet_108
+  - first:
+      213: 719688752659820494
+    second: Cass_SpriteSheet_109
+  - first:
+      213: -1710431970246211585
+    second: Cass_SpriteSheet_110
+  - first:
+      213: 5931131468940480543
+    second: Cass_SpriteSheet_111
+  - first:
+      213: 1561586436789487357
+    second: Cass_SpriteSheet_112
+  - first:
+      213: 2818806822356936460
+    second: Cass_SpriteSheet_113
+  - first:
+      213: 8728685652364489723
+    second: Cass_SpriteSheet_114
+  - first:
+      213: 7169024138555578407
+    second: Cass_SpriteSheet_115
+  - first:
+      213: 4210015270624941856
+    second: Cass_SpriteSheet_116
+  - first:
+      213: 6240405290918380088
+    second: Cass_SpriteSheet_117
+  - first:
+      213: 7613215512773046318
+    second: Cass_SpriteSheet_118
+  - first:
+      213: -203404618461024060
+    second: Cass_SpriteSheet_119
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Cass_SpriteSheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 12780
+        width: 1100
+        height: 1420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 178c8e927f8edd640800000000000000
+      internalID: 5106493700765698161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cass_SpriteSheet_1
+      rect:
+        serializedVersion: 2
+        x: 1100
+        y: 12780
+        width: 1100
+        height: 1420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8b6a09a47335b0c0800000000000000
+      internalID: -4560682471497503862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cass_SpriteSheet_2
+      rect:
+        serializedVersion: 2
+        x: 2200
+        y: 12780
+        width: 1100
+        height: 1420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59f035853feb535d0800000000000000
+      internalID: -3083348417497067627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cass_SpriteSheet_3
+      rect:
+        serializedVersion: 2
+        x: 3300
+        y: 12780
+        width: 1100
+        height: 1420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 689874ab2c7ee7070800000000000000
+      internalID: 8106171202848393606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cass_SpriteSheet_4
+      rect:
+        serializedVersion: 2
+        x: 4400
+        y: 12780
+        width: 1100
+        height: 1420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8551cc131d53975e0800000000000000
+      internalID: -1911437394242169512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cass_SpriteSheet_5
+      rect:
+        serializedVersion: 2
+        x: 5500
+        y: 12780
+        width: 1100
+        height: 1420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 133503bd4bb336650800000000000000
+      internalID: 6224884757913686833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cass_SpriteSheet_6
+      rect:
+        serializedVersion: 2
+        x: 6600
+        y: 12780
+        width: 1100
+        height: 1420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5433f1846fe82d70800000000000000
+      internalID: 9018721468765385819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cass_SpriteSheet_7
+      rect:
+        serializedVersion: 2
+        x: 7700
+        y: 12780
+        width: 1100
+        height: 1420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f55fe07a4b905b410800000000000000
+      internalID: 1492109523044726111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cass_SpriteSheet_8
+      rect:
+        serializedVersion: 2
+        x: 8800
+        y: 12780
+        width: 1100
+        height: 1420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2789273dac2ae1060800000000000000
+      internalID: 6926152268956997746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cass_SpriteSheet_9
+      rect:
+        serializedVersion: 2
+        x: 9900
+        y: 12780
+        width: 1100
+        height: 1420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f74831f85bd14b00800000000000000
+      internalID: 811170582954002423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cass_SpriteSheet_10
+      rect:
+        serializedVersion: 2
+        x: 11000
+        y: 12780
+        width: 1100
+        height: 1420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed6ba4fe081560650800000000000000
+      internalID: 6198731551334381278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cass_SpriteSheet_11
+      rect:
+        serializedVersion: 2
+        x: 12100
+        y: 12780
+        width: 1100
+        height: 1420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad9978a03071309e0800000000000000
+      internalID: -1656454936113210918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cass_SpriteSheet_12
+      rect:
+        serializedVersion: 2
+        x: 13200
+        y: 12780
+        width: 1100
+        height: 1420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d896f60b7d2074f50800000000000000
+      internalID: 6865459282350926221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cass_SpriteSheet_13
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 11360
+        width: 1100
+        height: 1420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b63c9fc5f19db6f50800000000000000
+      internalID: 6875827984838280043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cass_SpriteSheet_14
+      rect:
+        serializedVersion: 2
+        x: 1100
+        y: 11360
+        width: 1100
+        height: 1420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 644ff51b5e9cdcaf0800000000000000
+      internalID: -374421205641333690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cass_SpriteSheet_15
+      rect:
+        serializedVersion: 2
+        x: 2200
+        y: 11360
+        width: 1100
+        height: 1420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2050dfc05b87b0ef0800000000000000
+      internalID: -140886244329716478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cass_SpriteSheet_16
+      rect:
+        serializedVersion: 2
+        x: 3300
+        y: 11360
+        width: 1100
+        height: 1420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e624a27f542dad10800000000000000
+      internalID: 2138405390434707168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cass_SpriteSheet_17
+      rect:
+        serializedVersion: 2
+        x: 4400
+        y: 11360
+        width: 1100
+        height: 1420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90f9ccdbd7a4a2390800000000000000
+      internalID: -7842373897196626167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cass_SpriteSheet_18
+      rect:
+        serializedVersion: 2
+        x: 5500
+        y: 11360
+        width: 1100
+        height: 1420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1ae83b2869b104d0800000000000000
+      internalID: -3170048805639230949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cass_SpriteSheet_19
+      rect:
+        serializedVersion: 2
+        x: 6600
+        y: 11360
+        width: 1100
+        height: 1420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b293d9249bfe84f0800000000000000
+      internalID: -824445067986758989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cass_SpriteSheet_20
+      rect:
+        serializedVersion: 2
+        x: 7700
+        y: 11360
+        width: 1100
+        height: 1420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2aa8c9c08fba43210800000000000000
+      internalID: 1311862473323481762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cass_SpriteSheet_21
+      rect:
+        serializedVersion: 2
+        x: 8800
+        y: 11360
+        width: 1100
+        height: 1420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37a7fdcd565642f10800000000000000
+      internalID: 2244030002509085299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cass_SpriteSheet_22
+      rect:
+        serializedVersion: 2
+        x: 9900
+        y: 11360
+        width: 1100
+        height: 1420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 797c7278bc13522c0800000000000000
+      internalID: -4457101505997584489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cass_SpriteSheet_23
+      rect:
+        serializedVersion: 2
+        x: 11000
+        y: 11360
+        width: 1100
+        height: 1420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2cf4f2d98ab1c3d0800000000000000
+      internalID: -3188061960089043921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cass_SpriteSheet_24
+      rect:
+        serializedVersion: 2
+        x: 12100
+        y: 11360
+        width: 1100
+        height: 1420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba904e22e2df95e80800000000000000
+      internalID: -8189236072800843349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cass_SpriteSheet_25
+      rect:
+        serializedVersion: 2
+        x: 13200
+        y: 11360
+        width: 1100
+        height: 1420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3bfda92e3c01f8810800000000000000
+      internalID: 1769651612086362035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cass_SpriteSheet_26
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 9940
+        width: 1100
+        height: 1420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f835f867c59dc740800000000000000
+      internalID: 5173956230610499832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cass_SpriteSheet_27
+      rect:
+        serializedVersion: 2
+        x: 1100
+        y: 9940
+        width: 1100
+        height: 1420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9af9d47e550782f70800000000000000
+      internalID: 9162696956140429225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cass_SpriteSheet_28
+      rect:
+        serializedVersion: 2
+        x: 2200
+        y: 9940
+        width: 1100
+        height: 1420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2551fefa139fa67c0800000000000000
+      internalID: -4077172520830167726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cass_SpriteSheet_29
+      rect:
+        serializedVersion: 2
+        x: 3300
+        y: 9940
+        width: 1100
+        height: 1420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5108bf9e418232f0800000000000000
+      internalID: -994590393008389798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cass_SpriteSheet_30
+      rect:
+        serializedVersion: 2
+        x: 4400
+        y: 9940
+        width: 1100
+        height: 1420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 168e21f1f18d016e0800000000000000
+      internalID: -1868756217181837215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cass_SpriteSheet_31
+      rect:
+        serializedVersion: 2
+        x: 5500
+        y: 9940
+        width: 1100
+        height: 1420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eefa63aa8d37cd270800000000000000
+      internalID: 8276617589605969902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cass_SpriteSheet_32
+      rect:
+        serializedVersion: 2
+        x: 6600
+        y: 9940
+        width: 1100
+        height: 1420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 557b81e2a57064c90800000000000000
+      internalID: -7186048071521224875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cass_SpriteSheet_33
+      rect:
+        serializedVersion: 2
+        x: 7700
+        y: 9940
+        width: 1100
+        height: 1420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa41bfd0cc6646450800000000000000
+      internalID: 6081098423450932399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cass_SpriteSheet_34
+      rect:
+        serializedVersion: 2
+        x: 8800
+        y: 9940
+        width: 1100
+        height: 1420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01fd65505d5fdbcc0800000000000000
+      internalID: -3693525824107520240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cass_SpriteSheet_35
+      rect:
+        serializedVersion: 2
+        x: 9900
+        y: 9940
+        width: 1100
+        height: 1420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61c58c3147fb7eee0800000000000000
+      internalID: -1231805467793531882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cass_SpriteSheet_36
+      rect:
+        serializedVersion: 2
+        x: 11000
+        y: 9940
+        width: 1100
+        height: 1420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2afe09d6c35b166c0800000000000000
+      internalID: -4151838110318006366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cass_SpriteSheet_37
+      rect:
+        serializedVersion: 2
+        x: 12100
+        y: 9940
+        width: 1100
+        height: 1420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62295bbd2426ed740800000000000000
+      internalID: 5178684660816122406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cass_SpriteSheet_38
+      rect:
+        serializedVersion: 2
+        x: 13200
+        y: 9940
+        width: 1100
+        height: 1420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a22c1fd094307610800000000000000
+      internalID: 1616850063049106089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cass_SpriteSheet_39
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 8520
+        width: 1100
+        height: 1420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddb5c3d48e8c7af20800000000000000
+      internalID: 3433934140947061725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cass_SpriteSheet_40
+      rect:
+        serializedVersion: 2
+        x: 1100
+        y: 8520
+        width: 1100
+        height: 1420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e23e4499e9bdf0b0800000000000000
+      internalID: -5693189941059767575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cass_SpriteSheet_41
+      rect:
+        serializedVersion: 2
+        x: 2200
+        y: 8520
+        width: 1100
+        height: 1420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b954148ec34c989f0800000000000000
+      internalID: -465625320582462053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cass_SpriteSheet_42
+      rect:
+        serializedVersion: 2
+        x: 3300
+        y: 8520
+        width: 1100
+        height: 1420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 049924b3ef2e48f40800000000000000
+      internalID: 5729954207465904448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cass_SpriteSheet_43
+      rect:
+        serializedVersion: 2
+        x: 4400
+        y: 8520
+        width: 1100
+        height: 1420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e3c35a7c2b67a180800000000000000
+      internalID: -9104190282931125276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cass_SpriteSheet_44
+      rect:
+        serializedVersion: 2
+        x: 5500
+        y: 8520
+        width: 1100
+        height: 1420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78a77be196d11f440800000000000000
+      internalID: 4967784201290480263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cass_SpriteSheet_45
+      rect:
+        serializedVersion: 2
+        x: 6600
+        y: 8520
+        width: 1100
+        height: 1420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4434d807d7b4cf220800000000000000
+      internalID: 2520972893551936324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cass_SpriteSheet_46
+      rect:
+        serializedVersion: 2
+        x: 7700
+        y: 8520
+        width: 1100
+        height: 1420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e29ec436d3f6325e0800000000000000
+      internalID: -1935581105389508306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cass_SpriteSheet_47
+      rect:
+        serializedVersion: 2
+        x: 8800
+        y: 8520
+        width: 1100
+        height: 1420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcde1edde3d020740800000000000000
+      internalID: 5116666690308009419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cass_SpriteSheet_48
+      rect:
+        serializedVersion: 2
+        x: 9900
+        y: 8520
+        width: 1100
+        height: 1420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bf4b74c7032d7830800000000000000
+      internalID: 4070448154480955320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cass_SpriteSheet_49
+      rect:
+        serializedVersion: 2
+        x: 11000
+        y: 8520
+        width: 1100
+        height: 1420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d1d5a91a7dbed1f0800000000000000
+      internalID: -1018168133625196077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cass_SpriteSheet_50
+      rect:
+        serializedVersion: 2
+        x: 12100
+        y: 8520
+        width: 1100
+        height: 1420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03e00999d3ed860e0800000000000000
+      internalID: -2276325255485059536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cass_SpriteSheet_51
+      rect:
+        serializedVersion: 2
+        x: 13200
+        y: 8520
+        width: 1100
+        height: 1420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6c120c5c8f77b760800000000000000
+      internalID: 7473582347460418666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cass_SpriteSheet_52
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 7100
+        width: 1100
+        height: 1420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18d01720c73482270800000000000000
+      internalID: 8225898919288180097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cass_SpriteSheet_53
+      rect:
+        serializedVersion: 2
+        x: 1100
+        y: 7100
+        width: 1100
+        height: 1420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f096dcd14e96a570800000000000000
+      internalID: 8477637354286649587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cass_SpriteSheet_54
+      rect:
+        serializedVersion: 2
+        x: 2200
+        y: 7100
+        width: 1100
+        height: 1420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c4d59051e37dba70800000000000000
+      internalID: 8844352654782354625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cass_SpriteSheet_55
+      rect:
+        serializedVersion: 2
+        x: 3300
+        y: 7100
+        width: 1100
+        height: 1420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 933d43ddf9c62dc80800000000000000
+      internalID: -8299451729423576263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cass_SpriteSheet_56
+      rect:
+        serializedVersion: 2
+        x: 4400
+        y: 7100
+        width: 1100
+        height: 1420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7664ffd232631060800000000000000
+      internalID: 6922985022843807359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cass_SpriteSheet_57
+      rect:
+        serializedVersion: 2
+        x: 5500
+        y: 7100
+        width: 1100
+        height: 1420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c76368c03415dc560800000000000000
+      internalID: 7335608716471187068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cass_SpriteSheet_58
+      rect:
+        serializedVersion: 2
+        x: 6600
+        y: 7100
+        width: 1100
+        height: 1420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d62b3ebddfaed860800000000000000
+      internalID: 7556670591688451793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cass_SpriteSheet_59
+      rect:
+        serializedVersion: 2
+        x: 7700
+        y: 7100
+        width: 1100
+        height: 1420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99f120c81988da730800000000000000
+      internalID: 4012013001757564825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cass_SpriteSheet_60
+      rect:
+        serializedVersion: 2
+        x: 8800
+        y: 7100
+        width: 1100
+        height: 1420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cd638e5110d8aef0800000000000000
+      internalID: -96598618969772607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cass_SpriteSheet_61
+      rect:
+        serializedVersion: 2
+        x: 9900
+        y: 7100
+        width: 1100
+        height: 1420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79b2790459b91e070800000000000000
+      internalID: 8133953467343907735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cass_SpriteSheet_62
+      rect:
+        serializedVersion: 2
+        x: 11000
+        y: 7100
+        width: 1100
+        height: 1420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4430e6e430803f720800000000000000
+      internalID: 2878653397113635652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cass_SpriteSheet_63
+      rect:
+        serializedVersion: 2
+        x: 12100
+        y: 7100
+        width: 1100
+        height: 1420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05bb0ae71ca6b4de0800000000000000
+      internalID: -1347866284181636272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cass_SpriteSheet_64
+      rect:
+        serializedVersion: 2
+        x: 13200
+        y: 7100
+        width: 1100
+        height: 1420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed934684d5b7c5a20800000000000000
+      internalID: 3052450288027056606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cass_SpriteSheet_65
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5680
+        width: 1100
+        height: 1420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48f9be9efda706270800000000000000
+      internalID: 8241722420208836484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cass_SpriteSheet_66
+      rect:
+        serializedVersion: 2
+        x: 1100
+        y: 5680
+        width: 1100
+        height: 1420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1541bdf177e5e7cc0800000000000000
+      internalID: -3711425177178139567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cass_SpriteSheet_67
+      rect:
+        serializedVersion: 2
+        x: 2200
+        y: 5680
+        width: 1100
+        height: 1420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec47ef8bb7b0b80a0800000000000000
+      internalID: -6878391379865733938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cass_SpriteSheet_68
+      rect:
+        serializedVersion: 2
+        x: 3300
+        y: 5680
+        width: 1100
+        height: 1420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83fd5b19231fc13a0800000000000000
+      internalID: -6693209746684125384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cass_SpriteSheet_69
+      rect:
+        serializedVersion: 2
+        x: 4400
+        y: 5680
+        width: 1100
+        height: 1420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 965897fa46928eb30800000000000000
+      internalID: 4316745755252065641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cass_SpriteSheet_70
+      rect:
+        serializedVersion: 2
+        x: 5500
+        y: 5680
+        width: 1100
+        height: 1420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb5b190e722a3ed00800000000000000
+      internalID: 1000821834361451963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cass_SpriteSheet_71
+      rect:
+        serializedVersion: 2
+        x: 6600
+        y: 5680
+        width: 1100
+        height: 1420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7c23f81f4a27e870800000000000000
+      internalID: 8711978523380886650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cass_SpriteSheet_72
+      rect:
+        serializedVersion: 2
+        x: 7700
+        y: 5680
+        width: 1100
+        height: 1420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5437acbe1e189b3f0800000000000000
+      internalID: -884533044478053563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cass_SpriteSheet_73
+      rect:
+        serializedVersion: 2
+        x: 8800
+        y: 5680
+        width: 1100
+        height: 1420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4edc09dceb56c6ce0800000000000000
+      internalID: -1410640713106797084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cass_SpriteSheet_74
+      rect:
+        serializedVersion: 2
+        x: 9900
+        y: 5680
+        width: 1100
+        height: 1420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90f39712ed5b77da0800000000000000
+      internalID: -5947084817270489335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cass_SpriteSheet_75
+      rect:
+        serializedVersion: 2
+        x: 11000
+        y: 5680
+        width: 1100
+        height: 1420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e03926ea98c683570800000000000000
+      internalID: 8446620439725380366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cass_SpriteSheet_76
+      rect:
+        serializedVersion: 2
+        x: 12100
+        y: 5680
+        width: 1100
+        height: 1420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 492f09fb4e086f300800000000000000
+      internalID: 285557346339451540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cass_SpriteSheet_77
+      rect:
+        serializedVersion: 2
+        x: 13200
+        y: 5680
+        width: 1100
+        height: 1420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59b766d822721a370800000000000000
+      internalID: 8331983814966803349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cass_SpriteSheet_78
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4260
+        width: 1100
+        height: 1420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a75f92038c19800a0800000000000000
+      internalID: -6915116938839853702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cass_SpriteSheet_79
+      rect:
+        serializedVersion: 2
+        x: 1100
+        y: 4260
+        width: 1100
+        height: 1420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7489b620b7b34b90800000000000000
+      internalID: -7258756207199288193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cass_SpriteSheet_80
+      rect:
+        serializedVersion: 2
+        x: 2200
+        y: 4260
+        width: 1100
+        height: 1420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89e54637cea802e40800000000000000
+      internalID: 5629652282365992600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cass_SpriteSheet_81
+      rect:
+        serializedVersion: 2
+        x: 3300
+        y: 4260
+        width: 1100
+        height: 1420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 098d2f2a054013f30800000000000000
+      internalID: 4553425442626001040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cass_SpriteSheet_82
+      rect:
+        serializedVersion: 2
+        x: 4400
+        y: 4260
+        width: 1100
+        height: 1420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f859b70f53d928440800000000000000
+      internalID: 4936680996544943503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cass_SpriteSheet_83
+      rect:
+        serializedVersion: 2
+        x: 5500
+        y: 4260
+        width: 1100
+        height: 1420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e72eae00260f42f0800000000000000
+      internalID: -986563058615834653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cass_SpriteSheet_84
+      rect:
+        serializedVersion: 2
+        x: 6600
+        y: 4260
+        width: 1100
+        height: 1420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31068ea89b15cb690800000000000000
+      internalID: -7585097815057473517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cass_SpriteSheet_85
+      rect:
+        serializedVersion: 2
+        x: 7700
+        y: 4260
+        width: 1100
+        height: 1420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1510130190ec5c780800000000000000
+      internalID: -8663291769855606447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cass_SpriteSheet_86
+      rect:
+        serializedVersion: 2
+        x: 8800
+        y: 4260
+        width: 1100
+        height: 1420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4b655458d08f8970800000000000000
+      internalID: 8759361466875079500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cass_SpriteSheet_87
+      rect:
+        serializedVersion: 2
+        x: 9900
+        y: 4260
+        width: 1100
+        height: 1420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c9db326234d67e60800000000000000
+      internalID: 7959782704285473216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cass_SpriteSheet_88
+      rect:
+        serializedVersion: 2
+        x: 11000
+        y: 4260
+        width: 1100
+        height: 1420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d7f9294367111660800000000000000
+      internalID: 7354685381669418967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cass_SpriteSheet_89
+      rect:
+        serializedVersion: 2
+        x: 12100
+        y: 4260
+        width: 1100
+        height: 1420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 320fa9a508a920020800000000000000
+      internalID: 2306575835233710115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cass_SpriteSheet_90
+      rect:
+        serializedVersion: 2
+        x: 13200
+        y: 4260
+        width: 1100
+        height: 1420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 753f5ffaca210c490800000000000000
+      internalID: -7728156427671964841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cass_SpriteSheet_91
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2840
+        width: 1100
+        height: 1420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82e350f0cdd2f9410800000000000000
+      internalID: 1485956825223609896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cass_SpriteSheet_92
+      rect:
+        serializedVersion: 2
+        x: 1100
+        y: 2840
+        width: 1100
+        height: 1420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01d23f35b06f375a0800000000000000
+      internalID: -6524600906616197872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cass_SpriteSheet_93
+      rect:
+        serializedVersion: 2
+        x: 2200
+        y: 2840
+        width: 1100
+        height: 1420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5addb18477f4796c0800000000000000
+      internalID: -4136750358987022939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cass_SpriteSheet_94
+      rect:
+        serializedVersion: 2
+        x: 3300
+        y: 2840
+        width: 1100
+        height: 1420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7e350aa3962254e0800000000000000
+      internalID: -1994489269317190020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cass_SpriteSheet_95
+      rect:
+        serializedVersion: 2
+        x: 4400
+        y: 2840
+        width: 1100
+        height: 1420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 420e976732dcd6550800000000000000
+      internalID: 6155801817880584228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cass_SpriteSheet_96
+      rect:
+        serializedVersion: 2
+        x: 5500
+        y: 2840
+        width: 1100
+        height: 1420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75f3546d6824f94a0800000000000000
+      internalID: -6584470983304462505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cass_SpriteSheet_97
+      rect:
+        serializedVersion: 2
+        x: 6600
+        y: 2840
+        width: 1100
+        height: 1420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f65d79cdc94c2690800000000000000
+      internalID: -7625638920847534343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cass_SpriteSheet_98
+      rect:
+        serializedVersion: 2
+        x: 7700
+        y: 2840
+        width: 1100
+        height: 1420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b218b6a3b336ef10800000000000000
+      internalID: 2298581506508460725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cass_SpriteSheet_99
+      rect:
+        serializedVersion: 2
+        x: 8800
+        y: 2840
+        width: 1100
+        height: 1420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ea4c08b6c111e330800000000000000
+      internalID: 3738288710883232487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cass_SpriteSheet_100
+      rect:
+        serializedVersion: 2
+        x: 9900
+        y: 2840
+        width: 1100
+        height: 1420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a647e9a02a2528d00800000000000000
+      internalID: 973431325381784682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cass_SpriteSheet_101
+      rect:
+        serializedVersion: 2
+        x: 11000
+        y: 2840
+        width: 1100
+        height: 1420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0644f32732f1fe120800000000000000
+      internalID: 2445207359786533984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cass_SpriteSheet_102
+      rect:
+        serializedVersion: 2
+        x: 12100
+        y: 2840
+        width: 1100
+        height: 1420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf5768a779397b140800000000000000
+      internalID: 4735415812008343036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cass_SpriteSheet_103
+      rect:
+        serializedVersion: 2
+        x: 13200
+        y: 2840
+        width: 1100
+        height: 1420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75e5452e261f7d920800000000000000
+      internalID: 3015143882554105431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cass_SpriteSheet_104
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1420
+        width: 1100
+        height: 1420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3a85117cdc404020800000000000000
+      internalID: 2323941917396929086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cass_SpriteSheet_105
+      rect:
+        serializedVersion: 2
+        x: 1100
+        y: 1420
+        width: 1100
+        height: 1420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4dd96cb9b69716140800000000000000
+      internalID: 4711180188288196052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cass_SpriteSheet_106
+      rect:
+        serializedVersion: 2
+        x: 2200
+        y: 1420
+        width: 1100
+        height: 1420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a69e70572ed72b30800000000000000
+      internalID: 4262619832765028007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cass_SpriteSheet_107
+      rect:
+        serializedVersion: 2
+        x: 3300
+        y: 1420
+        width: 1100
+        height: 1420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64ab8e96a038ee550800000000000000
+      internalID: 6192030618430782022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cass_SpriteSheet_108
+      rect:
+        serializedVersion: 2
+        x: 4400
+        y: 1420
+        width: 1100
+        height: 1420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e78a6d49b25ed770800000000000000
+      internalID: 8637432091164444641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cass_SpriteSheet_109
+      rect:
+        serializedVersion: 2
+        x: 5500
+        y: 1420
+        width: 1100
+        height: 1420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecfe1238b19dcf900800000000000000
+      internalID: 719688752659820494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cass_SpriteSheet_110
+      rect:
+        serializedVersion: 2
+        x: 6600
+        y: 1420
+        width: 1100
+        height: 1420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff7c0017f235348e0800000000000000
+      internalID: -1710431970246211585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cass_SpriteSheet_111
+      rect:
+        serializedVersion: 2
+        x: 7700
+        y: 1420
+        width: 1100
+        height: 1420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f10965285ac9f4250800000000000000
+      internalID: 5931131468940480543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cass_SpriteSheet_112
+      rect:
+        serializedVersion: 2
+        x: 8800
+        y: 1420
+        width: 1100
+        height: 1420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df6c7e2379edba510800000000000000
+      internalID: 1561586436789487357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cass_SpriteSheet_113
+      rect:
+        serializedVersion: 2
+        x: 9900
+        y: 1420
+        width: 1100
+        height: 1420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c076809ced96e1720800000000000000
+      internalID: 2818806822356936460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cass_SpriteSheet_114
+      rect:
+        serializedVersion: 2
+        x: 11000
+        y: 1420
+        width: 1100
+        height: 1420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf3fb31ba55822970800000000000000
+      internalID: 8728685652364489723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cass_SpriteSheet_115
+      rect:
+        serializedVersion: 2
+        x: 12100
+        y: 1420
+        width: 1100
+        height: 1420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7285ecc887d7d7360800000000000000
+      internalID: 7169024138555578407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cass_SpriteSheet_116
+      rect:
+        serializedVersion: 2
+        x: 13200
+        y: 1420
+        width: 1100
+        height: 1420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 027d190459afc6a30800000000000000
+      internalID: 4210015270624941856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cass_SpriteSheet_117
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1100
+        height: 1420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83288ab8c8f5a9650800000000000000
+      internalID: 6240405290918380088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cass_SpriteSheet_118
+      rect:
+        serializedVersion: 2
+        x: 1100
+        y: 0
+        width: 1100
+        height: 1420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e20b45d1c2397a960800000000000000
+      internalID: 7613215512773046318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cass_SpriteSheet_119
+      rect:
+        serializedVersion: 2
+        x: 2200
+        y: 0
+        width: 1100
+        height: 1420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c0f4f2c39c5d2df0800000000000000
+      internalID: -203404618461024060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 547568e3a7e72ae42a3ded8374ccab0a
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

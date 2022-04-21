@@ -1,0 +1,364 @@
+fileFormatVersion: 2
+guid: 47d2286f612df8e41919aa8aff606138
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3697824021678140836
+    second: fractured_cephas_0
+  - first:
+      213: 1306923321997470037
+    second: fractured_cephas_1
+  - first:
+      213: -4569022791728851937
+    second: fractured_cephas_2
+  - first:
+      213: -643474013246193459
+    second: fractured_cephas_3
+  - first:
+      213: -3528181645248882258
+    second: fractured_cephas_4
+  - first:
+      213: -894675957344810929
+    second: fractured_cephas_5
+  - first:
+      213: 6486339635461377771
+    second: fractured_cephas_9
+  - first:
+      213: 5946657162860029076
+    second: fractured_cephas_10
+  - first:
+      213: 6105998121964634297
+    second: fractured_cephas_12
+  - first:
+      213: -6206076649981050767
+    second: fractured_cephas_13
+  - first:
+      213: -8527799118159973517
+    second: fractured_cephas_14
+  - first:
+      213: -6153637655334943748
+    second: fractured_cephas_16
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: fractured_cephas_3
+      rect:
+        serializedVersion: 2
+        x: 926
+        y: 1387
+        width: 233
+        height: 292
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc004425bcbe117f0800000000000000
+      internalID: -643474013246193459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fractured_cephas_5
+      rect:
+        serializedVersion: 2
+        x: 688
+        y: 605
+        width: 201
+        height: 582
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f48416df4f87593f0800000000000000
+      internalID: -894675957344810929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fractured_cephas_9
+      rect:
+        serializedVersion: 2
+        x: 966
+        y: 967
+        width: 314
+        height: 279
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 95, y: -16.5}
+        - {x: 59, y: -4.5}
+        - {x: 23, y: 81.5}
+        - {x: -12, y: 134.5}
+        - {x: -40, y: 139.5}
+        - {x: -124, y: 139.5}
+        - {x: -157, y: 90.5}
+        - {x: -115, y: -72.5}
+        - {x: -74, y: -94.5}
+        - {x: -17, y: -96.5}
+        - {x: -14, y: -100.5}
+        - {x: 15, y: -136.5}
+        - {x: 21, y: -139.5}
+        - {x: 43, y: -139.5}
+        - {x: 63, y: -131.5}
+        - {x: 114, y: -82.5}
+        - {x: 114, y: -37.5}
+        - {x: 109, y: -20.5}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bee4638488b140a50800000000000000
+      internalID: 6486339635461377771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fractured_cephas_10
+      rect:
+        serializedVersion: 2
+        x: 898
+        y: 850
+        width: 219
+        height: 196
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -45.5, y: -97}
+        - {x: 0.5, y: -97}
+        - {x: 28.5, y: -90}
+        - {x: 58.5, y: -83}
+        - {x: 91.5, y: -69}
+        - {x: 104.5, y: -58}
+        - {x: 109.5, y: -38}
+        - {x: 109.5, y: 12}
+        - {x: -48.5, y: 98}
+        - {x: -102.5, y: 98}
+        - {x: -103.5, y: 94}
+        - {x: -103.5, y: -24}
+        - {x: -87.5, y: -66}
+        - {x: -62.5, y: -66}
+        - {x: -70.5, y: -76}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 494ed41de25c68250800000000000000
+      internalID: 5946657162860029076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fractured_cephas_12
+      rect:
+        serializedVersion: 2
+        x: 1030
+        y: 675
+        width: 209
+        height: 212
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 74.5, y: 19}
+        - {x: 73.5, y: 24}
+        - {x: -13.5, y: 106}
+        - {x: -25.5, y: 106}
+        - {x: -38.5, y: 97}
+        - {x: -59.5, y: 87}
+        - {x: -82.5, y: 80}
+        - {x: -104.5, y: 75}
+        - {x: -104.5, y: 52}
+        - {x: -62.5, y: -78}
+        - {x: -38.5, y: -101}
+        - {x: -18.5, y: -106}
+        - {x: 22.5, y: -106}
+        - {x: 26.5, y: -95}
+        - {x: 65.5, y: -35}
+        - {x: 74.5, y: -6}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b087e2e0fcdcb450800000000000000
+      internalID: 6105998121964634297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fractured_cephas_14
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 377
+        width: 151
+        height: 230
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3737f2e52eb27a980800000000000000
+      internalID: -8527799118159973517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fractured_cephas_16
+      rect:
+        serializedVersion: 2
+        x: 1070
+        y: 376
+        width: 158
+        height: 241
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf30b45e723e99aa0800000000000000
+      internalID: -6153637655334943748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

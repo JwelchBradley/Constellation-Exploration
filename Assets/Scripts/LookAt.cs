@@ -23,11 +23,11 @@ public class LookAt : MonoBehaviour
             Debug.Log(true);
             for (int a = 0; a < this.gameObject.transform.childCount; a++)
             {
-                if (transform.GetChild(0).gameObject.activeSelf)
+                if (a == 0)
                 {
                     transform.GetChild(0).gameObject.SetActive(false);
                 }
-                else if (!transform.GetChild(a).gameObject.activeSelf && !transform.GetChild(a).name.Equals("ignore"))
+                else if (!transform.GetChild(a).gameObject.activeSelf)
                 {
                     transform.GetChild(a).transform.LookAt(cam.transform.position, transform.GetChild(a).transform.up);
                     transform.GetChild(a).gameObject.SetActive(true);
