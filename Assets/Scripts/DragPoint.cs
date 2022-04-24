@@ -35,7 +35,6 @@ public class DragPoint : MonoBehaviour
     {
         if (other.gameObject.Equals(snapObject))
         {
-            Debug.Log(Vector3.Distance(other.gameObject.transform.position, transform.position));
             if(Vector3.Distance(other.gameObject.transform.position, transform.position) <= snapDist)
             {
                 isCloseEnough = true;
@@ -74,5 +73,7 @@ public class DragPoint : MonoBehaviour
         snapObject.transform.position = transform.position;
         de.Complete();
         hasNotSnapped = false;
+
+        dragable.thisXR.SendHapticImpulse(0.3f, 0.2f);
     }
 }

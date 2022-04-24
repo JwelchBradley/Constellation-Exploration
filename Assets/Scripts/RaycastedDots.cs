@@ -29,8 +29,7 @@ public class RaycastedDots : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        starCreator = GameObject.FindObjectOfType<StarCreator>().gameObject;
-        print(starCreator.gameObject.name);
+        starCreator = FindObjectOfType<StarCreator>().gameObject;
     }
 
     private void FixedUpdate()

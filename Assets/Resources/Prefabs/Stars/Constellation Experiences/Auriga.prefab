@@ -139,6 +139,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1249090339}
   - component: {fileID: 1249090342}
+  - component: {fileID: 8548892048449655429}
   m_Layer: 0
   m_Name: Background
   m_TagString: Untagged
@@ -211,6 +212,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &8548892048449655429
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1249090338}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 654ad1947e7aa4a4dafe191b7809e3ea, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1917065829
 GameObject:
   m_ObjectHideFlags: 0
@@ -535,6 +555,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isBeingDragged: 0
+  thisXR: {fileID: 0}
 --- !u!65 &677294122168831844
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1023,6 +1044,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isBeingDragged: 0
+  thisXR: {fileID: 0}
 --- !u!65 &2736379746399366308
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1299,6 +1321,12 @@ MonoBehaviour:
   - {fileID: 8536387185392034222}
   - {fileID: 408824645232577086}
   dragSpotPingSound: {fileID: 8300000, guid: 064c708d94569704eaa32e9d25b07323, type: 3}
+  toDisable:
+  - {fileID: 6113491257902296327}
+  - {fileID: 1286145809346881613}
+  - {fileID: 3596163004036543296}
+  - {fileID: 5445829186250780918}
+  animator: {fileID: 8548892048449655429}
 --- !u!82 &2311535660495705181
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1756,6 +1784,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isBeingDragged: 0
+  thisXR: {fileID: 0}
 --- !u!65 &5528376735374830983
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1913,6 +1942,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isBeingDragged: 0
+  thisXR: {fileID: 0}
 --- !u!1 &6135312029037409273
 GameObject:
   m_ObjectHideFlags: 0

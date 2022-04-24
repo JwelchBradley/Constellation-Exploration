@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.XR.Interaction.Toolkit;
 
 public class DraggingPlacable : MonoBehaviour
 {
@@ -10,6 +11,9 @@ public class DraggingPlacable : MonoBehaviour
 
     [SerializeField]
     private HandController hand;
+
+    [SerializeField]
+    private ActionBasedController xrController;
 
     private Dragable d;
 
@@ -51,6 +55,7 @@ public class DraggingPlacable : MonoBehaviour
         if (isHovering)
         {
             d = hit.transform.GetComponentInChildren<Dragable>();
+            d.thisXR = xrController;
             d.isBeingDragged = true;
             isAttached = true;
         }

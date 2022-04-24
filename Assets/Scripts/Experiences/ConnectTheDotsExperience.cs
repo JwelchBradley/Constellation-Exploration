@@ -33,7 +33,7 @@ public class ConnectTheDotsExperience : TransitionExperience
     public Dictionary<int, List<int>> pointer = new Dictionary<int, List<int>>();
 
     [SerializeField]
-    private float hapticFeedbackAmplitude = 0.25f;
+    private float hapticFeedbackAmplitude = 0.6f;
 
     [SerializeField]
     private float hapticFeedbackDuration = 0.1f;
@@ -116,10 +116,6 @@ public class ConnectTheDotsExperience : TransitionExperience
 
         StartCoroutine("wait");
 
-    }
-
-    private void Update()
-    {
     }
 
     public List<Vector3> NextPoint()
@@ -352,7 +348,7 @@ public class ConnectTheDotsExperience : TransitionExperience
 
         lrs[0].positionCount = 1;
 
-        dot = GameObject.FindObjectOfType<RaycastedDots>();
+        dot = FindObjectOfType<RaycastedDots>();
         dot.enabled = true;
 
         AddPoint();

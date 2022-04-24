@@ -12,6 +12,12 @@ public class DraggingExperience : Experience
     [SerializeField]
     private AudioClip dragSpotPingSound;
 
+    [SerializeField]
+    private List<GameObject> toDisable = new List<GameObject>();
+
+    [SerializeField]
+    private Animator animator;
+
     protected override void Awake()
     {
         base.Awake();
@@ -27,9 +33,21 @@ public class DraggingExperience : Experience
         {
             aud.Play();
             StartCoroutine(PlaySubtitles());
-            Destroy(gameObject, ExperienceTimer+0.05f);
+            DisableObjects();
+            animator.SetBool("HasBuilt", true);
+            animator.transform.localScale /= 1.5f;
+            animator.transform.rotation *= Quaternion.Euler(new Vector3(0, 0, -90));
+            Destroy(gameObject, ExperienceTimer);
         }
         aud.PlayOneShot(dragSpotPingSound);
+    }
+
+    private void DisableObjects()
+    {
+        foreach(GameObject obj in toDisable)
+        {
+            obj.SetActive(false);
+        }
     }
 
     protected void OnDestroy()

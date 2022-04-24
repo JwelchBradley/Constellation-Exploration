@@ -6,6 +6,7 @@ using static UnityEngine.ParticleSystem;
 
 public class ConstellationInteraction : MonoBehaviour
 {
+    #region Variables
     RaycastHit hit;
 
     [SerializeField]
@@ -44,6 +45,11 @@ public class ConstellationInteraction : MonoBehaviour
 
     private int finishedExperienceCount = 0;
 
+    [SerializeField]
+    private RaycastedDots otherRaycastDots;
+    #endregion
+
+    #region Funcitons
     private void Awake()
     {
         if (isRight)
@@ -341,6 +347,7 @@ public class ConstellationInteraction : MonoBehaviour
 
             if (isGroup)
             {
+                Destroy(otherRaycastDots);
                 foreach (ListWrapper group in constellationData.GroupedConstellations)
                 {
                     if (group.names.Contains(currentSelected))
@@ -499,6 +506,7 @@ public class ConstellationInteraction : MonoBehaviour
             lr.material.color = newColor;
         }
     }
+    #endregion
     #endregion
 }
 

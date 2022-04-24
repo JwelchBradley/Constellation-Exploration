@@ -43,7 +43,6 @@ public class Experience : MonoBehaviour
 
         foreach(SubtitleObject sub in subtitle)
         {
-            Debug.Log(sub.Subtitle);
             Subtitle.sub.SetText(sub.Subtitle);
             yield return new WaitForSeconds(sub.SubtitleTime);
         }

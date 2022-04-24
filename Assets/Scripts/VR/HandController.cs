@@ -50,40 +50,16 @@ public class HandController : MonoBehaviour
     /// <summary>
     /// Sends the current animations values to the Hand script.
     /// </summary>
-    private void Update()
+    private void FixedUpdate()
     {
-        hand.SetGrip(controller.selectAction.action.ReadValue<float>());
+        float selectAction = controller.selectAction.action.ReadValue<float>();
+        float activateAction = controller.activateAction.action.ReadValue<float>();
 
-        #region Old Other trigger stuff
-        /*
-        if(neitherEnabled && controller.selectAction.action.ReadValue<float>() == 1)
-        {
-            //neitherEnabled = false;
-            //ci.enabled = true;
-        }
-        else if(!neitherEnabled && ci.enabled && controller.selectAction.action.ReadValue<float>() == 0)
-        {
-            //neitherEnabled = true;
-            //ci.enabled = false;
-
-            if (neitherEnabled)
-            {
-                /*
-                foreach(ConstellationInteraction ci in cis)
-                {
-                    if (!ci.enabled)
-                    {
-                        neitherEnabled = true;
-                        break;
-                    }
-                }
-    }
-}*/
-#endregion
+        hand.SetGrip(selectAction);
 
 if (ci.enabled)
         {
-            if (controller.activateAction.action.ReadValue<float>() == 1)
+            if (activateAction == 1 || selectAction == 1)
             {
                 if (!isPressed)
                 {
@@ -104,6 +80,6 @@ if (ci.enabled)
             }
         }
 
-        hand.SetTrigger(controller.activateAction.action.ReadValue<float>());
+        hand.SetTrigger(activateAction);
     }
 }

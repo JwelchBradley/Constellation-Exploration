@@ -1666,6 +1666,7 @@ GameObject:
   - component: {fileID: 199475935}
   - component: {fileID: 199475936}
   - component: {fileID: 199475937}
+  - component: {fileID: 199475938}
   m_Layer: 0
   m_Name: Raycast pos
   m_TagString: Untagged
@@ -1702,6 +1703,7 @@ MonoBehaviour:
   constellationData: {fileID: 11400000, guid: 34239e441be536f4da7ccbd05e778705, type: 2}
   isRight: 0
   thisXR: {fileID: 795044016}
+  otherRaycastDots: {fileID: 1753809475}
   displayNameList: []
 --- !u!82 &199475936
 AudioSource:
@@ -1815,6 +1817,32 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 256
   hand: {fileID: 795044012}
+  xrController: {fileID: 795044016}
+--- !u!114 &199475938
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 199475933}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d348aa798b237d947b613be1afb46f6d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dotsLayer:
+    serializedVersion: 2
+    m_Bits: 64
+  constelationLayer:
+    serializedVersion: 2
+    m_Bits: 8
+  point: {x: 0, y: 0, z: 0}
+  starCreator: {fileID: 0}
+  add: {x: 0, y: 0, z: 0}
+  subtract: {x: 0, y: 0, z: 0}
+  expirence: 0
+  useable: 0
+  xr: {fileID: 795044016}
 --- !u!1 &204687827
 GameObject:
   m_ObjectHideFlags: 0
@@ -19793,6 +19821,7 @@ MonoBehaviour:
   constellationData: {fileID: 11400000, guid: 34239e441be536f4da7ccbd05e778705, type: 2}
   isRight: 1
   thisXR: {fileID: 795044016}
+  otherRaycastDots: {fileID: 0}
   displayNameList:
   - {fileID: 767967189}
   - {fileID: 683098438}
@@ -20160,6 +20189,7 @@ MonoBehaviour:
   constellationData: {fileID: 11400000, guid: 34239e441be536f4da7ccbd05e778705, type: 2}
   isRight: 1
   thisXR: {fileID: 1935666038}
+  otherRaycastDots: {fileID: 199475938}
   displayNameList:
   - {fileID: 767967189}
   - {fileID: 683098438}
@@ -20303,6 +20333,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 256
   hand: {fileID: 1935666034}
+  xrController: {fileID: 1935666038}
 --- !u!1001 &1763149623
 PrefabInstance:
   m_ObjectHideFlags: 0
