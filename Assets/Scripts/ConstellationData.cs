@@ -17,6 +17,14 @@ public class ConstellationData : ScriptableObject
     private float lineWidth = 3.0f;
     public float LineWidth { get => lineWidth; }
 
+    [SerializeField]
+    private float minStarSize = 0.8f;
+    public float MinStarSize { get => minStarSize; }
+
+    [SerializeField]
+    private float minConstellationStarSize = 0.8f;
+    public float MinConstellationStarSize { get => minConstellationStarSize; }
+
     #region LayerMasks
     [SerializeField]
     private LayerMask constellationLayer;

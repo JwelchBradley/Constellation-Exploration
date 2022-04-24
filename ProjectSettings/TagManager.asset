@@ -14,7 +14,7 @@ TagManager:
   - Connect The Dots
   - Start Button
   - Dragging
-  - 
+  - Constellation Lines
   - 
   - 
   - 
@@ -40,4 +40,7 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Lines
+    uniqueID: 2711752145
     locked: 0

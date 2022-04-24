@@ -13,8 +13,10 @@ MonoBehaviour:
   m_Name: ConstellationData
   m_EditorClassIdentifier: 
   hapticFeedbackDuration: 0.2
-  hapticFeedbackAmplitude: 0.25
+  hapticFeedbackAmplitude: 0.5
   lineWidth: 3
+  minStarSize: 0.4
+  minConstellationStarSize: 0.8
   constellationLayer:
     serializedVersion: 2
     m_Bits: 8

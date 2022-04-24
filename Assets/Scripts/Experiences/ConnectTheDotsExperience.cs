@@ -44,9 +44,13 @@ public class ConnectTheDotsExperience : TransitionExperience
     public float value = 0;
     public float time;
 
+    [ColorUsage(true, true)]
     public Color aimedColor;
 
     private bool check = true;
+
+    [SerializeField]
+    private GameObject particleEffect;
 
     protected override void Awake()
     {
@@ -196,6 +200,10 @@ public class ConnectTheDotsExperience : TransitionExperience
         List<Vector3> nextPoints = NextPoint();
         if (nextPoints.Contains(pos))
         {
+            Transform effect = Instantiate(particleEffect, lrs[0].transform.TransformPoint(pos), Quaternion.identity).transform;
+            effect.LookAt(Camera.main.transform.position);
+            Destroy(effect.gameObject, 2f);
+
             xr.SendHapticImpulse(hapticFeedbackAmplitude, hapticFeedbackDuration);
 
             aud.PlayOneShot(connectDotSound);
@@ -258,25 +266,7 @@ public class ConnectTheDotsExperience : TransitionExperience
             }
             nums.Remove(currentPoints);
 
-            
-            
-            //print(pointer.Count);
-            /*
-
-            pointer.TryGetValue(totalPoints - 1, out List<int> val);
-                currentPoints = val[val.IndexOf(points.IndexOf(pos))];
-
-                pointer.TryGetValue(currentPoints, out List<int> newVal);
-                val.Remove(points.IndexOf(pos));
-                print(newVal.IndexOf(totalPoints - 1) + " " + newVal[newVal.IndexOf(totalPoints - 1)]);
-                newVal.Remove(newVal.IndexOf(totalPoints - 1));*/
-
             return AddPoint();
-            //}
-            //else
-            //{
-            //return false;
-            //}
         }
         return false;
     }

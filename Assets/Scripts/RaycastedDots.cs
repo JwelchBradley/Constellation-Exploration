@@ -33,14 +33,13 @@ public class RaycastedDots : MonoBehaviour
         print(starCreator.gameObject.name);
     }
 
-    private void Update()
+    private void FixedUpdate()
     {
         if (!expirence)
         {
             if (Physics.Raycast(transform.position, transform.forward.normalized, out dotHit, Mathf.Infinity, dotsLayer))
             {
                 point = dotHit.collider.gameObject.transform.localPosition;
-                Debug.DrawLine(this.gameObject.transform.position, dotHit.point, Color.red);
 
                 expirence = ConnectTheDotsExperience.thisScript.SetPoint(dotHit.collider.gameObject.transform.localPosition, true, xr);
             }

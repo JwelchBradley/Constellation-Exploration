@@ -116,7 +116,7 @@ ParticleSystem:
     startLifetime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 100000
+      scalar: 1200
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -972,7 +972,7 @@ ParticleSystem:
     m_BurstCount: 0
     m_Bursts: []
   SizeModule:
-    enabled: 0
+    enabled: 1
     curve:
       serializedVersion: 2
       minMaxState: 1
@@ -982,10 +982,19 @@ ParticleSystem:
         serializedVersion: 2
         m_Curve:
         - serializedVersion: 3
-          time: 0
-          value: 0
+          time: 0.0020217896
+          value: 1
           inSlope: 0
-          outSlope: 1
+          outSlope: 0
+          tangentMode: 0
+          weightedMode: 0
+          inWeight: 0.33333334
+          outWeight: 0.33333334
+        - serializedVersion: 3
+          time: 0.1
+          value: 1
+          inSlope: 0
+          outSlope: 0
           tangentMode: 0
           weightedMode: 0
           inWeight: 0.33333334
@@ -993,11 +1002,11 @@ ParticleSystem:
         - serializedVersion: 3
           time: 1
           value: 1
-          inSlope: 1
+          inSlope: 0
           outSlope: 0
           tangentMode: 0
           weightedMode: 0
-          inWeight: 0.33333334
+          inWeight: 0.12133352
           outWeight: 0.33333334
         m_PreInfinity: 2
         m_PostInfinity: 2
@@ -4817,8 +4826,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: afa7d82fd0cedcf44bac0a5eb57972f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  h: []
+  constellationData: {fileID: 0}
   constellationLines: {fileID: 622292844340446134, guid: 188b32be9df1b9f4a8c8aea85d8305f3, type: 3}
-  defaultLineColor: {r: 1, g: 1, b: 1, a: 0.19607843}
   connectTheDotsSphere: {fileID: 6812941687943991739, guid: e8600e82666cdc94a97a13cd566d7083, type: 3}
   connectTheDotsConstelllations:
   - Perseus

@@ -1197,6 +1197,8 @@ public class StarCreator : MonoBehaviour
     }
     #endregion
     #endregion
+
+    AnimationCurve twinkleCurve;
     #endregion
 
     #region Functions
@@ -1206,7 +1208,18 @@ public class StarCreator : MonoBehaviour
     void Awake()
     {
         particleSystems = GetComponentsInChildren<ParticleSystem>();
+        SetTwinkleCurve(constellationData.MinConstellationStarSize);
         InitializeStars();
+    }
+
+    private void SetTwinkleCurve(float minSize)
+    {
+        twinkleCurve = new AnimationCurve();
+
+        for(int i = 0; i<1200; i++)
+        {
+            twinkleCurve.AddKey((float)i/1200, Mathf.Lerp(minSize, 1, Random.value));
+        }
     }
 
     /// <summary>
@@ -1223,6 +1236,16 @@ public class StarCreator : MonoBehaviour
         if (currentParticleSystem < particleSystems.Length)
         {
             ps = particleSystems[currentParticleSystem];
+
+            if (currentParticleSystem >= 20)
+            {
+                SetTwinkleCurve(constellationData.MinStarSize);
+            }
+
+            var sz = ps.sizeOverLifetime;
+            sz.enabled = true;
+            sz.size = new MinMaxCurve(1, twinkleCurve);
+
             currentParticleStars = new Particle[ps.main.maxParticles];
             ps.GetParticles(currentParticleStars);
             maxParticles = ps.main.maxParticles;
@@ -1378,7 +1401,7 @@ public class StarCreator : MonoBehaviour
 
             if (connectTheDotsGame)
             {
-                GameObject node = Instantiate(connectTheDotsSphere, pos, Quaternion.identity, transform);
+                GameObject node = Instantiate(connectTheDotsSphere, pos - (Camera.main.transform.position - pos).normalized * 25, Quaternion.identity, transform);
                 node.name = star_Database[a].name;
                 currentConnectTheDotsGame.Add(node);
             }
@@ -1429,7 +1452,7 @@ public class StarCreator : MonoBehaviour
         {
             for (int i = 0; i < starPositions.Count; i++)
             {
-                constellationLine.SetPosition(i, starPositions[i]);
+                constellationLine.SetPosition(i, starPositions[i]-(Camera.main.transform.position-starPositions[i]).normalized* 25);
             }
 
             constellations[currentConstellation].Add(constellationLine);

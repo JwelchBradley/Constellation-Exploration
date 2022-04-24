@@ -8,7 +8,7 @@ AnimatorState:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: CassAnim
-  m_Speed: 0.5
+  m_Speed: 0.4
   m_CycleOffset: 0
   m_Transitions: []
   m_StateMachineBehaviours: []
@@ -20,7 +20,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 6418926787e5e3b44bf397de3b15a49b, type: 2}
+  m_Motion: {fileID: 7400000, guid: b0dfb55b6b75abc4ba4cddebfcf69808, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
