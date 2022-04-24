@@ -15,8 +15,14 @@ MonoBehaviour:
   hapticFeedbackDuration: 0.2
   hapticFeedbackAmplitude: 0.65
   lineWidth: 3
-  minStarSize: 0.4
-  minConstellationStarSize: 0.8
+  minStarSize: 0.2
+  maxStarSize: 0.4
+  minStarTime: 0.8
+  maxStarTime: 2
+  minConstellationStarSize: 0.6
+  maxConstellationStarSize: 0.8
+  minConstellationStarTime: 0.8
+  maxConstellationStarTime: 3
   constellationLayer:
     serializedVersion: 2
     m_Bits: 8

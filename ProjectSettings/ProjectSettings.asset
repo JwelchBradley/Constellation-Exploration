@@ -142,6 +142,20 @@ PlayerSettings:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   - {fileID: -4880929611034551377, guid: 948bde3e1583b674e80cbd1d1068e634, type: 2}
   - {fileID: 11400000, guid: 38c27e19d019ea44c89e2b72eac8a4b5, type: 2}
   - {fileID: 0}
@@ -713,7 +727,7 @@ PlayerSettings:
   il2cppCompilerConfiguration:
     Android: 2
   managedStrippingLevel:
-    Android: 3
+    Android: 2
   incrementalIl2cppBuild: {}
   suppressCommonWarnings: 1
   allowUnsafeCode: 0

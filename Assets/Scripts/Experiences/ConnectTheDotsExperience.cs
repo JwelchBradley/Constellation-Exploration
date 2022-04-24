@@ -118,6 +118,7 @@ public class ConnectTheDotsExperience : TransitionExperience
 
     }
 
+    float[] currentParticleSizes = new float[20];
     public List<Vector3> NextPoint()
     {
         StarCreator.Constellations.TryGetValue(name, out List<LineRenderer> lrs);
@@ -132,10 +133,13 @@ public class ConnectTheDotsExperience : TransitionExperience
         h.GetParticles(particles);
 
         List<Vector3> nextPoints = new List<Vector3>();
+            /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
         foreach (int num in nums)
         {
             nextPoints.Add(points[num]);
             particles[num].startColor = lerped;
+            particles[num].size = currentParticleSizes[num] + value*75;
         }
         h.SetParticles(particles);
         return nextPoints;
@@ -161,6 +165,20 @@ public class ConnectTheDotsExperience : TransitionExperience
                 h.Add(false);
             }
         }
+
+        /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        StarCreator.ConstellationParticleSystems.TryGetValue(name, out ParticleSystem g);
+        Particle[] particles = new Particle[g.main.maxParticles];
+
+        g.GetParticles(particles);
+        pointer.TryGetValue(currentPoints, out List<int> nums);
+
+        foreach (int num in nums)
+        {
+            currentParticleSizes[num] = particles[num].size;
+        }
+        /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
         if (h.Contains(false))
         {
             return false;
@@ -196,6 +214,19 @@ public class ConnectTheDotsExperience : TransitionExperience
         List<Vector3> nextPoints = NextPoint();
         if (nextPoints.Contains(pos))
         {
+            /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+            StarCreator.ConstellationParticleSystems.TryGetValue(name, out ParticleSystem g);
+            Particle[] particles = new Particle[g.main.maxParticles];
+
+            g.GetParticles(particles);
+            pointer.TryGetValue(currentPoints, out List<int> nums);
+
+            foreach (int num in nums)
+            {
+                particles[num].size = currentParticleSizes[num];
+            }
+            /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
             Transform effect = Instantiate(particleEffect, lrs[0].transform.TransformPoint(pos), Quaternion.identity).transform;
             effect.LookAt(Camera.main.transform.position);
             Destroy(effect.gameObject, 2f);
@@ -203,9 +234,6 @@ public class ConnectTheDotsExperience : TransitionExperience
             xr.SendHapticImpulse(hapticFeedbackAmplitude, hapticFeedbackDuration);
 
             aud.PlayOneShot(connectDotSound);
-
-            pointer.TryGetValue(currentPoints, out List<int> nums);
-
 
             foreach (int num in nums)
             {

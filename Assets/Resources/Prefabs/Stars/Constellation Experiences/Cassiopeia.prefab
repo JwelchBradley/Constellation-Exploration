@@ -302,7 +302,7 @@ MonoBehaviour:
   lerped: {r: 0, g: 0, b: 0, a: 0}
   value: 0
   time: 0
-  aimedColor: {r: 0.9254902, g: 0, b: 0.76862746, a: 1}
+  aimedColor: {r: 0.7058824, g: 0.03137255, b: 2, a: 1}
   particleEffect: {fileID: 6664636462313981208, guid: a778dd479f2af7f4e9a7bad1b8fa4069, type: 3}
 --- !u!82 &5378059524692756915
 AudioSource:

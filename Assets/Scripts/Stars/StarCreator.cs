@@ -1208,18 +1208,30 @@ public class StarCreator : MonoBehaviour
     void Awake()
     {
         particleSystems = GetComponentsInChildren<ParticleSystem>();
-        SetTwinkleCurve(constellationData.MinConstellationStarSize);
         InitializeStars();
     }
 
-    private void SetTwinkleCurve(float minSize)
+    private void SetTwinkleCurve(float minSize, float maxSize, float minTime, float maxTime)
     {
         twinkleCurve = new AnimationCurve();
 
+        float time = 0;
+
         for(int i = 0; i<1200; i++)
         {
-            twinkleCurve.AddKey((float)i/1200, Mathf.Lerp(minSize, 1, Random.value));
+            twinkleCurve.AddKey((float)time/(1200+time), SizeGetter(minSize, maxSize, i));
+            time += Mathf.Lerp(minTime, maxTime, Random.value);
         }
+    }
+
+    private float SizeGetter(float minSize, float maxSize, int i)
+    {
+        if(i % 2 == 1)
+        {
+            return 1;
+        }
+
+        return Mathf.Lerp(minSize, 1, Random.value);
     }
 
     /// <summary>
@@ -1239,7 +1251,17 @@ public class StarCreator : MonoBehaviour
 
             if (currentParticleSystem >= 20)
             {
-                SetTwinkleCurve(constellationData.MinStarSize);
+                if (currentParticleSystem == 20)
+                {
+                    RandomizeStars(currentA+1);
+                }
+
+                SetTwinkleCurve(constellationData.MinStarSize, constellationData.MaxStarSize, constellationData.MinStarTime, constellationData.MaxStarTime);
+            }
+            else
+            {
+                SetTwinkleCurve(constellationData.MinConstellationStarSize, constellationData.MaxConstellationStarSize, constellationData.MinConstellationStarTime, constellationData.MaxConstellationStarTime);
+
             }
 
             var sz = ps.sizeOverLifetime;
@@ -1261,6 +1283,7 @@ public class StarCreator : MonoBehaviour
         transform.rotation = Quaternion.Euler(new Vector3(40.6936f, 0, -28.9f));
     }
 
+    int currentA = 0;
     /// <summary>
     /// Places all of the stars and creates the constellation lines.
     /// </summary>
@@ -1287,6 +1310,13 @@ public class StarCreator : MonoBehaviour
 
             bool nameStartEnd = star_Database[a].name == "start" || star_Database[a].name == "end";
 
+            currentA = a;
+
+            if (currentParticlesIndex >= 50)
+            {
+                SetParticleSystem();
+            }
+
             CheckIfConstellation(a);
 
             SpawnStar(a, nameStartEnd, pos);
@@ -1299,6 +1329,7 @@ public class StarCreator : MonoBehaviour
 
         // Sets the background stars
         SetParticleSystem();
+        star_Database = new stars_type[0];
     }
 
     private void SetParticleSystem()
@@ -1306,6 +1337,19 @@ public class StarCreator : MonoBehaviour
         particleSystems[currentParticleSystem].SetParticles(currentParticleStars, particleSystems[currentParticleSystem].main.maxParticles);
         currentParticleSystem++;
         InitializeNewParticleSystem();
+    }
+
+    private void RandomizeStars(int a)
+    {
+        int startingA = a;
+
+        for(int i = a; i < star_Database.Length; i++)
+        {
+            stars_type type = star_Database[a];
+            int randomIndex = Random.Range(startingA, star_Database.Length - 1);
+            star_Database[a] = star_Database[randomIndex];
+            star_Database[randomIndex] = type;
+        }
     }
 
     /// <summary>
