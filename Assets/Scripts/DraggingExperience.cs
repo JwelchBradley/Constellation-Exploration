@@ -35,8 +35,10 @@ public class DraggingExperience : Experience
             StartCoroutine(PlaySubtitles());
             DisableObjects();
             animator.SetBool("HasBuilt", true);
-            animator.transform.localScale /= 1.5f;
+            animator.transform.localScale *= 0.7f;
             animator.transform.rotation *= Quaternion.Euler(new Vector3(0, 0, -90));
+            animator.transform.position = new Vector3(animator.transform.position.x - 25, animator.transform.position.y - 50, animator.transform.position.z);
+            animator.gameObject.GetComponent<SpriteRenderer>().color = Color.white;
             Destroy(gameObject, ExperienceTimer);
         }
         aud.PlayOneShot(dragSpotPingSound);

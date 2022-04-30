@@ -33,11 +33,22 @@ public class DisableAfterShortTime : MonoBehaviour
     [SerializeField]
     public bool shouldMove = true;
 
+    [SerializeField]
+    private bool shouldRotateWithCamera = false;
+
+    [SerializeField]
+    private float followSpeed = 5;
+
+    private Coroutine followRef;
+
+    private Transform camTransform;
+
     // Start is called before the first frame update
     void Awake()
     {
         sr = GetComponentsInChildren<SpriteRenderer>();
         text = GetComponentInChildren<TextMeshPro>();
+        camTransform = Camera.main.transform;
 
         if (hoverObj != null)
         {
@@ -56,9 +67,57 @@ public class DisableAfterShortTime : MonoBehaviour
         StartCoroutine(FadeOut());
     }
 
+    private void FixedUpdate()
+    {
+        if (shouldRotateWithCamera)
+        {
+            Vector3 camForward = camTransform.forward;
+            camForward.y = 0;
+            Vector3 camPos = camTransform.position;
+            camPos.y = transform.position.y;
+
+            if (followRef == null && Vector3.Angle(camForward, (transform.position - camPos).normalized) > 45)
+            {
+                StartCoroutine(MoveToCamCenter());
+            }
+        }
+    }
+
+    private IEnumerator MoveToCamCenter()
+    {
+        Vector3 temp = Vector3.zero;
+        MoveToCamCenterHelper(ref temp);
+
+        while ((temp - transform.position).sqrMagnitude > 16)
+        {
+            yield return new WaitForFixedUpdate();
+            MoveToCamCenterHelper(ref temp);
+        }
+
+        followRef = null;
+    }
+
+    private void MoveToCamCenterHelper(ref Vector3 temp)
+    {
+        temp = camTransform.forward;
+        temp.y = 0;
+        temp = temp.normalized * distFromPlayer;
+        temp.y = yPos;
+        //temp = Vector3.MoveTowards(transform.position, temp, Time.fixedDeltaTime * followSpeed);
+        transform.position = Vector3.MoveTowards(transform.position, temp, Time.fixedDeltaTime * followSpeed);
+        transform.LookAt(camTransform.position);
+
+        Vector3 pos;
+        pos = -transform.forward * distFromPlayer;
+        pos.y = yPos;
+
+        transform.position = pos;
+        transform.LookAt(camTransform.position);
+    }
+
     private void Position()
     {
-        Vector3 temp = Camera.main.transform.forward;
+        Vector3 temp = camTransform.forward;
         temp.y = 0;
 
         transform.position = temp.normalized * distFromPlayer;

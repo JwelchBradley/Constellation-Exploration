@@ -146,9 +146,9 @@ public class ConstellationInteraction : MonoBehaviour
         {
             string name = hit.transform.gameObject.name;
 
-            if (NotFinished.Contains(name)) return;
+            if (NotFinished.Contains(name) || alreadySelectedExperiences.ContainsKey(name)) return;
 
-            if (name != "" && !alreadySelectedExperiences.ContainsKey(name))
+            if (name != "")
             {
                 if (isRight)
                 {

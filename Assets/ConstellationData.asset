@@ -15,12 +15,12 @@ MonoBehaviour:
   hapticFeedbackDuration: 0.2
   hapticFeedbackAmplitude: 0.65
   lineWidth: 3
-  minStarSize: 0.2
-  maxStarSize: 0.4
+  minStarSize: 0.1
+  maxStarSize: 0.2
   minStarTime: 0.8
   maxStarTime: 2
-  minConstellationStarSize: 0.6
-  maxConstellationStarSize: 0.8
+  minConstellationStarSize: 0.4
+  maxConstellationStarSize: 0.6
   minConstellationStarTime: 0.8
   maxConstellationStarTime: 3
   constellationLayer:
@@ -55,7 +55,7 @@ MonoBehaviour:
   defaultColor: {r: 1, g: 1, b: 1, a: 0.05882353}
   groupColor: {r: 1, g: 1, b: 1, a: 0.19607843}
   alreadyClickedColor: {r: 1, g: 1, b: 1, a: 0.003921569}
-  hoverStarSizeMod: 10
+  hoverStarSizeMod: 8
   hoverGroupedStarSizeMod: 5
   hoverSound: {fileID: 8300000, guid: 4c17cd1f82b286b4e9052150296f88f1, type: 3}
   hoverBufferTime: 0.2

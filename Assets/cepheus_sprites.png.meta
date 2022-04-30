@@ -1,0 +1,1848 @@
+fileFormatVersion: 2
+guid: b5e49595ed8c6684989d61875c370560
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4518716037465575619
+    second: cepheus_sprites_0
+  - first:
+      213: 3924778909779766466
+    second: cepheus_sprites_1
+  - first:
+      213: 2543762429193391213
+    second: cepheus_sprites_2
+  - first:
+      213: -1871126867143780676
+    second: cepheus_sprites_3
+  - first:
+      213: 6605211231980170813
+    second: cepheus_sprites_4
+  - first:
+      213: -8496413956886799945
+    second: cepheus_sprites_5
+  - first:
+      213: -1156028349469060698
+    second: cepheus_sprites_6
+  - first:
+      213: 7835722186687647268
+    second: cepheus_sprites_7
+  - first:
+      213: 6082863426282094517
+    second: cepheus_sprites_8
+  - first:
+      213: -3721506517191924172
+    second: cepheus_sprites_9
+  - first:
+      213: -3481989237334977888
+    second: cepheus_sprites_10
+  - first:
+      213: -1689736940639683801
+    second: cepheus_sprites_11
+  - first:
+      213: 4882376921368481136
+    second: cepheus_sprites_12
+  - first:
+      213: -9162504236718912887
+    second: cepheus_sprites_13
+  - first:
+      213: 5335805201831184131
+    second: cepheus_sprites_14
+  - first:
+      213: -9193316047580554339
+    second: cepheus_sprites_15
+  - first:
+      213: 1523261149824523087
+    second: cepheus_sprites_16
+  - first:
+      213: 572586544949573996
+    second: cepheus_sprites_17
+  - first:
+      213: -1950505753108538790
+    second: cepheus_sprites_18
+  - first:
+      213: -6936936169610450715
+    second: cepheus_sprites_19
+  - first:
+      213: 5783928395903322720
+    second: cepheus_sprites_20
+  - first:
+      213: -4034377604581778286
+    second: cepheus_sprites_21
+  - first:
+      213: -107695080252794356
+    second: cepheus_sprites_22
+  - first:
+      213: 2833787421859641140
+    second: cepheus_sprites_23
+  - first:
+      213: 7630138500853121585
+    second: cepheus_sprites_24
+  - first:
+      213: -8766832515598584380
+    second: cepheus_sprites_25
+  - first:
+      213: 8075046747212674680
+    second: cepheus_sprites_26
+  - first:
+      213: -9078475834223315940
+    second: cepheus_sprites_27
+  - first:
+      213: -1167193640203597224
+    second: cepheus_sprites_28
+  - first:
+      213: -1248741423546593830
+    second: cepheus_sprites_29
+  - first:
+      213: 1810423576713380606
+    second: cepheus_sprites_30
+  - first:
+      213: -8441965661005576785
+    second: cepheus_sprites_31
+  - first:
+      213: 9197720550077990828
+    second: cepheus_sprites_32
+  - first:
+      213: -5994170642513901919
+    second: cepheus_sprites_33
+  - first:
+      213: -22509768636034970
+    second: cepheus_sprites_34
+  - first:
+      213: -6430850591346820923
+    second: cepheus_sprites_35
+  - first:
+      213: 4898665415313309456
+    second: cepheus_sprites_36
+  - first:
+      213: -3819812059275451143
+    second: cepheus_sprites_37
+  - first:
+      213: 6797009954692747819
+    second: cepheus_sprites_38
+  - first:
+      213: 2903233650953278127
+    second: cepheus_sprites_39
+  - first:
+      213: 5034031175044128446
+    second: cepheus_sprites_40
+  - first:
+      213: 1153036986740920028
+    second: cepheus_sprites_41
+  - first:
+      213: 5954840812904067781
+    second: cepheus_sprites_42
+  - first:
+      213: 2266169440908964213
+    second: cepheus_sprites_43
+  - first:
+      213: -3164941257710730314
+    second: cepheus_sprites_44
+  - first:
+      213: 3235151265195565100
+    second: cepheus_sprites_45
+  - first:
+      213: 7317380136550155559
+    second: cepheus_sprites_46
+  - first:
+      213: 8494930550347004798
+    second: cepheus_sprites_47
+  - first:
+      213: 3455257771565981660
+    second: cepheus_sprites_48
+  - first:
+      213: 7810289524259181146
+    second: cepheus_sprites_49
+  - first:
+      213: -1737936898812562875
+    second: cepheus_sprites_50
+  - first:
+      213: 3076657268770067069
+    second: cepheus_sprites_51
+  - first:
+      213: -802244440528495322
+    second: cepheus_sprites_52
+  - first:
+      213: -1326842570604952128
+    second: cepheus_sprites_53
+  - first:
+      213: -5049760459210785891
+    second: cepheus_sprites_54
+  - first:
+      213: 7203875278302271574
+    second: cepheus_sprites_55
+  - first:
+      213: 7858851044763309941
+    second: cepheus_sprites_56
+  - first:
+      213: 3746149380068034787
+    second: cepheus_sprites_57
+  - first:
+      213: 3115368739128196081
+    second: cepheus_sprites_58
+  - first:
+      213: 6031170301665019007
+    second: cepheus_sprites_59
+  - first:
+      213: -5761504388971616729
+    second: cepheus_sprites_60
+  - first:
+      213: -5823758974258963101
+    second: cepheus_sprites_61
+  - first:
+      213: 469801626345749746
+    second: cepheus_sprites_62
+  - first:
+      213: -1920158045998230659
+    second: cepheus_sprites_63
+  - first:
+      213: 6712259674133950353
+    second: cepheus_sprites_64
+  - first:
+      213: -6487927113558064873
+    second: cepheus_sprites_65
+  - first:
+      213: 6490080978729506249
+    second: cepheus_sprites_66
+  - first:
+      213: -6131581613605348119
+    second: cepheus_sprites_67
+  - first:
+      213: -6744068046194775136
+    second: cepheus_sprites_68
+  - first:
+      213: -7246156282067698961
+    second: cepheus_sprites_69
+  - first:
+      213: -4707146453544138183
+    second: cepheus_sprites_70
+  - first:
+      213: 8703367920641949497
+    second: cepheus_sprites_71
+  - first:
+      213: 5038770261164156595
+    second: cepheus_sprites_72
+  - first:
+      213: -578899948966994160
+    second: cepheus_sprites_73
+  - first:
+      213: 8711900548219325685
+    second: cepheus_sprites_74
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: cepheus_sprites_3
+      rect:
+        serializedVersion: 2
+        x: 4560
+        y: 12160
+        width: 1520
+        height: 1520
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb6943a270c6806e0800000000000000
+      internalID: -1871126867143780676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cepheus_sprites_4
+      rect:
+        serializedVersion: 2
+        x: 6080
+        y: 12160
+        width: 1520
+        height: 1520
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3e299c9e9c6aab50800000000000000
+      internalID: 6605211231980170813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cepheus_sprites_5
+      rect:
+        serializedVersion: 2
+        x: 7600
+        y: 12160
+        width: 1520
+        height: 1520
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b9571ba58ca61a80800000000000000
+      internalID: -8496413956886799945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cepheus_sprites_6
+      rect:
+        serializedVersion: 2
+        x: 9120
+        y: 12160
+        width: 1520
+        height: 1520
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a19d9f4756f4ffe0800000000000000
+      internalID: -1156028349469060698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cepheus_sprites_8
+      rect:
+        serializedVersion: 2
+        x: 12160
+        y: 12160
+        width: 1520
+        height: 1520
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bf72ccce0caa6450800000000000000
+      internalID: 6082863426282094517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cepheus_sprites_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 10640
+        width: 1520
+        height: 1520
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 436697d3a8d8a5cc0800000000000000
+      internalID: -3721506517191924172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cepheus_sprites_10
+      rect:
+        serializedVersion: 2
+        x: 1520
+        y: 10640
+        width: 1520
+        height: 1520
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a25aecac3d7dafc0800000000000000
+      internalID: -3481989237334977888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cepheus_sprites_11
+      rect:
+        serializedVersion: 2
+        x: 3040
+        y: 10640
+        width: 1520
+        height: 1520
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72bf0518439dc88e0800000000000000
+      internalID: -1689736940639683801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cepheus_sprites_12
+      rect:
+        serializedVersion: 2
+        x: 4560
+        y: 10640
+        width: 1520
+        height: 1520
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07dcbb921ffa1c340800000000000000
+      internalID: 4882376921368481136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cepheus_sprites_13
+      rect:
+        serializedVersion: 2
+        x: 6080
+        y: 10640
+        width: 1520
+        height: 1520
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98a8b5511fe38d080800000000000000
+      internalID: -9162504236718912887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cepheus_sprites_14
+      rect:
+        serializedVersion: 2
+        x: 7600
+        y: 10640
+        width: 1520
+        height: 1520
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30744dd8f869c0a40800000000000000
+      internalID: 5335805201831184131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cepheus_sprites_15
+      rect:
+        serializedVersion: 2
+        x: 9120
+        y: 10640
+        width: 1520
+        height: 1520
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9b101453c7ca6080800000000000000
+      internalID: -9193316047580554339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cepheus_sprites_16
+      rect:
+        serializedVersion: 2
+        x: 10640
+        y: 10640
+        width: 1520
+        height: 1520
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4b9177f1f5b32510800000000000000
+      internalID: 1523261149824523087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cepheus_sprites_17
+      rect:
+        serializedVersion: 2
+        x: 12160
+        y: 10640
+        width: 1520
+        height: 1520
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6933eecd6c32f700800000000000000
+      internalID: 572586544949573996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cepheus_sprites_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 9120
+        width: 1520
+        height: 1520
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5a1c9d0a596ee4e0800000000000000
+      internalID: -1950505753108538790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cepheus_sprites_19
+      rect:
+        serializedVersion: 2
+        x: 1520
+        y: 9120
+        width: 1520
+        height: 1520
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e86fc4ae4d0bbf90800000000000000
+      internalID: -6936936169610450715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cepheus_sprites_20
+      rect:
+        serializedVersion: 2
+        x: 3040
+        y: 9120
+        width: 1520
+        height: 1520
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06acc144b34a44050800000000000000
+      internalID: 5783928395903322720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cepheus_sprites_21
+      rect:
+        serializedVersion: 2
+        x: 4560
+        y: 9120
+        width: 1520
+        height: 1520
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29c9c1591f20308c0800000000000000
+      internalID: -4034377604581778286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cepheus_sprites_22
+      rect:
+        serializedVersion: 2
+        x: 6080
+        y: 9120
+        width: 1520
+        height: 1520
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0a997525e3618ef0800000000000000
+      internalID: -107695080252794356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cepheus_sprites_23
+      rect:
+        serializedVersion: 2
+        x: 7600
+        y: 9120
+        width: 1520
+        height: 1520
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 437f9e865a2a35720800000000000000
+      internalID: 2833787421859641140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cepheus_sprites_24
+      rect:
+        serializedVersion: 2
+        x: 9120
+        y: 9120
+        width: 1520
+        height: 1520
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 132c1625a82b3e960800000000000000
+      internalID: 7630138500853121585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cepheus_sprites_25
+      rect:
+        serializedVersion: 2
+        x: 10640
+        y: 9120
+        width: 1520
+        height: 1520
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c5f6669644f55680800000000000000
+      internalID: -8766832515598584380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cepheus_sprites_26
+      rect:
+        serializedVersion: 2
+        x: 12160
+        y: 9120
+        width: 1520
+        height: 1520
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 876f840bb34501070800000000000000
+      internalID: 8075046747212674680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cepheus_sprites_27
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 7600
+        width: 1520
+        height: 1520
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c14b62f1456c20280800000000000000
+      internalID: -9078475834223315940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cepheus_sprites_28
+      rect:
+        serializedVersion: 2
+        x: 1520
+        y: 7600
+        width: 1520
+        height: 1520
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85ac19b719b4dcfe0800000000000000
+      internalID: -1167193640203597224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cepheus_sprites_29
+      rect:
+        serializedVersion: 2
+        x: 3040
+        y: 7600
+        width: 1520
+        height: 1520
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: add80399a449baee0800000000000000
+      internalID: -1248741423546593830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cepheus_sprites_30
+      rect:
+        serializedVersion: 2
+        x: 4560
+        y: 7600
+        width: 1520
+        height: 1520
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef24ef6a6aaef1910800000000000000
+      internalID: 1810423576713380606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cepheus_sprites_31
+      rect:
+        serializedVersion: 2
+        x: 6080
+        y: 7600
+        width: 1520
+        height: 1520
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa587b175fc18da80800000000000000
+      internalID: -8441965661005576785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cepheus_sprites_32
+      rect:
+        serializedVersion: 2
+        x: 7600
+        y: 7600
+        width: 1520
+        height: 1520
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca785b2db1ed4af70800000000000000
+      internalID: 9197720550077990828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cepheus_sprites_33
+      rect:
+        serializedVersion: 2
+        x: 9120
+        y: 7600
+        width: 1520
+        height: 1520
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a642e12f8d60dca0800000000000000
+      internalID: -5994170642513901919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cepheus_sprites_34
+      rect:
+        serializedVersion: 2
+        x: 10640
+        y: 7600
+        width: 1520
+        height: 1520
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66019741c7700bff0800000000000000
+      internalID: -22509768636034970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cepheus_sprites_35
+      rect:
+        serializedVersion: 2
+        x: 12160
+        y: 7600
+        width: 1520
+        height: 1520
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c87923957701c6a0800000000000000
+      internalID: -6430850591346820923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cepheus_sprites_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 6080
+        width: 1520
+        height: 1520
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01fbd31bd3e8bf340800000000000000
+      internalID: 4898665415313309456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cepheus_sprites_37
+      rect:
+        serializedVersion: 2
+        x: 1520
+        y: 6080
+        width: 1520
+        height: 1520
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f4222a9b2d4dfac0800000000000000
+      internalID: -3819812059275451143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cepheus_sprites_38
+      rect:
+        serializedVersion: 2
+        x: 3040
+        y: 6080
+        width: 1520
+        height: 1520
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b22514caa84d35e50800000000000000
+      internalID: 6797009954692747819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cepheus_sprites_39
+      rect:
+        serializedVersion: 2
+        x: 4560
+        y: 6080
+        width: 1520
+        height: 1520
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa2d701af9b5a4820800000000000000
+      internalID: 2903233650953278127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cepheus_sprites_40
+      rect:
+        serializedVersion: 2
+        x: 6080
+        y: 6080
+        width: 1520
+        height: 1520
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebe5fb8aea87cd540800000000000000
+      internalID: 5034031175044128446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cepheus_sprites_41
+      rect:
+        serializedVersion: 2
+        x: 7600
+        y: 6080
+        width: 1520
+        height: 1520
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cde4497c709600010800000000000000
+      internalID: 1153036986740920028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cepheus_sprites_42
+      rect:
+        serializedVersion: 2
+        x: 9120
+        y: 6080
+        width: 1520
+        height: 1520
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c235235b28d3a250800000000000000
+      internalID: 5954840812904067781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cepheus_sprites_43
+      rect:
+        serializedVersion: 2
+        x: 10640
+        y: 6080
+        width: 1520
+        height: 1520
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 571793e891d037f10800000000000000
+      internalID: 2266169440908964213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cepheus_sprites_44
+      rect:
+        serializedVersion: 2
+        x: 12160
+        y: 6080
+        width: 1520
+        height: 1520
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b38c27d1bed314d0800000000000000
+      internalID: -3164941257710730314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cepheus_sprites_45
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4560
+        width: 1520
+        height: 1520
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2023a46fe095ec20800000000000000
+      internalID: 3235151265195565100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cepheus_sprites_46
+      rect:
+        serializedVersion: 2
+        x: 1520
+        y: 4560
+        width: 1520
+        height: 1520
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 725429d077e8c8560800000000000000
+      internalID: 7317380136550155559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cepheus_sprites_47
+      rect:
+        serializedVersion: 2
+        x: 3040
+        y: 4560
+        width: 1520
+        height: 1520
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7bfb05d35e04e570800000000000000
+      internalID: 8494930550347004798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cepheus_sprites_48
+      rect:
+        serializedVersion: 2
+        x: 4560
+        y: 4560
+        width: 1520
+        height: 1520
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdf1991f2aa83ff20800000000000000
+      internalID: 3455257771565981660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cepheus_sprites_49
+      rect:
+        serializedVersion: 2
+        x: 6080
+        y: 4560
+        width: 1520
+        height: 1520
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a525c6e01f8b36c60800000000000000
+      internalID: 7810289524259181146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cepheus_sprites_50
+      rect:
+        serializedVersion: 2
+        x: 7600
+        y: 4560
+        width: 1520
+        height: 1520
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 542bb38399b91e7e0800000000000000
+      internalID: -1737936898812562875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cepheus_sprites_51
+      rect:
+        serializedVersion: 2
+        x: 9120
+        y: 4560
+        width: 1520
+        height: 1520
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d72d9a03c7b72ba20800000000000000
+      internalID: 3076657268770067069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cepheus_sprites_52
+      rect:
+        serializedVersion: 2
+        x: 10640
+        y: 4560
+        width: 1520
+        height: 1520
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62d544b8eeaddd4f0800000000000000
+      internalID: -802244440528495322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cepheus_sprites_53
+      rect:
+        serializedVersion: 2
+        x: 12160
+        y: 4560
+        width: 1520
+        height: 1520
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c5c93246bb169de0800000000000000
+      internalID: -1326842570604952128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cepheus_sprites_54
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3040
+        width: 1520
+        height: 1520
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9b7debfd95abe9b0800000000000000
+      internalID: -5049760459210785891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cepheus_sprites_55
+      rect:
+        serializedVersion: 2
+        x: 1520
+        y: 3040
+        width: 1520
+        height: 1520
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 658dc69d56e49f360800000000000000
+      internalID: 7203875278302271574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cepheus_sprites_56
+      rect:
+        serializedVersion: 2
+        x: 3040
+        y: 3040
+        width: 1520
+        height: 1520
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57713d1236f301d60800000000000000
+      internalID: 7858851044763309941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cepheus_sprites_57
+      rect:
+        serializedVersion: 2
+        x: 4560
+        y: 3040
+        width: 1520
+        height: 1520
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e84182630ffcf330800000000000000
+      internalID: 3746149380068034787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cepheus_sprites_58
+      rect:
+        serializedVersion: 2
+        x: 6080
+        y: 3040
+        width: 1520
+        height: 1520
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fbb710cc530c3b20800000000000000
+      internalID: 3115368739128196081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cepheus_sprites_59
+      rect:
+        serializedVersion: 2
+        x: 7600
+        y: 3040
+        width: 1520
+        height: 1520
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7401a25f6503b350800000000000000
+      internalID: 6031170301665019007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cepheus_sprites_60
+      rect:
+        serializedVersion: 2
+        x: 9120
+        y: 3040
+        width: 1520
+        height: 1520
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7262e73b8460b00b0800000000000000
+      internalID: -5761504388971616729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cepheus_sprites_61
+      rect:
+        serializedVersion: 2
+        x: 10640
+        y: 3040
+        width: 1520
+        height: 1520
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36d1dc9811add2fa0800000000000000
+      internalID: -5823758974258963101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cepheus_sprites_62
+      rect:
+        serializedVersion: 2
+        x: 12160
+        y: 3040
+        width: 1520
+        height: 1520
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fc3d3d0712158600800000000000000
+      internalID: 469801626345749746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cepheus_sprites_63
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1520
+        width: 1520
+        height: 1520
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d73daab3e6a3a55e0800000000000000
+      internalID: -1920158045998230659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cepheus_sprites_64
+      rect:
+        serializedVersion: 2
+        x: 1520
+        y: 1520
+        width: 1520
+        height: 1520
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19feeec4c9cb62d50800000000000000
+      internalID: 6712259674133950353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cepheus_sprites_65
+      rect:
+        serializedVersion: 2
+        x: 3040
+        y: 1520
+        width: 1520
+        height: 1520
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7110fbb2aa046f5a0800000000000000
+      internalID: -6487927113558064873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cepheus_sprites_66
+      rect:
+        serializedVersion: 2
+        x: 4560
+        y: 1520
+        width: 1520
+        height: 1520
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c511b4a346611a50800000000000000
+      internalID: 6490080978729506249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cepheus_sprites_67
+      rect:
+        serializedVersion: 2
+        x: 6080
+        y: 1520
+        width: 1520
+        height: 1520
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ec9cb9420f38eaa0800000000000000
+      internalID: -6131581613605348119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cepheus_sprites_68
+      rect:
+        serializedVersion: 2
+        x: 7600
+        y: 1520
+        width: 1520
+        height: 1520
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ab6f75f7d14862a0800000000000000
+      internalID: -6744068046194775136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cepheus_sprites_69
+      rect:
+        serializedVersion: 2
+        x: 9120
+        y: 1520
+        width: 1520
+        height: 1520
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: feab364d04b707b90800000000000000
+      internalID: -7246156282067698961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cepheus_sprites_70
+      rect:
+        serializedVersion: 2
+        x: 10640
+        y: 1520
+        width: 1520
+        height: 1520
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93a03c27d3bdcaeb0800000000000000
+      internalID: -4707146453544138183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cepheus_sprites_71
+      rect:
+        serializedVersion: 2
+        x: 12160
+        y: 1520
+        width: 1520
+        height: 1520
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93fb46be20398c870800000000000000
+      internalID: 8703367920641949497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cepheus_sprites_72
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1520
+        height: 1520
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b6ed712bde4de540800000000000000
+      internalID: 5038770261164156595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cepheus_sprites_73
+      rect:
+        serializedVersion: 2
+        x: 1520
+        y: 0
+        width: 1520
+        height: 1520
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01f9455409557f7f0800000000000000
+      internalID: -578899948966994160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cepheus_sprites_74
+      rect:
+        serializedVersion: 2
+        x: 3040
+        y: 0
+        width: 1520
+        height: 1520
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fcc4271463e6e870800000000000000
+      internalID: 8711900548219325685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5cb6d3798ea8aec4d9b6d51c0fa9568f
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
